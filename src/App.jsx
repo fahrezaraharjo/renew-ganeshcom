@@ -1,4 +1,4 @@
-import { Navbar, Welcome, Footer, Services, Transactions, Tabs } from "./components";
+import { Navbar, Welcome, Footer, Services, Tabs, TrustedBy } from "./components";
 
 const App = () => (
   <div className="min-h-screen">
@@ -10,9 +10,10 @@ const App = () => (
       <Services />
       <Tabs />
     </div>
-    {/* 
-    <Transactions />
-    <Footer /> */}
+    <div className="gradient-bg-footer">
+      <TrustedBy />
+    </div>
+    
   </div>
 );
 

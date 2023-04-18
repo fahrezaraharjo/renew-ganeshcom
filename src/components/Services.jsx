@@ -21,10 +21,9 @@ const Services = () => (
   <div className="flex w-full justify-center items-center gradient-bg-services">
     <div className="flex mf:flex-row flex-col items-center justify-between md:p-20 py-12 px-4">
       <div className="flex-1 flex flex-col justify-start items-start">
-        <h1 className="text-white text-3xl sm:text-5xl py-2 text-gradient">
-          Ganeshcom Studio
+        <h1 className="text-white text-3xl sm:text-5xl py-2 text-gradient text-center">
+          GANESHCOM STUDIO
           <br />
-          continue to improve
         </h1>
         <p className="text-left my-2 text-white font-light md:w-9/12 w-11/12 text-base">
           We are an Information Technology Company that provides IT services and solutions for website design, web application development, mobile application development, and various innovative product developments. We realize the progression into the digital age has been inevitable, for businesses to survive and thrive in this era, an understanding of these innovations is key. With a mission to enhance our customers' business growth, we provide IT services and solutions with creative design and development, as well as provide high-quality solutions.

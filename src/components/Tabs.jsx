@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { BsArrowRight } from "react-icons/bs";
+
 
 const tabsData = [
   {
@@ -40,6 +42,9 @@ const Tabs = () => {
 
   return (
     <div className="w-full flex flex-col p-14 mx-auto gradient-bg-transactions">
+      <h3 className="text-white text-3xl text-center my-2">
+        OUR SERVICE
+      </h3>
       <div className="flex mb-4">
         {tabsData.map((tab, index) => (
           <button
@@ -54,11 +59,14 @@ const Tabs = () => {
           </button>
         ))}
       </div>
-      <div className="flex flex-row items-center py-4">
-        <img src={tabsData[activeTab].photo} alt={tabsData[activeTab].title} className="w-32 h-32 mr-4" />
+      <div className="flex flex-row items-center py-4 justify-between">
+        <div className='w-2/5 ml-10 h-30'>
+          <img src={tabsData[activeTab].photo} alt={tabsData[activeTab].title} className="w-full object-cover mr-4" />
+        </div>
         <div>
           <h2 className="text-white text-3xl sm:text-5xl py-2 text-gradient mb-2">{tabsData[activeTab].title}</h2>
           <p className="text-gray-600">{tabsData[activeTab].paragraph}</p>
+
         </div>
       </div>
     </div>
