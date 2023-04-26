@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BsArrowRight } from "react-icons/bs";
+import { BsArrowRight, BsShieldFillCheck } from "react-icons/bs";
 
 
 const tabsData = [
@@ -30,8 +30,19 @@ const tabsData = [
   },
 ];
 
-
-
+const ServiceCard = ({ color, title, icon, paragraph }) => (
+  <div className="flex flex-row justify-start items-start white-glassmorphism p-3 m-2 cursor-pointer hover:shadow-xl">
+    <div className={`w-10 h-10 rounded-full flex justify-center items-center ${color}`}>
+      {icon}
+    </div>
+    <div className="ml-5 flex flex-col flex-1">
+      <h3 className="mt-2 text-white text-lg">{title}</h3>
+      <p className="mt-1 text-white text-sm md:w-9/12">
+        {paragraph}
+      </p>
+    </div>
+  </div>
+);
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -42,7 +53,7 @@ const Tabs = () => {
 
   return (
     <div className="w-full flex flex-col p-14 mx-auto gradient-bg-transactions">
-      <h3 className="text-white text-3xl text-center my-2">
+      <h3 className="text-3xl font-bold text-gradient mb-4">
         OUR SERVICE
       </h3>
       <div className="flex mb-4">
@@ -59,15 +70,22 @@ const Tabs = () => {
           </button>
         ))}
       </div>
-      <div className="flex flex-row items-center py-4 justify-between">
-        <div className='w-2/5 ml-10 h-30'>
-          <img src={tabsData[activeTab].photo} alt={tabsData[activeTab].title} className="w-full object-cover mr-4" />
+      <div className="flex flex-row items-center w-full justify-evenly">
+        <div className='w-1/4 ml-10 h-30'>
+          <img src={tabsData[activeTab].photo} alt={tabsData[activeTab].title} className="w-full object-cover " />
         </div>
-        <div>
-          <h2 className="text-white text-3xl sm:text-5xl py-2 text-gradient mb-2">{tabsData[activeTab].title}</h2>
-          <p className="text-gray-600">{tabsData[activeTab].paragraph}</p>
-
-        </div>
+        {tabsData.map((tab, index) => (
+          activeTab === index && (
+            <div className='flex flex-start flex-col w-1/4'>
+              <ServiceCard
+                color="bg-[#2952E3]"
+                title={tab.title}
+                icon={<BsShieldFillCheck fontSize={21} className="text-white" />}
+                paragraph={tab.paragraph}
+              />
+            </div>
+          )
+        ))}
       </div>
     </div>
   );
