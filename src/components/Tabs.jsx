@@ -1,34 +1,6 @@
 import React, { useState } from 'react';
 import { BsArrowRight, BsShieldFillCheck } from "react-icons/bs";
-
-
-const tabsData = [
-  {
-    title: 'Software Development',
-    photo: '	https://ganeshcomstudio.com/uploads/images/service-230326.175925.png',
-    paragraph: 'We develop responsive web-based applications on various platforms, with interactive design displays, powerful functionality, and dynamic software..',
-  },
-  {
-    title: 'Mobile App',
-    photo: '	https://ganeshcomstudio.com/uploads/images/service-230326.175935.png',
-    paragraph: 'We design a mobile app system that supports various existing operating systems and is user friendly, where you can interact adaptively with anyone..',
-  },
-  {
-    title: 'IT Masterplan',
-    photo: 'https://ganeshcomstudio.com/uploads/images/service-230326.175944.png',
-    paragraph: 'We develop an IT development plan that aligns with your business strategy. Realize your company`s digital transformation with the right planning.',
-  },
-  {
-    title: 'Branding Website',
-    photo: 'https://ganeshcomstudio.com/uploads/images/service-230326.175955.png',
-    paragraph: 'We work with different types of clients. For us, your website is not only your digital presence but also a strong digital brand through a personalized website that visitors will love.',
-  },
-  {
-    title: 'Startup Partnership',
-    photo: 'https://ganeshcomstudio.com/uploads/images/service-230326.180003.png',
-    paragraph: 'Partners with us. We fine tune each innovation program to enable corporate/startup collaboration and leapfrog competition by innovating faster.',
-  },
-];
+import { tabsData } from '../utils/dummyData';
 
 const ServiceCard = ({ color, title, icon, paragraph }) => (
   <div className="flex flex-row justify-start items-start white-glassmorphism p-3 m-2 cursor-pointer hover:shadow-xl">
