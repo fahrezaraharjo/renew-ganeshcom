@@ -8,7 +8,7 @@ import { settings } from '../utils/dummyData';
 const TrustedBySection = () => {
   return (
     <div className="gradient-bg-trustedby w-full flex flex-col p-14 mx-auto">
-      <h2 className="text-3xl font-bold text-gradient mb-4">Trusted by</h2>
+      <h2 className="text-3xl font-bold text-gradient mb-4">TRUSTED BY</h2>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Slider {...settings}>
           {trustedCompanies.map((company) => (

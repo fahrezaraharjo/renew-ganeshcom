@@ -33,7 +33,17 @@ body {
   background-image:
     radial-gradient(at 50% 0%, hsla(225, 39%, 25%, 1) 0, transparent 50%),
     radial-gradient(at 0% 100%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+}
 
+.bg-getintouch {
+  background-image: url('../../images/4238568.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  
 }
 
 .gradient-bg-trustedby {
@@ -49,6 +59,8 @@ body {
     radial-gradient(at 0% 100%, hsla(253, 16%, 7%, 1) 0, transparent 53%),
     radial-gradient(at 50% 150%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
 }
+
+
 
 .blue-glassmorphism {
   background: rgb(39, 51, 89, 0.4);
