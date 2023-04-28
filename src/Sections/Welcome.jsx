@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
-import { BsInfoCircle, BsArrowRight } from "react-icons/bs";
+import React from "react";
+import { BsArrowRight } from "react-icons/bs";
 
-import Carousel from "./Carousel";
+import Carousel from "../components/Carousel";
 
 const Welcome = () => {
 
@@ -31,9 +31,9 @@ const Welcome = () => {
 
           <Carousel
             images={[
-              'https://ganeshcomstudio.com/uploads/images/homeslider-230326.171937.jpg',
-              'https://ganeshcomstudio.com/uploads/images/homeslider-230326.171926.jpg',
-              'https://ganeshcomstudio.com/uploads/images/homeslider-230326.171913.jpg',
+              '../../images/homeslider-230326.171937.jpg',
+              '../../images/homeslider-230326.171926.jpg',
+              '../../images/homeslider-230326.171913.jpg',
             ]}
           />
         </div>

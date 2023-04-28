@@ -11,6 +11,35 @@ export const trustedCompanies = [
     { image: '../../../images/trustedby-230317.201106.png' },
 ];
 
+export const products = [
+    {
+        id: 1,
+        title: 'Akunta.id',
+        images: [
+            '../../../images/akuntaid-230317.205557.png'
+        ],
+        description: 'Simplifies the bookkeeping process for your business.',
+    },
+    {
+        id: 2,
+        title: 'SION App',
+        images: [
+            '../../../images/sion-app-230317.205711.png'
+        ],
+        description:
+            'Simple way to manage payments for school & others.',
+    },
+    {
+        id: 3,
+        title: 'Dimedika.id',
+        images: [
+            '../../../images/dimedikaid-230317.205857.png'
+        ],
+        description:
+            'The future of digital healthcare super apps.',
+    },
+];
+
 export const categories = [
     {
         id: 1,

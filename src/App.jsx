@@ -1,4 +1,5 @@
-import { Navbar, Welcome, Footer, Services, Tabs, TrustedBy, CategoryList, GetInTouch } from "./components";
+import { Navbar, Tabs } from "./components";
+import { CategoryList, FeaturedProduct, Services, TrustedBySection, GetInTouch, Welcome } from "./Sections";
 
 const App = () => (
   <div className="min-h-screen">
@@ -11,11 +12,14 @@ const App = () => (
       <Tabs />
     </div>
     <div className="gradient-bg-footer">
-      <TrustedBy />
+      <TrustedBySection />
     </div>
-    <div className="bg-getintouch h-screen">
+    <div className="bg-getintouch">
       <CategoryList />
       <GetInTouch />
+    </div>
+    <div className="gradient-bg-product">
+      <FeaturedProduct />
     </div>
   </div>
 );
