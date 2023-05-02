@@ -1,10 +1,19 @@
-import { 
-    akuntaid, dimedika, keacaracom, mytimesheet, pems, ximo, sion, 
-    trustedby1, trustedby2, trustedby3, trustedby4, trustedby5, trustedby6, trustedby7, trustedby8, trustedby9, trustedby10, 
-    solution1,solution2,solution3,
+import {
+    akuntaid, dimedika, keacaracom, mytimesheet, pems, ximo, sion,
+    trustedby1, trustedby2, trustedby3, trustedby4, trustedby5, trustedby6, trustedby7, trustedby8, trustedby9, trustedby10,
+    solution1, solution2, solution3,
     whatsnew1, whatsnew2, whatsnew3
 
 } from "../../images";
+
+export const aboutUs = [
+    {
+        text1: "We have been established since 2016 as an IT company that is ready to provide our best innovation to advance your business.",
+        text2: "Our experience is a form of our best achievement in providing solutions.",
+        text3: "We`ve Done with more than 60 Client,",
+        text4: "and we made a long relationship partnership with more than 5 Company in Indonesia."
+    }
+]
 
 
 export const trustedCompanies = [
@@ -18,7 +27,7 @@ export const trustedCompanies = [
     { id: '8', image: trustedby8 },
     { id: '9', image: trustedby9 },
     { id: '10', image: trustedby10 },
-  ];
+];
 
 export const products = [
     {
@@ -83,7 +92,7 @@ export const products = [
         description:
             'The future of digital healthcare super apps.',
     },
-    
+
 ];
 
 export const categories = [
@@ -277,26 +286,26 @@ export const tabsData = [
 ];
 
 
- export const articles = [
+export const articles = [
     {
-      id: 1,
-      image: whatsnew1,
-      title: "6 Alasan Pentingnya Teknologi di Era Kita Sekarang",
-      description:
-        "Tujuan pertama dan terpenting yang dilayani oleh teknologi adalah komunikasi. Media sosial dan aplikasi teknologi lainnya telah menyatukan kita.",
+        id: 1,
+        image: whatsnew1,
+        title: "6 Alasan Pentingnya Teknologi di Era Kita Sekarang",
+        description:
+            "Tujuan pertama dan terpenting yang dilayani oleh teknologi adalah komunikasi. Media sosial dan aplikasi teknologi lainnya telah menyatukan kita.",
     },
     {
-      id: 2,
-      image: whatsnew2,
-      title: "Pentingnya Teknologi untuk Membuat Dunia yang Lebih Baik",
-      description:
-        "Teknologi adalah keseluruhan sarana untuk menyediakan barang-barang yang diperlukan bagi kelangsungan dan kenyamanan hidup manusia.",
+        id: 2,
+        image: whatsnew2,
+        title: "Pentingnya Teknologi untuk Membuat Dunia yang Lebih Baik",
+        description:
+            "Teknologi adalah keseluruhan sarana untuk menyediakan barang-barang yang diperlukan bagi kelangsungan dan kenyamanan hidup manusia.",
     },
     {
-      id: 3,
-      image: whatsnew3,
-      title: "10 Web Design Trends You Should Know",
-      description:
-        "Vivamus finibus, massa non faucibus commodo, turpis velit vehicula elit, et commodo quam lorem ac justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod lorem vel mauris aliquam blandit.",
+        id: 3,
+        image: whatsnew3,
+        title: "10 Web Design Trends You Should Know",
+        description:
+            "Vivamus finibus, massa non faucibus commodo, turpis velit vehicula elit, et commodo quam lorem ac justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod lorem vel mauris aliquam blandit.",
     },
-  ];
+];

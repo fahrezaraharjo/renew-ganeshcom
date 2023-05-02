@@ -25,7 +25,7 @@ const Artikel = () => {
         </div>
 
         <div className="w-full md:w-1/3 lg:w-2/5">
-          <h1 className="text-gray-200 mb-4">HEADLINE</h1>
+          <h1 className="text-gray-200 mb-4 font-semibold">HEADLINE</h1>
           <div className="flex items-center justify-center h-64 md:h-auto">
             <img src={whatsnew4} alt="Headline" className="object-cover h-23 w-full" />
           </div>

@@ -9,11 +9,11 @@ const CategoryList = () => {
 
   // Menambahkan custom style untuk efek hover pada list kategori
   const categoryItemStyle =
-    "my-2 cursor-pointer text-white hover:text-black hover:bg-gray-100 transition duration-300 ease-in-out";
+    "my-2 cursor-pointer text-white hover:text-black hover:bg-blue-200 transition duration-300 ease-in-out";
 
   // Menambahkan custom style untuk efek hover pada slide foto
   const slideItemStyle =
-    "px-4 py-4 md:p-4 hover:bg-gray-100 transition duration-300 ease-in-out";
+    "px-4 py-4 md:p-4 hover:bg-blue-200 transition duration-300 ease-in-out";
 
   const settings = {
     dots: true,
@@ -52,7 +52,7 @@ const CategoryList = () => {
 
 
   return (
-    <div className="w-full flex flex-col p-14 mx-auto backdrop-blur-sm">
+    <div className="w-full flex flex-col p-14 mx-auto backdrop-blur-sm ">
       <h1 className="text-3xl font-bold text-gradient mb-4">OUR SOLUTION</h1>
       <div className="flex flex-row justify-between w-full px-14">
         <div className="w-1/3 white-glassmorphism p-4 mx-5">

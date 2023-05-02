@@ -30,7 +30,7 @@ const FeaturedProduct = () => {
   };
 
   return (
-    <div className='container mx-auto py-8 backdrop-blur-sm'>
+    <div className='container mx-auto py-8 backdrop-blur-sm gradient-bg-welcome'>
       <div className='text-center'>
         <h2 className='text-3xl font-bold text-gradient'>FEATURED PRODUCT</h2>
       </div>

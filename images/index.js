@@ -67,6 +67,8 @@ import whatsnew1 from "./top-6-teknologi.jpg";
 import whatsnew2 from "./ales-nesetril-Im7lZjxeLhg-unsplash.jpg";
 import whatsnew3 from "./Web-design-trends-2023-1024x763.jpg";
 import whatsnew4 from "./christina-wocintechchat-com-glRqyWJgUeY-unsplash.jpg";
+import whatsnew5 from "./world.png";
+
 
 
 
@@ -125,5 +127,6 @@ export {
     whatsnew1,
     whatsnew2,
     whatsnew3,
-    whatsnew4
+    whatsnew4,
+    whatsnew5
 };
