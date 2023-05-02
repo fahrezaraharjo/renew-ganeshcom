@@ -35,33 +35,37 @@ body {
     radial-gradient(at 0% 100%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
 }
 
-.bg-getintouch {
-  background-image: url('../../images/4238568.jpg');
-  background-position: center;
-  background-size: cover;
-  left: 0;
-  width: 100%;  
-}
-
 .gradient-bg-trustedby {
   background-color: #0f0e13;
   background-image:
-    radial-gradient(at center center, hsla(253, 16%, 7%, 1) 0, transparent 50%),
-    radial-gradient(at 0% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+    radial-gradient(at 0% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(106, 86, 47, 0.759) 0, transparent 50%),
+    radial-gradient(at 100% 100%, rgb(108, 39, 114) 0, transparent 50%);
+  transition: background-image 0.5s ease-in-out;
 }
+
+.bg-getintouch {
+  background-color: #0f0e13;
+  background-image:
+    radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+    radial-gradient(at 50% 0%, rgb(106, 86, 47) 0, transparent 50%),
+    radial-gradient(at 100% 0%, rgb(108, 39, 114) 0, transparent 50%);
+  transition: background-image 0.5s ease-in-out;
+}
+
 
 .gradient-bg-footer {
   background-color: #0f0e13;
   background-image:
     radial-gradient(at 0% 100%, hsla(253, 16%, 7%, 1) 0, transparent 53%),
-    radial-gradient(at 50% 150%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+    radial-gradient(at 0% 150%, rgb(195, 0, 255) 0, transparent 50%);
 }
 
 .gradient-bg-product {
   background-color: #0f0e13;
   background-image:
-    radial-gradient(at 0% 100%, hsla(253, 16%, 7%, 1) 0, transparent 53%),
-    radial-gradient(at 50% 150%, rgb(89, 14, 96) 0, transparent 50%);
+    radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+    radial-gradient(at 50% 100%, hsla(225, 39%, 25%, 1) 0, transparent 50%);
 }
 
 .blue-glassmorphism {
@@ -96,7 +100,7 @@ body {
 
 .text-gradient {
   background-color: #fff;
-  background-image: radial-gradient(at 4% 36%, hsla(0, 0%, 100%, 1) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(0, 0, 0) 0, transparent 50%);
+  background-image: radial-gradient(at 4% 36%, rgb(56, 94, 154) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(102, 14, 123) 0, transparent 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

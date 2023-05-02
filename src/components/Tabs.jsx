@@ -48,7 +48,7 @@ const Tabs = () => {
         </div>
         {tabsData.map((tab, index) => (
           activeTab === index && (
-            <div className='flex flex-start flex-col w-1/4'>
+            <div key={index} className='flex flex-start flex-col w-1/4'>
               <ServiceCard
                 color="bg-[#2952E3]"
                 title={tab.title}
@@ -64,3 +64,7 @@ const Tabs = () => {
 };
 
 export default Tabs;
+
+
+
+

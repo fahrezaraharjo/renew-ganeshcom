@@ -21,6 +21,8 @@ const CategoryList = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true, // Added autoplay prop
+    autoplaySpeed: 2000, // Added autoplaySpeed prop
     responsive: [
       {
         breakpoint: 1024,
@@ -50,7 +52,7 @@ const CategoryList = () => {
 
 
   return (
-    <div className="w-full flex flex-col p-14 mx-auto">
+    <div className="w-full flex flex-col p-14 mx-auto backdrop-blur-sm">
       <h1 className="text-3xl font-bold text-gradient mb-4">OUR SOLUTION</h1>
       <div className="flex flex-row justify-between w-full px-14">
         <div className="w-1/3 white-glassmorphism p-4 mx-5">
@@ -75,12 +77,16 @@ const CategoryList = () => {
           <div className="p-8">
             <Slider {...settings}>
               {activeCategory.photos.map((photo) => (
-                <div
-                  key={photo.id}
-                  data-title={photo.title}
-                  className="relative hover:opacity-75 transition-opacity duration-200 px-4"
-                >
-                  <img src={photo.url} alt={photo.title} className="object-contain rounded-md" />
+                <div key={photo.id} className="relative group px-4 cursor-pointer">
+                  <div className="text-center text-white items-center justify-center flex">
+                    {photo.title}
+                  </div>
+                  <img
+                    src={photo.url}
+                    alt={photo.title}
+                    className="object-cover rounded-md z-0 transition-opacity duration-200"
+                    style={{ height: "200px", width: "300px" }} // add fixed height and width
+                  />
                 </div>
               ))}
             </Slider>

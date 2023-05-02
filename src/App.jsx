@@ -1,5 +1,5 @@
 import { Navbar, Tabs } from "./components";
-import { CategoryList, FeaturedProduct, Services, TrustedBySection, GetInTouch, Welcome } from "./Sections";
+import { CategoryList, FeaturedProduct, Services, TrustedBySection, GetInTouch, Welcome, Artikel } from "./Sections";
 
 const App = () => (
   <div className="min-h-screen">
@@ -20,6 +20,7 @@ const App = () => (
     </div>
     <div className="gradient-bg-product">
       <FeaturedProduct />
+      <Artikel />
     </div>
   </div>
 );

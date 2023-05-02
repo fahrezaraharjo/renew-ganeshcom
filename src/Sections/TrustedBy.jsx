@@ -12,7 +12,7 @@ const TrustedBySection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Slider {...settings}>
           {trustedCompanies.map((company) => (
-            <div key={company.name} className="px-4">
+            <div key={company.id} className="px-4">
               <img src={company.image} alt={company.name} className="h-20 mx-auto" />
             </div>
           ))}

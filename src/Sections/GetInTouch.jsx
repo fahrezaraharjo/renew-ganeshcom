@@ -3,7 +3,7 @@ import React from "react";
 const GetInTouch = () => {
   return (
     <section
-      className="bg-cover bg-center py-12"
+      className="bg-cover bg-center py-12 backdrop-blur-sm	"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 blue-glassmorphism">
         <div className="md:flex md:items-center md:justify-between">
