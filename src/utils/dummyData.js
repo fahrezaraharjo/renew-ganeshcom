@@ -15,6 +15,58 @@ export const aboutUs = [
     }
 ]
 
+export const footerData = {
+    mainMenu: [
+        { id: 1, title: "About" },
+        { id: 2, title: "Testimonial" },
+        { id: 3, title: "Services" },
+        { id: 4, title: "Achievement" },
+        { id: 5, title: "Sitemap" }
+    ],
+    otherMenu: [
+        { id: 1, title: "Blog" },
+        { id: 2, title: "Carrers" },
+        { id: 3, title: "Intership" },
+        { id: 4, title: "R&D Program" },
+        { id: 5, title: "Term & Condition" }
+    ],
+    whereWeAre: [
+        {
+            id: 1,
+            title: "branchOffice",
+            address:
+                "Jl. Sunset Road No.28, Seminyak, Kuta, Kabupaten Badung, Bali 80361"
+        },
+        {
+            id: 2,
+            title: "mainOffice",
+            address:
+                "Jl. Kenyeri III No.82, Tonja, Kec. Denpasar Utara, Kota Denpasar, Bali 80236"
+        }
+    ],
+    connectWithUs: [
+        {
+            id: 1,
+            title: "Facebook",
+            icon: "fab fa-facebook"
+        },
+        {
+            id: 2,
+            title: "Instagram",
+            icon: "fab fa-instagram"
+        },
+        {
+            id: 3,
+            title: "Linkedin",
+            icon: "fab fa-linkedin"
+        },
+        {
+            id: 4,
+            title: "Youtube",
+            icon: "fab fa-youtube"
+        }
+    ]
+};
 
 export const trustedCompanies = [
     { id: '1', image: trustedby1 },

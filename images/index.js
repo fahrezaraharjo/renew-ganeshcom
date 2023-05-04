@@ -69,14 +69,17 @@ import whatsnew3 from "./Web-design-trends-2023-1024x763.jpg";
 import whatsnew4 from "./christina-wocintechchat-com-glRqyWJgUeY-unsplash.jpg";
 import whatsnew5 from "./world.png";
 
-
-
-
+import bali1 from "./bali.png";
+import getin from "./pngwing.com (4).png";
+import getintouch1 from "./ales-nesetril-Im7lZjxeLhg-unsplash.jpg";
 
 
 
 
 export {
+    getintouch1,
+    getin,
+    bali1,
     akuntaid,
     bali,
     dimedika,
