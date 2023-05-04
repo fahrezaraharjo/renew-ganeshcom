@@ -73,10 +73,15 @@ import bali1 from "./bali.png";
 import getin from "./pngwing.com (4).png";
 import getintouch1 from "./ales-nesetril-Im7lZjxeLhg-unsplash.jpg";
 
-
-
+//headerimg
+import headerimgabout from "./4238568.jpg";
+import headerimgwork from "./Neon-4k-Wallpaper.jpg"
+import headerimgsolution from "./city-abstraction-from-neon-lights-wallpaper-85369_w635.webp"
 
 export {
+    headerimgabout,
+    headerimgsolution,
+    headerimgwork,
     getintouch1,
     getin,
     bali1,

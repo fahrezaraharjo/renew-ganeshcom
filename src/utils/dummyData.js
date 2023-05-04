@@ -2,7 +2,7 @@ import {
     akuntaid, dimedika, keacaracom, mytimesheet, pems, ximo, sion,
     trustedby1, trustedby2, trustedby3, trustedby4, trustedby5, trustedby6, trustedby7, trustedby8, trustedby9, trustedby10,
     solution1, solution2, solution3,
-    whatsnew1, whatsnew2, whatsnew3
+    whatsnew1, whatsnew2, whatsnew3, headerimgabout, headerimgwork, headerimgsolution
 
 } from "../../images";
 
@@ -14,6 +14,57 @@ export const aboutUs = [
         text4: "and we made a long relationship partnership with more than 5 Company in Indonesia."
     }
 ]
+
+export const headerData = {
+    about: {
+        name: "About",
+        img: headerimgabout,
+        title: "About Us",
+        description: "We are an Information Technology Company that provides innovative IT services and solutions to businesses. Our team of experts specializes in website design, web application development, mobile application development, and various innovative product developments. Our goal is to help businesses thrive in the digital age by providing high-quality solutions that enhance their business growth. We work closely with our clients to understand their needs and requirements, and provide creative design and development solutions that meet their goals. At our core, we believe in building long-lasting relationships with our clients and helping them achieve their full potential in the digital world.",
+    },
+    work: {
+        name: "Our Future start from what we develop.",
+        img: headerimgwork,
+        title: "Our Work"
+    },
+    solutions: {
+        name: "Solutions",
+        img: headerimgsolution,
+        title: "Our Solutions"
+    },
+    contact: {
+        name: "Contact",
+        img: "contact-img.jpg",
+        title: "Contact Us"
+    }
+};
+
+export const workDatas = {
+    softwareDevelopment: {
+        items: [
+            { name: "Project 1", desc: "Description of project 1" },
+            { name: "Project 2", desc: "Description of project 2" },
+        ],
+    },
+    mobileApp: {
+        items: [
+            { name: "Project A", desc: "Description of project A" },
+            { name: "Project B", desc: "Description of project B" },
+        ],
+    },
+    itMasterplan: {
+        items: [
+            { name: "Project X", desc: "Description of project X" },
+            { name: "Project Y", desc: "Description of project Y" },
+        ],
+    },
+    brandingWebsite: {
+        items: [
+            { name: "Project M", desc: "Description of project M" },
+            { name: "Project N", desc: "Description of project N" },
+        ],
+    },
+};
 
 export const footerData = {
     mainMenu: [

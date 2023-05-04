@@ -13,6 +13,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.bg-about-page {
+  background-image: url('../images/4238568.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-work-page {
+  background-image: url('../images/Neon-4k-Wallpaper.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .gradient-bg-welcome {
   background-color: #0f0e13;
   background-image:

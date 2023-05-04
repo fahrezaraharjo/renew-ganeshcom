@@ -1,10 +1,12 @@
 import { footerData } from '../utils/dummyData';
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
 
-const Footer = () => {
+const Footer = ({ isHomePage }) => {
+  const footerBgClass = isHomePage ? 'gradient-bg-footer' : 'bg-transparent';
+
   return (
-    <footer className=" text-white">
-      <div className="container mx-auto px-4 py-[120px] overflow-hidden">
+    <footer className={`text-white ${footerBgClass}`}>
+      <div className="container mx-auto px-4 overflow-hidden">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h4 className="text-lg font-semibold mb-4">Main Menu</h4>
@@ -50,7 +52,7 @@ const Footer = () => {
                 Facebook
               </h1>
               <li className="mr-4 mt-2">
-                <a href={footerData.connectWithUs.facebook} className="hover:text-gray-400">
+                <a href={footerData.connectWithUs.facebook} className="hover:text-gray-400 cursor-pointer">
                   <FaFacebook size={24} className='' />
                 </a>
               </li>
@@ -58,7 +60,7 @@ const Footer = () => {
                 Instagram
               </h1>
               <li className="mr-4 mt-2">
-                <a href={footerData.connectWithUs.instagram} className="hover:text-gray-400">
+                <a href={footerData.connectWithUs.instagram} className="hover:text-gray-400 cursor-pointer">
                   <FaInstagram size={24} className='' />
                 </a>
               </li>
@@ -66,7 +68,7 @@ const Footer = () => {
                 LinkedIn
               </h1>
               <li className="mr-4 mt-2">
-                <a href={footerData.connectWithUs.linkedin} className="hover:text-gray-400">
+                <a href={footerData.connectWithUs.linkedin} className="hover:text-gray-400 cursor-pointer">
                   <FaLinkedin size={24} className='' />
                 </a>
               </li>
@@ -74,7 +76,7 @@ const Footer = () => {
                 Youtube
               </h1>
               <li className='mr-4 mt-2'>
-                <a href={footerData.connectWithUs.youtube} className="hover:text-gray-400">
+                <a href={footerData.connectWithUs.youtube} className="hover:text-gray-400 cursor-pointer">
                   <FaYoutube size={24} className='' />
                 </a>
               </li>
