@@ -42,26 +42,68 @@ export const headerData = {
 export const workDatas = {
     softwareDevelopment: {
         items: [
-            { name: "Project 1", desc: "Description of project 1" },
-            { name: "Project 2", desc: "Description of project 2" },
+            { name: "Online Tutoring in PT Les Online", desc: "Developing an application to find online tutoring service providers and private tutors for PT Les Online" },
+            { name: "Smart POS in Rayas Store", desc: "Developing a Point of Sale application to support direct transactions with sellers at the Rayash Store" },
+            { name: "Magnus Indonesia in Azria", desc: "Developing an application to face the UTBK SBMPTN. The questions are presented in accordance with the Try Out and UTBK grids from LTMPT for Azria" },
+            { name: "Property Management System (PEMS) in PT Undagi Bali Sadana", desc: "Developing software for operating hotel accommodation and commercial housing rental properties for PT Undagi Bali Sadana which is a land and building property provider" },
+            { name: "Online Industrial Relations System at the Department of Labor and Industry", desc: "Developing system to provide a harmonious relationship between employer and employees, ensuring continuous productivity at the Department of Labor and Industry" },
+            { name: "Property System in Krisna Agung Property", desc: "software applications for the operation of hospitality accommodation and commercial residential rental properties in Krisna Agung Property" },
+            { name: "Property Management System (PEMS) in UD Pancer Mas Pesada", desc: "Developing software for operating hotel accommodation and commercial housing rental properties for UD Pancer Mas Pesada" },
+            { name: "Lesku.id in Lesku", desc: "Developing an application to find online tutoring service providers and private tutors for Lesku" },
+            { name: "SAKIRA BPSDM ESDM", desc: "Developing employee performance information system for the work report of the Energy and Mineral Resources Development Agency" },
+            { name: "Asset Integrated Management (AIMS) in PT Pertamina Hulu Energi", desc: "Developing a web-based application that is used as a monitoring medium to route some data into a display that makes it easier for the management level in PT Pertamina Hulu Energi" },
+            { name: "PHE Dashboard Project in Ministry of Marine Affairs and Fisheries Karangasem Regency", desc: "Developing system for PKL Registration, Commodity, and Laboratory Test - BPIUK Ministry of Marine Affairs and Fisheries Karangasem Regency" },
+            { name: "Company Profile Website in Aditya Furniture Bali", desc: "Developing website to find information like services, location, hours of operation and contact info easily in Aditya Furniture Bali" },
+            { name: "Company Profile Website in Rindu Adventures", desc: "Developing website to find information like services, location, hours of operation and contact info easily in Rindu Adventures" },
+            { name: "Academic System & Online Exam in Bandung Energy and Mining Polytechnic", desc: "Developing Academic & Online Exam system designed to make it easier for students and teachers to prepare for exams and manage academic administration in Bandung Energy and Mining Polytechnic" },
+            { name: "Asset Management Information System (SIMASET) in Pertamina University", desc: "Developing a system for monitoring or tracking important assets and tracking the progress of asset maintenance requests easily" },
+            { name: "E-Library in Widya Pasraman Sila Kertha Raharja School", desc: "Developing an application for storing, accessing, and managing magazine articles, books, and even study materials in Widya Pasraman Sila Kertha Raharja School" },
         ],
     },
     mobileApp: {
         items: [
-            { name: "Project A", desc: "Description of project A" },
-            { name: "Project B", desc: "Description of project B" },
+            { name: "Timesheet in PT Dago Engineering", desc: "Development of applications that assist users in recording daily work, projects and monitoring work reports for PT Dago Engineering." },
+            { name: "Restaurant Reservation Application in Bebek Bengil", desc: "Developing an application to make it easier for customers to book online reservations in Bebek Bengil" },
         ],
     },
     itMasterplan: {
         items: [
-            { name: "Project X", desc: "Description of project X" },
-            { name: "Project Y", desc: "Description of project Y" },
+            { name: "IT Support in PT Trihasco Utama", desc: "Placing IT Support to monitors and maintains the company computer systems, installs, and configures hardware and software, and solves technical issues in PT Trihasco Utama" },
+            { name: "THU One Dashboard in PT Trihasco Utama", desc: "Developing system for keeping track of information is important in PT Trihasco Utama" },
+            { name: "Company Profile Website in PT Trihasco Utama", desc: "Developing website to introduces a business's mission, goals, vision, and history in PT Trihasco Utama" },
+            { name: "Asset Management in PT Trihasco Utama", desc: "Developing software that helps you manage your facilities, vehicles, assets, equipment, and machines PT Trihasco Utama" },
+            { name: "Finance System Integration in PT Trihasco Utama", desc: "Developing software to supporting daily financial operations in PT Trihasco Utama" },
+            { name: "Project Manajement (Timesheet) in PT Trihasco Utama", desc: "Developing software for time tracking and employee timesheets integrated with the project management system in PT Trihasco Utama            " },
+            { name: "HR Management in PT Trihasco Utama", desc: "Developing human resources software is used by businesses to combine a number of necessary HR functions in PT Trihasco Utama" },
+            { name: "Workspace & Online Reporting in PT Trihasco Utama", desc: "Developing software for support work productivity that is integrated with other systems in PT Trihasco Utama" },
+            { name: "Document Management System (DMS) in PT Trihasco Utama", desc: "Developing document management system to create, store, manage, and track electronic documents in PT Trihasco Utama            " },
+            { name: "Timesheet in Trihasco Utama", desc: "Developing of applications that assist users in recording daily work, projects and monitoring work reports for PT Trihasco Utama" },
+            { name: "New Student Admissions Information System in AKAMIGAS Energy and Mineral Polytechnic", desc: "Developing an information system used to assist the AKAMIGAS Energy and Mineral Polytechnic in the process of managing new student admissions" },
+            { name: "Academic System & Online Exam in AKAMIGAS Energy and Mineral Polytechnic", desc: "Developing system to make it easier to prepare for exams and assisting in the management/administration of academic activities in AKAMIGAS Energy and Mineral Polytechnic" },
+            { name: "E-Letter in Pertamina University", desc: "Developing a system to facilitate the process of recording and managing correspondence within agencies at Pertamina University" },
+            { name: "Office Manuscript Application (ANDIN) in Pertamina University", desc: "Developing an application that makes it easy to manage, review, create, and distribute official scripts at Pertamina University" },
+            { name: "Managing Domain and E-Library Maintenance in Widya Pasraman Sila Kertha Raharja School", desc: "Manage the Domain and Maintenance of the Widya Pasraman Sila Kertha Raharja School E-Library on a regular basis" },
+
+
         ],
     },
     brandingWebsite: {
         items: [
-            { name: "Project M", desc: "Description of project M" },
-            { name: "Project N", desc: "Description of project N" },
+            { name: "Restaurant Website in Bebek Bengil", desc: "Developing website to find information like menus, location, hours of operation and contact info easily for Bebek Bengil" },
+            { name: "Company Profile Website in Bebek Bengil Football School", desc: "to introduces a business's mission, goals, vision, and history in Bebek Bengil Football School" },
+            { name: "Company Profile Website in Astra Motor Dealers", desc: "Developing website to find information like location, hours of operation and contact info easily for Astra Motor Dealers" },
+            { name: "Company Profile Website in Prima Media Hospital", desc: "Developing website to find information like services, location, hours of operation and contact info easily in Prima Media Hospital" },
+            { name: "Company Profile Website in Adrenaline Rush Bali", desc: "Developing website to find information like services, location, hours of operation and contact info easily in Adrenaline Rush Bali" },
+            { name: "Company Profile Website in Penida Point", desc: "Developing website to find information like services, location, hours of operation and contact info easily in Penida Point" },
+            { name: "Company Profile Website in Balam Bali Villa", desc: "Developing website to find information like services, location, hours of operation and contact info easily in Balam Bali Villa" },
+            { name: "Company Profile Website in The Nusa Penida Bali", desc: "Developing website to find information like services, location, hours of operation and contact info easily in The Nusa Penida Bali" },
+            { name: "Company Profile Website in Besakih", desc: "Developing website to find information like services, location, hours of operation and contact info easily in Besakih" },
+            { name: "Company Profile Website in Jaje Bali and Craft", desc: "Developing website to find information like services, location, hours of operation and contact info easily in Jaje Bali and Craft" },
+            { name: "Company Profile Website in My Island Guide", desc: "Developing website to find information like services, location, hours of operation and contact info easily in My Island Guide" },
+            { name: "Company Profile and Catalog Website in CV Vidjitha Group", desc: "Developing a website to offer products and services and find information such as location, hours of operation and contact info easily for CV Vidjitha Group" },
+
+
+
         ],
     },
 };
