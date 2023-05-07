@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Home,  AboutPage, WorkPages } from './Pages'
+import { Home, AboutPage, WorkPages, DetailsPage } from './Pages'
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/work" element={<WorkPages />} />
-          {/* <Route path="/service" component={Service} />
-          <Route path="/solution" component={Solution} />
+          <Route path="/details/:id" element={<DetailsPage />} />
+          {/* <Route path="/solution" component={Solution} />
           <Route path="/contact" component={Contact} /> */}
         </Routes>
       </div>

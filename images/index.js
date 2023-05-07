@@ -77,8 +77,10 @@ import getintouch1 from "./ales-nesetril-Im7lZjxeLhg-unsplash.jpg";
 import headerimgabout from "./4238568.jpg";
 import headerimgwork from "./Neon-4k-Wallpaper.jpg"
 import headerimgsolution from "./city-abstraction-from-neon-lights-wallpaper-85369_w635.webp"
+import cardplaceholder from "./istockphoto-1436435089-612x612.jpg"
 
 export {
+    cardplaceholder,
     headerimgabout,
     headerimgsolution,
     headerimgwork,

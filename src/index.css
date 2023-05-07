@@ -29,6 +29,14 @@ body {
   background-size: cover;
 }
 
+.bg-card-work {
+  background-image: url('../images/3771022.jpg');
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+}
+
 .gradient-bg-welcome {
   background-color: #0f0e13;
   background-image:
@@ -123,6 +131,10 @@ body {
     radial-gradient(at 27% 71%, hsla(336, 91%, 65%, 1) 0, transparent 49%),
     radial-gradient(at 74% 89%, hsla(30, 98%, 65%, 1) 0, transparent 51%),
     radial-gradient(at 53% 75%, hsla(174, 94%, 68%, 1) 0, transparent 45%);
+}
+
+.shadowcard {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .text-gradient {
