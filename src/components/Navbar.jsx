@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav className="w-full flex md:justify-center justify-between items-center p-4">
       <div className="md:flex-[0.5] flex-initial justify-center items-center">
         <img src={logo} alt="logo" className="w-8 cursor-pointer" />
-        <a href="http://localhost:3001/" className="text-white mx-[-23px] my-8">Ganeshcom</a>
+        <Link to="/" className="text-white mx-[-23px] my-8">Ganeshcom</Link>
       </div>
       <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
         {["About", "Work", "Solusion", "Contact"].map((item, index) => (
