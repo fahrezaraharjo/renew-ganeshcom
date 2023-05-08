@@ -1,3 +1,4 @@
+import { BsShieldFillCheck } from "react-icons/bs";
 import {
     akuntaid, dimedika, keacaracom, mytimesheet, pems, ximo, sion,
     trustedby1, trustedby2, trustedby3, trustedby4, trustedby5, trustedby6, trustedby7, trustedby8, trustedby9, trustedby10,
@@ -5,6 +6,8 @@ import {
     whatsnew1, whatsnew2, whatsnew3, headerimgabout, headerimgwork, headerimgsolution, cardplaceholder
 
 } from "../../images";
+import { BiSearchAlt } from "react-icons/bi";
+import { RiHeart2Fill } from "react-icons/ri";
 
 export const aboutUs = [
     {
@@ -14,6 +17,14 @@ export const aboutUs = [
         text4: "and we made a long relationship partnership with more than 5 Company in Indonesia."
     }
 ]
+
+export const serviceHome = {
+    topItems:
+    {
+        text1: "GANESHCOM STUDIO",
+        text2: "We are an Information Technology Company that provides IT services and solutions for website design, web application development, mobile application development, and various innovative product developments. We realize the progression into the digital age has been inevitable, for businesses to survive and thrive in this era, an understanding of these innovations is key. With a mission to enhance our customers' business growth, we provide IT services and solutions with creative design and development, as well as provide high-quality solutions.",
+    }
+}
 
 export const headerData = {
     about: {
@@ -79,14 +90,105 @@ export const workDatas = {
                 id: "2",
                 name: "Smart POS in Rayas Store",
                 img: cardplaceholder,
-                desc: "Developing a Point of Sale application to support direct transactions with sellers at the Rayash Store",
+                desc: "A good system in your business will give maximum contribution in developing your business in the future. Let's start digitizing. Access our store anywhere anytime. Safe and in control",
                 systemFeatures: [
                     {
                         id: "1",
-                        name: "",
-                        img: "",
+                        name: "Kategori produk",
+                        img: headerimgabout,
+                        desc: "kategori produk"
+                    },
+                    {
+                        id: "2",
+                        name: "Kartu Stok",
+                        img: headerimgabout,
+                        desc: "Kartu Stok"
+                    },
+                    {
+                        id: "3",
+                        name: "Laporan Transaksi",
+                        img: headerimgabout,
+                        desc: "Laporan Transaksi"
+                    },
+                    {
+                        id: "4",
+                        name: "History Penjualan",
+                        img: headerimgabout,
+                        desc: "History Penjualan"
+                    },
+                    {
+                        id: "5",
+                        name: "Dashboard",
+                        img: headerimgabout,
+                        desc: "Dashboard"
+                    },
+                    {
+                        id: "6",
+                        name: "Arus Kas",
+                        img: headerimgabout,
+                        desc: "Arus Kas"
+                    },
+                    {
+                        id: "7",
+                        name: "Data stok",
+                        img: headerimgabout,
+                        desc: "Data stok"
+                    },
+                    {
+                        id: "8",
+                        name: "Tambah Produk",
+                        img: headerimgabout,
+                        desc: "Tambah Produk"
+                    },
+                    {
+                        id: "9",
+                        name: "Update Stok(opname)",
+                        img: headerimgabout,
+                        desc: "Update Stok(opname)"
+                    },
+                    {
+                        id: "10",
+                        name: "Pencarian Produk",
+                        img: headerimgabout,
+                        desc: "Pencarian Produk"
+                    },
+                    {
+                        id: "11",
+                        name: "Atur Harga dan Diskon",
+                        img: headerimgabout,
+                        desc: "Atur Harga dan Diskon"
+                    },
+                    {
+                        id: "12",
+                        name: "Penjualan",
+                        img: headerimgabout,
+                        desc: "Penjualan"
+                    },
+                    {
+                        id: "13",
+                        name: "Cash In/Cash Out",
+                        img: headerimgabout,
+                        desc: "Cash In/Cash Out"
+                    },
+                    {
+                        id: "14",
+                        name: "Laporan Harian",
+                        img: headerimgabout,
+                        desc: "Laporan Harian"
+                    },
+                    {
+                        id: "15",
+                        name: "History Penjualan",
+                        img: headerimgabout,
                         desc: ""
-                    }
+                    },
+                    {
+                        id: "16",
+                        name: "Kasir",
+                        img: headerimgabout,
+                        desc: "Kasir"
+                    },
+
                 ]
             },
             {
@@ -96,10 +198,28 @@ export const workDatas = {
                 desc: "Developing an application to face the UTBK SBMPTN. The questions are presented in accordance with the Try Out and UTBK grids from LTMPT for Azria",
                 systemFeatures: [
                     {
-                        id: "",
-                        name: "",
+                        id: "1",
+                        name: "Work Featured 1",
                         img: "",
-                        desc: ""
+                        desc: "lorem ipsum dolor amet"
+                    },
+                    {
+                        id: "2",
+                        name: "Work Featured 2",
+                        img: headerimgabout,
+                        desc: "lorem ipsum dolor amet"
+                    },
+                    {
+                        id: "3",
+                        name: "Work Featured 3",
+                        img: headerimgabout,
+                        desc: "lorem ipsum dolor amet"
+                    },
+                    {
+                        id: "4",
+                        name: "Work Featured 4",
+                        img: headerimgabout,
+                        desc: "lorem ipsum dolor amet"
                     }
                 ]
             },
@@ -108,12 +228,67 @@ export const workDatas = {
                 name: "Property Management System (PEMS) in PT Undagi Bali Sadana",
                 img: cardplaceholder,
                 desc: "Developing software for operating hotel accommodation and commercial housing rental properties for PT Undagi Bali Sadana which is a land and building property provider",
+                desc2: "PT Undagi Bali Sadana is a company that develops and builds a piece of land or land into a property product along with all the complete facilities and infrastructure inside into a single unit.To assist its business operations, PT Undagi Bali Sadana uses a Property Management System (PEMS). This application aims to facilitate property management and marketing.",
                 systemFeatures: [
                     {
-                        id: "",
-                        name: "",
-                        img: "",
-                        desc: ""
+                        id: "1",
+                        name: "Master Data",
+                        img: headerimgabout,
+                        desc: "Master Data"
+                    },
+                    {
+                        id: "2",
+                        name: "Project Management",
+                        img: headerimgabout,
+                        desc: "Project Management"
+                    },
+                    {
+                        id: "3",
+                        name: "Logistic",
+                        img: headerimgabout,
+                        desc: "Logistic"
+                    },
+                    {
+                        id: "4",
+                        name: "Selling",
+                        img: headerimgabout,
+                        desc: "Selling"
+                    },
+                    {
+                        id: "5",
+                        name: "Oprational",
+                        img: headerimgabout,
+                        desc: "Oprational"
+                    },
+                    {
+                        id: "6",
+                        name: "Project Cart",
+                        img: headerimgabout,
+                        desc: "Project Cart"
+                    },
+                    {
+                        id: "7",
+                        name: "AR/AP",
+                        img: headerimgabout,
+                        desc: "AR/AP"
+                    },
+                    {
+                        id: "8",
+                        name: "Acounting",
+                        img: headerimgabout,
+                        desc: "Acounting"
+                    },
+                    {
+                        id: "9",
+                        name: "Report",
+                        img: headerimgabout,
+                        desc: "Report"
+                    },
+                    {
+                        id: "10",
+                        name: "Dashboard",
+                        img: headerimgabout,
+                        desc: "Dashboard"
                     }
                 ]
             },
@@ -124,11 +299,59 @@ export const workDatas = {
                 desc: "Developing system to provide a harmonious relationship between employer and employees, ensuring continuous productivity at the Department of Labor and Industry",
                 systemFeatures: [
                     {
-                        id: "",
-                        name: "",
-                        img: "",
-                        desc: ""
-                    }
+                        id: "1",
+                        name: "Create mail",
+                        img: headerimgabout,
+                        desc: "Create mail"
+                    },
+                    {
+                        id: "2",
+                        name: "Project Management",
+                        img: headerimgabout,
+                        desc: "Project Management"
+                    },
+                    {
+                        id: "3",
+                        name: "Logistic",
+                        img: headerimgabout,
+                        desc: "Logistic"
+                    },
+                    {
+                        id: "4",
+                        name: "Selling",
+                        img: headerimgabout,
+                        desc: "Selling"
+                    },
+                    {
+                        id: "5",
+                        name: "Oprational",
+                        img: headerimgabout,
+                        desc: "Oprational"
+                    },
+                    {
+                        id: "6",
+                        name: "Project Cart",
+                        img: headerimgabout,
+                        desc: "Project Cart"
+                    },
+                    {
+                        id: "7",
+                        name: "AR/AP",
+                        img: headerimgabout,
+                        desc: "AR/AP"
+                    },
+                    {
+                        id: "8",
+                        name: "Acounting",
+                        img: headerimgabout,
+                        desc: "Acounting"
+                    },
+                    {
+                        id: "9",
+                        name: "Report",
+                        img: headerimgabout,
+                        desc: "Report"
+                    },
                 ]
             },
             {

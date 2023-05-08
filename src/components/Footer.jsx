@@ -2,7 +2,8 @@ import { footerData } from '../utils/dummyData';
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
 
 const Footer = ({ isHomePage }) => {
-  const footerBgClass = isHomePage ? 'gradient-bg-footer' : 'bg-transparent';
+
+  const footerBgClass = isHomePage ? 'gradient-bg-footer' : 'white-glassmorphism';
 
   return (
     <footer className={`text-white ${footerBgClass}`}>

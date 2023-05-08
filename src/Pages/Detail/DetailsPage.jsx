@@ -16,25 +16,26 @@ const DetailsPage = () => {
   const [activeTab, setActiveTab] = useState(item.systemFeatures[0].id);
 
   return (
-    <div className='min-h-screen bg-gray-100'>
-      <div className='gradient-bg-welcome'>
-        <Navbar />
-      </div>
+    <div className='min-h-screen gradient-bg-welcome'>
+      <Navbar />
       <div className='container mx-auto px-4 pt-12 pb-24'>
-        <h1 className='text-4xl font-bold text-gray-800 mb-4'>{item.name}</h1>
-        <img className='mb-6' src={item.img} alt={item.name} />
-        <p className='text-gray-700 leading-relaxed mb-12'>{item.desc}</p>
-        <h2 className='text-2xl font-bold text-gray-800 mb-4'>System Features</h2>
+        <div className='flex '>
+          <div className='flex flex-col'>
+          <h1 className='text-4xl font-bold text-blue-700 mb-4'>{item.name}</h1>
+          <p className='text-blue-200 leading-relaxed mb-12'>{item.desc}</p>
+          </div>
+          <img className='mb-6' src={item.img} alt={item.name} />
+        </div>
+        <h2 className='text-2xl font-bold text-blue-200 mb-4'>System Features</h2>
         <div className='flex flex-col'>
           <div className='flex'>
             {item.systemFeatures.map(feature => (
               <button
                 key={feature.id}
-                className={`py-2 px-4 mr-2 rounded-lg border ${
-                  feature.id === activeTab
-                    ? 'bg-blue-500 text-white border-blue-500'
-                    : 'bg-white text-blue-500 border-gray-300'
-                }`}
+                className={`py-2 px-4 mr-2 rounded-lg border ${feature.id === activeTab
+                  ? 'bg-blue-500 text-white border-blue-500'
+                  : 'bg-white text-blue-500 border-gray-300'
+                  }`}
                 onClick={() => setActiveTab(feature.id)}
               >
                 {feature.name}
@@ -45,9 +46,8 @@ const DetailsPage = () => {
             {item.systemFeatures.map(feature => (
               <div
                 key={feature.id}
-                className={`${
-                  feature.id === activeTab ? '' : 'hidden'
-                } mt-8`}
+                className={`${feature.id === activeTab ? '' : 'hidden'
+                  } mt-8`}
               >
                 <img className='mb-6' src={feature.img} alt={feature.name} />
                 <p className='text-gray-700 leading-relaxed'>{feature.desc}</p>

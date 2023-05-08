@@ -1,11 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 
 import logo from "../../images/logo.png";
 
-const NavBarItem = ({ title, classprops }) => (
-  <li className={`mx-4 cursor-pointer ${classprops}`}>{title}</li>
+const NavBarItem = ({ title, classprops, path }) => (
+  <li className={`mx-4 cursor-pointer ${classprops}`}>
+    <Link to={path}>{title}</Link>
+  </li>
 );
 
 const Navbar = () => {
@@ -18,8 +21,8 @@ const Navbar = () => {
         <a href="http://localhost:3001/" className="text-white mx-[-23px] my-8">Ganeshcom</a>
       </div>
       <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
-        {["About", "Service", "Work", "Solusion", "Contact"].map((item, index) => (
-          <NavBarItem key={item + index} title={item} />
+        {["About", "Work", "Solusion", "Contact"].map((item, index) => (
+          <NavBarItem key={item + index} title={item} path={`/${item.toLowerCase()}`} />
         ))}
       </ul>
       <div className="flex relative">
@@ -35,8 +38,8 @@ const Navbar = () => {
             flex flex-col justify-start items-end rounded-md blue-glassmorphism text-white animate-slide-in"
           >
             <li className="text-xl w-full my-2"><AiOutlineClose onClick={() => setToggleMenu(false)} /></li>
-            {["About", "Service", "Work", "Solusion", "Contact"].map(
-              (item, index) => <NavBarItem key={item + index} title={item} classprops="my-2 text-lg" />,
+            {["About", "Work", "Solusion", "Contact"].map(
+              (item, index) => <NavBarItem key={item + index} title={item} path={`/${item.toLowerCase()}`} classprops="my-2 text-lg" />,
             )}
           </ul>
         )}

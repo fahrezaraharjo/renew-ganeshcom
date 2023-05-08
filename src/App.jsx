@@ -1,12 +1,11 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home, AboutPage, WorkPages, DetailsPage } from './Pages'
+import { Navbar } from './components';
 
 function App() {
   return (
     <BrowserRouter>
       <div>
-        <div className='gradient-bg-welcome'>
-        </div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
