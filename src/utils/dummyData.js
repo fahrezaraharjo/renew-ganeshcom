@@ -3,7 +3,7 @@ import {
     akuntaid, dimedika, keacaracom, mytimesheet, pems, ximo, sion,
     trustedby1, trustedby2, trustedby3, trustedby4, trustedby5, trustedby6, trustedby7, trustedby8, trustedby9, trustedby10,
     solution1, solution2, solution3,
-    whatsnew1, whatsnew2, whatsnew3, headerimgabout, headerimgwork, headerimgsolution, cardplaceholder, homeslider1, homeslider2, homeslider3
+    whatsnew1, whatsnew2, whatsnew3, headerimgabout, headerimgwork, headerimgsolution, cardplaceholder, homeslider1, homeslider2, homeslider3, service1, service2, service3, service4, service5
 
 } from "../../images";
 import { BiSearchAlt } from "react-icons/bi";
@@ -1249,27 +1249,27 @@ export const settings = {
 export const tabsData = [
     {
         title: 'Software Development',
-        photo: '	../../../images/service-230326.175925.png',
+        photo: service1 ,
         paragraph: 'We develop responsive web-based applications on various platforms, with interactive design displays, powerful functionality, and dynamic software..',
     },
     {
         title: 'Mobile App',
-        photo: '	../../../images/service-230326.175935.png',
+        photo: service2 ,
         paragraph: 'We design a mobile app system that supports various existing operating systems and is user friendly, where you can interact adaptively with anyone..',
     },
     {
         title: 'IT Masterplan',
-        photo: '../../../images/service-230326.175944.png',
+        photo: service3 ,
         paragraph: 'We develop an IT development plan that aligns with your business strategy. Realize your company`s digital transformation with the right planning.',
     },
     {
         title: 'Branding Website',
-        photo: '../../../images/service-230326.175955.png',
+        photo: service4 ,
         paragraph: 'We work with different types of clients. For us, your website is not only your digital presence but also a strong digital brand through a personalized website that visitors will love.',
     },
     {
         title: 'Startup Partnership',
-        photo: '../../../images/service-230326.180003.png',
+        photo: service5 ,
         paragraph: 'Partners with us. We fine tune each innovation program to enable corporate/startup collaboration and leapfrog competition by innovating faster.',
     },
 ];
