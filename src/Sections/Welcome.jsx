@@ -2,6 +2,7 @@ import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 
 import Carousel from "../components/Carousel";
+import { carouselImages } from "../utils/dummyData";
 
 const Welcome = () => {
 
@@ -29,13 +30,7 @@ const Welcome = () => {
             <BsArrowRight className="text-white ml-3" />
           </button>
 
-          <Carousel
-            images={[
-              '../../images/homeslider-230326.171937.jpg',
-              '../../images/homeslider-230326.171926.jpg',
-              '../../images/homeslider-230326.171913.jpg',
-            ]}
-          />
+          <Carousel images={carouselImages} />
         </div>
       </div>
     </div>

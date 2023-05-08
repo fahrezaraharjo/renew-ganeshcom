@@ -3,7 +3,7 @@ import {
     akuntaid, dimedika, keacaracom, mytimesheet, pems, ximo, sion,
     trustedby1, trustedby2, trustedby3, trustedby4, trustedby5, trustedby6, trustedby7, trustedby8, trustedby9, trustedby10,
     solution1, solution2, solution3,
-    whatsnew1, whatsnew2, whatsnew3, headerimgabout, headerimgwork, headerimgsolution, cardplaceholder
+    whatsnew1, whatsnew2, whatsnew3, headerimgabout, headerimgwork, headerimgsolution, cardplaceholder, homeslider1, homeslider2, homeslider3
 
 } from "../../images";
 import { BiSearchAlt } from "react-icons/bi";
@@ -17,6 +17,12 @@ export const aboutUs = [
         text4: "and we made a long relationship partnership with more than 5 Company in Indonesia."
     }
 ]
+
+export const carouselImages = [
+  { id: 1, src: homeslider1 },
+  { id: 2, src: homeslider2 },
+  { id: 3, src: homeslider3 },
+];
 
 export const serviceHome = {
     topItems:
