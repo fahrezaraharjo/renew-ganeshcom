@@ -22,7 +22,7 @@ export const categoriesSolutions = [
     { label: 'Industry', value: 'industry' },
     { label: 'Store & Supply', value: 'storeSupply' },
     { label: 'Property & Contract Management', value: 'propertyContract' },
-  ];
+];
 
 export const welcomeDatas = {
     leftItems:
@@ -1454,126 +1454,70 @@ export const articles = [
 ];
 
 export const solutionDatas = {
-    all: {
-        title: 'All Solutions',
-        items: [
-            {
-                id: 'solution-1',
-                title: 'Solution 1',
-                category: 'education',
-                imageUrl: solution1,
-                description:
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                linkUrl: '/solutions/solution-1',
-            },
-            {
-                id: 'solution-2',
-                title: 'Solution 2',
-                category: 'oilGas',
-                imageUrl: solution1,
-                description:
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                linkUrl: '/solutions/solution-2',
-            },
-            {
-                id: 'solution-3',
-                title: 'Solution 3',
-                category: 'industry',
-                imageUrl: solution1,
-                description:
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                linkUrl: '/solutions/solution-3',
-            },
-            {
-                id: 'solution-4',
-                title: 'Solution 4',
-                category: 'storeSupply',
-                imageUrl: solution1,
-                description:
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                linkUrl: '/solutions/solution-4',
-            },
-        ],
-    },
     education: {
-        title: 'Education Solutions',
         items: [
             {
-                id: 'solution-1',
-                title: 'Solution 1',
-                category: 'education',
-                imageUrl: solution1,
-                description:
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                linkUrl: '/solutions/solution-1',
+                id: "1",
+                name: "Online Tutoring in PT Les Online",
+                img: cardplaceholder,
+                desc: "Developing an application to find online tutoring service providers and private tutors for PT Les Online",
+                desc2: "Developing an application to find online tutoring service providers and private tutors for PT Les Online",
             },
-        ],
+        ]
     },
     oilGas: {
-        title: 'Oil & Gas Solutions',
         items: [
             {
-                id: 'solution-2',
-                title: 'Solution 2',
-                category: 'oilGas',
-                imageUrl: solution1,
-                description:
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                linkUrl: '/solutions/solution-2',
+                id: "2",
+                name: "Timesheet in PT Dago Engineering",
+                img: cardplaceholder,
+                desc: "Development of applications that assist users in recording daily work, projects and monitoring work reports for PT Dago Engineering.",
+                desc2: "Timesheet Dago Eng Application will helps users in recording daily work, projects and monitoring work reports for PT Dago Engineering. Timesheet Dago Eng provides you employee attendance application system that can be use everywhere with a simple taps on mobile device. HR can monitor mobile employee more effective and the feature is usefull for evaluating employee’s performance. PT Dago Engineering has proven that using Mytimesheet can make it easier for them to be absent in their company activities.Timesheet Dago Eng was developed to automatically this manual process. This web application has these following features:",
             },
         ],
     },
     industry: {
-        title: 'Industry Solutions',
         items: [
             {
-                id: 'solution-3',
-                title: 'Solution 3',
-                category: 'industry',
-                imageUrl: solution1,
-                description:
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                linkUrl: '/solutions/solution-3',
-            },
+                id: "3",
+                name: "IT Support in PT Trihasco Utama",
+                img: cardplaceholder,
+                desc: "Placing IT Support to monitors and maintains the company computer systems, installs, and configures hardware and software, and solves technical issues in PT Trihasco Utama",
+                desc2: "Placing IT Support to monitors and maintains the company computer systems, installs, and configures hardware and software, and solves technical issues in PT Trihasco Utama",
+            }
         ],
     },
     storeSupply: {
-        title: 'Store & Supply Solutions',
         items: [
             {
-                id: 'solution-4',
-                title: 'Solution 4',
-                category: 'store',
-                imageUrl: solution1,
-                description: 'test',
-                linkUrl: '/solutions/solution-4'
+                id: "4",
+                name: "Restaurant Website in Bebek Bengil",
+                img: cardplaceholder,
+                desc: "Developing website to find information like menus, location, hours of operation and contact info easily for Bebek Bengil",
+                desc2: "A restaurant website is a business website whose purpose is to provide information on menus, services, locations and other services. It also provides directions to restaurants. It can also offer promotional discounts and special offers from restaurants.Your customers will get a clear picture of the experience the restaurant has to offer and the vibe guests can expect.",
             }
-        ]
+        ],
     },
-    propertyContract: {
-        title: 'Property & Contract Management',
+    propertyConstractor: {
         items: [
             {
-                id: 'solution-5',
-                title: 'Solution 5',
-                category: 'propertyContract',
-                imageUrl: solution1,
-                description: 'test',
-                linkUrl: '/solutions/solution-5'
+                id: "5",
+                name: "Restaurant Website in Bebek Bengil",
+                img: cardplaceholder,
+                desc: "Developing website to find information like menus, location, hours of operation and contact info easily for Bebek Bengil",
+                desc2: "A restaurant website is a business website whose purpose is to provide information on menus, services, locations and other services. It also provides directions to restaurants. It can also offer promotional discounts and special offers from restaurants.Your customers will get a clear picture of the experience the restaurant has to offer and the vibe guests can expect.",
             }
-        ]
+        ],
     },
-    storeSupply: {
-        title: 'Store & Supply Solutions',
+    eGovermment: {
         items: [
             {
-                id: 'solution-4',
-                title: 'Solution 4',
-                category: 'store',
-                imageUrl: solution1,
-                description: 'test',
-                linkUrl: '/solutions/solution-4'
+                id: "6",
+                name: "Restaurant Website in Bebek Bengil",
+                img: cardplaceholder,
+                desc: "Developing website to find information like menus, location, hours of operation and contact info easily for Bebek Bengil",
+                desc2: "A restaurant website is a business website whose purpose is to provide information on menus, services, locations and other services. It also provides directions to restaurants. It can also offer promotional discounts and special offers from restaurants.Your customers will get a clear picture of the experience the restaurant has to offer and the vibe guests can expect.",
             }
-        ]
-    }
-}
+        ],
+    },
+};

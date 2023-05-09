@@ -27,7 +27,30 @@ const SolutionPage = () => {
                 <div className='container mx-auto mt-10 cursor-pointer'>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
                         {solutionItems.map((item, index) => (
-                            <Card key={index} imageUrl={item.imageUrl} name={item.name} description={item.description} id={item.id} />
+                            <div className='relative' key={index}>
+                                <motion.div
+                                    className='absolute inset-0 bg-black bg-opacity-50 text-white p-4 hover:opacity-0 transition-opacity duration-500 ease-in-out'
+                                    initial={{ opacity: 1 }}
+                                    animate={{ opacity: 1 }}
+                                    whileHover={{ opacity: 0 }}
+                                    transition={{ duration: 0.5 }}
+                                >
+                                    <h2 className='text-lg font-bold'>{item.name}</h2>
+                                    <p className='text-gray-500'>{item.description}</p>
+                                    <Link to={`/solutions/${item.id}`} className='text-blue-500 font-bold mt-2 hover:text-blue-700'>
+                                        Learn More
+                                    </Link>
+                                </motion.div>
+                                <motion.img
+                                    src={item.img}
+                                    alt={item.name}
+                                    className='h-48 w-full object-cover rounded-md'
+                                    initial={{ opacity: 1 }}
+                                    animate={{ opacity: 1 }}
+                                    whileHover={{ opacity: 0.1 }}
+                                    transition={{ duration: 0.1 }}
+                                />
+                            </div>
                         ))}
                     </div>
                 </div>
