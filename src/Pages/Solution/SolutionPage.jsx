@@ -36,7 +36,7 @@ const SolutionPage = () => {
                                     transition={{ duration: 0.5 }}
                                 >
                                     <h2 className='text-lg font-bold'>{item.name}</h2>
-                                    <p className='text-gray-500'>{item.description}</p>
+                                    <p className='text-gray-500'>{item.desc}</p>
                                     <Link to={`/solutions/${item.id}`} className='text-blue-500 font-bold mt-2 hover:text-blue-700'>
                                         Learn More
                                     </Link>

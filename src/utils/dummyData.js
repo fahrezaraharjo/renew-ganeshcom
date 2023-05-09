@@ -1458,10 +1458,10 @@ export const solutionDatas = {
         items: [
             {
                 id: "1",
-                name: "Online Tutoring in PT Les Online",
+                name: "Lesku.id",
                 img: cardplaceholder,
                 desc: "Developing an application to find online tutoring service providers and private tutors for PT Les Online",
-                desc2: "Developing an application to find online tutoring service providers and private tutors for PT Les Online",
+                desc2: "Lesku.id is a platform that brings together tutoring or private tutoring service providers (teachers/teachers) with students/students whose learning process is carried out online and in real time through interactive videos. This application is able to run algorithms for planning private group lessons online with automatic scheduling",
             },
         ]
     },

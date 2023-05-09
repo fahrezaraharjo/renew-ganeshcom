@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { workDatas } from '../../utils/dummyData';
-import { Footer, Header, Navbar } from '../../components';
+import { solutionDatas } from '../../utils/dummyData';
+import { Footer, Navbar } from '../../components';
 import YouTube from "react-youtube";
 import { articles } from '../../utils/dummyData';
 
@@ -17,26 +17,22 @@ const DetailsSolutionPage = () => {
   };
 
   // Find the work item with the matching id
-  const items = Object.values(workDatas).reduce((acc, data) => acc.concat(data.items), []);
+  const items = Object.values(solutionDatas).reduce((acc, data) => acc.concat(data.items), []);
   const item = items.find((item) => item.id === id);
   if (!item) {
     return <div>Work item not found</div>;
   }
-
-  const [activeTab, setActiveTab] = useState(item.systemFeatures[0].id);
-
   return (
     <div className='min-h-screen gradient-bg-welcome'>
       <Navbar />
-      <Header title='Solutions' subtitle={item.name} />
       <div className='container mx-auto px-4 pt-12 pb-24'>
-        <div className='flex flex-row h-[480px] gap-6'>
-          <div className='flex flex-col w-1/2 h-full'>
-            <h1 className='text-2xl font-bold text-blue-700 mb-4 w-full'>{item.name}</h1>
+        <div className='flex flex-row gap-6 h-[380px]'>
+          <div className='flex flex-col w-full'>
+            <h1 className='text-2xl font-bold text-blue-700 w-full mb-4'>{item.name}</h1>
             <p className='text-blue-200 leading-relaxed mb-12 '>{item.desc2}</p>
           </div>
-          <div className='w-1/2 h-full'>
-            <img src={item.img} alt="detailSolution" />
+          <div className='w-full bg-white'>
+            <img src={item.img} alt="" className='w-full h-full object-cover' />
           </div>
         </div>
         <h2 className='text-2xl font-bold text-blue-200 mb-4 mt-4'>System Features</h2>
