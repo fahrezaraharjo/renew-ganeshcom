@@ -80,7 +80,38 @@ import headerimgsolution from "./city-abstraction-from-neon-lights-wallpaper-853
 import cardplaceholder from "./istockphoto-1436435089-612x612.jpg"
 import detailsBg from "./wallpaperflare.com_wallpaper.jpg"
 
+import RestaurantWebsite from "./work-feature-230324.165106.png"
+
+
+//details
+import lesonline1 from "./system-featured-lesonline1.png"
+import lesonline2 from "./system-featured-lesonline2.png"
+import lesonline3 from "./system-featured-lesonline3.png"
+import lesonline4 from "./system-featured-lesonline4.png"
+import restaurant1 from "./system-featured-restaurant1.png"
+import restaurant2 from "./system-featured-restaurant2.png"
+import restaurant3 from "./system-featured-restaurant3.png"
+import restaurant4 from "./system-featured-restaurant4.png"
+
+//solutions
+import SolutionsHeader from "./book-read-student-students.jpg"
+
+
+
+
+
+
 export {
+    SolutionsHeader,
+    restaurant1,
+    restaurant2,
+    restaurant3,
+    restaurant4,
+    lesonline1,
+    lesonline2,
+    lesonline3,
+    lesonline4,
+    RestaurantWebsite,
     detailsBg,
     cardplaceholder,
     headerimgabout,

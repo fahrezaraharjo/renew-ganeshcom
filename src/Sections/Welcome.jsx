@@ -1,40 +1,43 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
-
 import Carousel from "../components/Carousel";
-import { carouselImages } from "../utils/dummyData";
+import { welcomeDatas } from "../utils/dummyData";
+import { motion } from "framer-motion";
 
 const Welcome = () => {
-
   return (
-    <div className="flex w-full justify-center items-center">
-      <div className="flex mf:flex-row flex-col items-start justify-between md:p-12 py-4 px-4">
-        <div className="flex flex-1 justify-start items-start flex-col mf:mr-10">
-          <h2 className="text-3xl sm:text-5xl text-white text-gradient py-1">
-            Partner of <br />
-            DIGITAL TRANSFORMATION
-          </h2>
-          <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
-            A digital transformation partner helps firms quickly identify places and functions within an enterprise that would benefit from digital technology
-          </p>
-
-          <button
-            type="button"
-            onClick={() => { }}
-            className="flex flex-row justify-center items-center my-5 bg-[#2952e3] p-3 rounded-full cursor-pointer hover:bg-[#2546bd]"
-          >
-
-            <p className="text-white text-base font-semibold">
-              Explore Now
-            </p>
-            <BsArrowRight className="text-white ml-3" />
-          </button>
-
-          <Carousel images={carouselImages} />
+    <div className="p-4">
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, ease: "easeInOut" }}>
+        <div className="w-full mx-auto flex flex-row md:flex-row justify-center items-center py-16 md:py-32 px-6 md:px-0">
+          <div className="white-glassmorphism shadow-lg rounded-lg flex flex-col md:flex-row w-full p-4">
+            <div className="w-full md:w-1/2 h-full">
+              <div className="h-full">
+                <Carousel images={welcomeDatas.rightItems} />
+              </div>
+            </div>
+            <div className="p-8 flex flex-col justify-between md:w-1/2">
+              <h1 className="text-2xl md:text-2xl font-bold text-gray-400 mb-6">
+                {welcomeDatas.leftItems.text1}
+              </h1>
+              <h2 className="text-4xl md:text-6xl font-bold text-gradient mb-6">
+                {welcomeDatas.leftItems.text2}
+              </h2>
+              <p className="text-gray-600 text-base md:text-lg mb-8">
+                {welcomeDatas.leftItems.text3}
+              </p>
+              <button
+                type="button"
+                onClick={() => { }}
+                className="inline-flex items-end px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              >
+                Explore Now
+                <BsArrowRight className="ml-3 -mr-1 h-5 w-5" />
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
+      </motion.div>
     </div>
-
   );
 };
 

@@ -21,7 +21,7 @@ const Navbar = () => {
         <Link to="/" className="text-white mx-[-23px] my-8">Ganeshcom</Link>
       </div>
       <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
-        {["About", "Work", "Solusion", "Contact"].map((item, index) => (
+        {["About", "Work", "Solution", "Contact"].map((item, index) => (
           <NavBarItem key={item + index} title={item} path={`/${item.toLowerCase()}`} />
         ))}
       </ul>
@@ -38,7 +38,7 @@ const Navbar = () => {
             flex flex-col justify-start items-end rounded-md blue-glassmorphism text-white animate-slide-in"
           >
             <li className="text-xl w-full my-2"><AiOutlineClose onClick={() => setToggleMenu(false)} /></li>
-            {["About", "Work", "Solusion", "Contact"].map(
+            {["About", "Work", "Solution", "Contact"].map(
               (item, index) => <NavBarItem key={item + index} title={item} path={`/${item.toLowerCase()}`} classprops="my-2 text-lg" />,
             )}
           </ul>

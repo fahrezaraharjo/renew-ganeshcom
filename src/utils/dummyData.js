@@ -1,13 +1,10 @@
-import { BsShieldFillCheck } from "react-icons/bs";
 import {
     akuntaid, dimedika, keacaracom, mytimesheet, pems, ximo, sion,
     trustedby1, trustedby2, trustedby3, trustedby4, trustedby5, trustedby6, trustedby7, trustedby8, trustedby9, trustedby10,
     solution1, solution2, solution3,
-    whatsnew1, whatsnew2, whatsnew3, headerimgabout, headerimgwork, headerimgsolution, cardplaceholder, homeslider1, homeslider2, homeslider3, service1, service2, service3, service4, service5
+    whatsnew1, whatsnew2, whatsnew3, headerimgabout, headerimgwork, headerimgsolution, cardplaceholder, homeslider1, homeslider2, homeslider3, service1, service2, service3, service4, service5, RestaurantWebsite, lesonline1, lesonline3, lesonline4, lesonline2, restaurant1, restaurant2, restaurant3, restaurant4
 
 } from "../../images";
-import { BiSearchAlt } from "react-icons/bi";
-import { RiHeart2Fill } from "react-icons/ri";
 
 export const aboutUs = [
     {
@@ -18,10 +15,33 @@ export const aboutUs = [
     }
 ]
 
+export const categoriesSolutions = [
+    { label: 'All Category', value: 'all' },
+    { label: 'Education', value: 'education' },
+    { label: 'Oil & Gas Company', value: 'oilGas' },
+    { label: 'Industry', value: 'industry' },
+    { label: 'Store & Supply', value: 'storeSupply' },
+    { label: 'Property & Contract Management', value: 'propertyContract' },
+  ];
+
+export const welcomeDatas = {
+    leftItems:
+    {
+        text1: "Partner of",
+        text2: "DIGITAL TRANSFORMATION",
+        text3: "We help businesses innovate and transform with the latest digital technologies, enabling them to stay ahead of the competition and grow faster."
+    },
+    rightItems: [
+        { id: 1, src: homeslider3 },
+        { id: 2, src: homeslider2 },
+        { id: 3, src: homeslider1 },
+    ]
+}
+
 export const carouselImages = [
-  { id: 1, src: homeslider1 },
-  { id: 2, src: homeslider2 },
-  { id: 3, src: homeslider3 },
+    { id: 1, src: homeslider3 },
+    { id: 2, src: homeslider2 },
+    { id: 3, src: homeslider1 },
 ];
 
 export const serviceHome = {
@@ -64,29 +84,30 @@ export const workDatas = {
                 name: "Online Tutoring in PT Les Online",
                 img: cardplaceholder,
                 desc: "Developing an application to find online tutoring service providers and private tutors for PT Les Online",
+                desc2: "Developing an application to find online tutoring service providers and private tutors for PT Les Online",
                 systemFeatures: [
                     {
                         id: "1",
                         name: "Private lessons",
-                        img: headerimgabout,
+                        img: lesonline1,
                         desc: "private lessons"
                     },
                     {
                         id: "2",
                         name: "Group Lesson",
-                        img: headerimgabout,
+                        img: lesonline2,
                         desc: "private lessons"
                     },
                     {
                         id: "3",
                         name: "Select Schedule",
-                        img: headerimgabout,
+                        img: lesonline3,
                         desc: "private lessons"
                     },
                     {
                         id: "4",
                         name: "Find Teacher",
-                        img: headerimgabout,
+                        img: lesonline4,
                         desc: "private lessons"
                     },
 
@@ -312,51 +333,45 @@ export const workDatas = {
                     },
                     {
                         id: "2",
-                        name: "Project Management",
+                        name: "Mail Verification / Approval",
                         img: headerimgabout,
-                        desc: "Project Management"
+                        desc: "Mail Verification / Approval"
                     },
                     {
                         id: "3",
-                        name: "Logistic",
+                        name: "Administrator Mail Protal",
                         img: headerimgabout,
-                        desc: "Logistic"
+                        desc: "Administrator Mail Protal"
                     },
                     {
                         id: "4",
-                        name: "Selling",
+                        name: "Print/Export Mail",
                         img: headerimgabout,
-                        desc: "Selling"
+                        desc: "Print/Export Mail"
                     },
                     {
                         id: "5",
-                        name: "Oprational",
+                        name: "Attachment Upload/Download",
                         img: headerimgabout,
-                        desc: "Oprational"
+                        desc: "Attachment Upload/Download"
                     },
                     {
                         id: "6",
-                        name: "Project Cart",
+                        name: "Recap & Report",
                         img: headerimgabout,
-                        desc: "Project Cart"
+                        desc: "Recap & Report"
                     },
                     {
                         id: "7",
-                        name: "AR/AP",
+                        name: "User Management",
                         img: headerimgabout,
-                        desc: "AR/AP"
+                        desc: "User Management"
                     },
                     {
                         id: "8",
-                        name: "Acounting",
+                        name: "Mail Setting",
                         img: headerimgabout,
-                        desc: "Acounting"
-                    },
-                    {
-                        id: "9",
-                        name: "Report",
-                        img: headerimgabout,
-                        desc: "Report"
+                        desc: "Mail Setting"
                     },
                 ]
             },
@@ -407,6 +422,7 @@ export const workDatas = {
                 name: "SAKIRA BPSDM ESDM",
                 img: cardplaceholder,
                 desc: "Developing employee performance information system for the work report of the Energy and Mineral Resources Development Agency",
+                desc2: "Employee performance information system for the work report of the Energy and Mineral Resources Development Agency. Each employee records their daily to-do list in the system and you can assign assignments via the admin portal. Employee performance appraisal needs to be done by a company to evaluate the performance of the employee concerned. Through performance appraisal, the company or HR team will find it easier to find out the abilities, skills, behaviors, strengths, and weaknesses of employees.SAKIRA BPSDM ESDM was developed to automatically this manual process. This web application has these following features:",
                 systemFeatures: [
                     {
                         id: "",
@@ -519,31 +535,81 @@ export const workDatas = {
     mobileApp: {
         items: [
             {
-                id: "1",
+                id: "17",
                 name: "Timesheet in PT Dago Engineering",
                 img: cardplaceholder,
                 desc: "Development of applications that assist users in recording daily work, projects and monitoring work reports for PT Dago Engineering.",
+                desc2: "Timesheet Dago Eng Application will helps users in recording daily work, projects and monitoring work reports for PT Dago Engineering. Timesheet Dago Eng provides you employee attendance application system that can be use everywhere with a simple taps on mobile device. HR can monitor mobile employee more effective and the feature is usefull for evaluating employee’s performance. PT Dago Engineering has proven that using Mytimesheet can make it easier for them to be absent in their company activities.Timesheet Dago Eng was developed to automatically this manual process. This web application has these following features:",
                 systemFeatures: [
                     {
-                        id: "",
-                        name: "",
-                        img: "",
-                        desc: ""
-                    }
+                        id: "1",
+                        name: "Presence",
+                        img: headerimgabout,
+                        desc: "Presence"
+                    },
+                    {
+                        id: "2",
+                        name: "Work List",
+                        img: headerimgabout,
+                        desc: "Work List"
+                    },
+                    {
+                        id: "3",
+                        name: "SPD",
+                        img: headerimgabout,
+                        desc: "SPD"
+                    },
+                    {
+                        id: "4",
+                        name: "Absence History",
+                        img: headerimgabout,
+                        desc: "Absence History"
+                    },
+                    {
+                        id: "5",
+                        name: "Work Summary",
+                        img: headerimgabout,
+                        desc: "Work Summary"
+                    },
+                    {
+                        id: "6",
+                        name: "Work Calender",
+                        img: headerimgabout,
+                        desc: "Work Calender"
+                    },
                 ]
             },
             {
-                id: "2",
+                id: "18",
                 name: "Restaurant Reservation Application in Bebek Bengil",
                 img: cardplaceholder,
                 desc: "Developing an application to make it easier for customers to book online reservations in Bebek Bengil",
+                desc2: "Developing an application to make it easier for customers to book online reservations in Bebek Bengil",
                 systemFeatures: [
                     {
-                        id: "",
-                        name: "",
-                        img: "",
-                        desc: ""
-                    }
+                        id: "1",
+                        name: "News or Blog",
+                        img: restaurant1,
+                        desc: "News or Blog"
+                    },
+                    {
+                        id: "2",
+                        name: "Product Or Service",
+                        img: restaurant2,
+                        desc: "Product Or Service"
+                    },
+                    {
+                        id: "3",
+                        name: "SEO Management",
+                        img: restaurant3,
+                        desc: "SEO Management"
+                    },
+                    {
+                        id: "4",
+                        name: "File Manager",
+                        img: restaurant4,
+                        desc: "File Manager"
+                    },
                 ]
             },
         ],
@@ -551,10 +617,12 @@ export const workDatas = {
     itMasterplan: {
         items: [
             {
-                id: "1",
+                id: "19",
                 name: "IT Support in PT Trihasco Utama",
                 img: cardplaceholder,
                 desc: "Placing IT Support to monitors and maintains the company computer systems, installs, and configures hardware and software, and solves technical issues in PT Trihasco Utama",
+                desc2: "Placing IT Support to monitors and maintains the company computer systems, installs, and configures hardware and software, and solves technical issues in PT Trihasco Utama",
+
                 systemFeatures: [
                     {
                         id: "",
@@ -565,7 +633,7 @@ export const workDatas = {
                 ]
             },
             {
-                id: "0",
+                id: "20",
                 name: "THU One Dashboard in PT Trihasco Utama",
                 img: cardplaceholder,
                 desc: "Developing system for keeping track of information is important in PT Trihasco Utama",
@@ -579,7 +647,7 @@ export const workDatas = {
                 ]
             },
             {
-                id: "3",
+                id: "21",
                 name: "Company Profile Website in PT Trihasco Utama",
                 img: cardplaceholder,
                 desc: "Developing website to introduces a business's mission, goals, vision, and history in PT Trihasco Utama",
@@ -593,7 +661,7 @@ export const workDatas = {
                 ]
             },
             {
-                id: "4",
+                id: "22",
                 name: "Asset Management in PT Trihasco Utama",
                 img: cardplaceholder,
                 desc: "Developing software that helps you manage your facilities, vehicles, assets, equipment, and machines PT Trihasco Utama",
@@ -607,7 +675,7 @@ export const workDatas = {
                 ]
             },
             {
-                id: "5",
+                id: "23",
                 name: "Finance System Integration in PT Trihasco Utama",
                 img: cardplaceholder,
                 desc: "Developing software to supporting daily financial operations in PT Trihasco Utama",
@@ -621,7 +689,7 @@ export const workDatas = {
                 ]
             },
             {
-                id: "6",
+                id: "24",
                 name: "Project Manajement (Timesheet) in PT Trihasco Utama",
                 img: cardplaceholder,
                 desc: "Developing software for time tracking and employee timesheets integrated with the project management system in PT Trihasco Utama            ",
@@ -635,7 +703,7 @@ export const workDatas = {
                 ]
             },
             {
-                id: "7",
+                id: "25",
                 name: "HR Management in PT Trihasco Utama",
                 img: cardplaceholder,
                 desc: "Developing human resources software is used by businesses to combine a number of necessary HR functions in PT Trihasco Utama",
@@ -649,7 +717,7 @@ export const workDatas = {
                 ]
             },
             {
-                id: "8",
+                id: "26",
                 name: "Workspace & Online Reporting in PT Trihasco Utama",
                 img: cardplaceholder,
                 desc: "Developing software for support work productivity that is integrated with other systems in PT Trihasco Utama",
@@ -663,7 +731,7 @@ export const workDatas = {
                 ]
             },
             {
-                id: "9",
+                id: "27",
                 name: "Document Management System (DMS) in PT Trihasco Utama",
                 img: cardplaceholder,
                 desc: "Developing document management system to create, store, manage, and track electronic documents in PT Trihasco Utama            ",
@@ -677,21 +745,64 @@ export const workDatas = {
                 ]
             },
             {
-                id: "10",
+                id: "28",
                 name: "Timesheet in Trihasco Utama",
                 img: cardplaceholder,
                 desc: "Developing of applications that assist users in recording daily work, projects and monitoring work reports for PT Trihasco Utama",
+                desc2: "Timesheet Trihasco Utama Application will helps users in recording daily work, projects and monitoring work reports for PT Trihasco Utama. Timesheet Trihasco Utama provides you employee attendance application system that can be use everywhere with a simple taps on mobile device. HR can monitor mobile employee more effective and the feature is usefull for evaluating employee’s performance. PT Trihasco Utama has proven that using Mytimesheet can make it easier for them to be absent in their company activities.Timesheet Trihasco Utama was developed to automatically this manual process. This web application has these following features:",
                 systemFeatures: [
                     {
-                        id: "",
-                        name: "",
-                        img: "",
-                        desc: ""
-                    }
+                        id: "1",
+                        name: "Presence",
+                        img: headerimgabout,
+                        desc: "Presence"
+                    },
+                    {
+                        id: "2",
+                        name: "Work List",
+                        img: headerimgabout,
+                        desc: "Work List"
+                    },
+                    {
+                        id: "3",
+                        name: "Meeting",
+                        img: headerimgabout,
+                        desc: "Meeting"
+                    },
+                    {
+                        id: "4",
+                        name: "CheckIn",
+                        img: headerimgabout,
+                        desc: "CheckIn"
+                    },
+                    {
+                        id: "5",
+                        name: "Absence History",
+                        img: headerimgabout,
+                        desc: "Absence History"
+                    },
+                    {
+                        id: "6",
+                        name: "Work Callender",
+                        img: headerimgabout,
+                        desc: "Work Callender"
+                    },
+                    {
+                        id: "7",
+                        name: "Export & Import Project Task",
+                        img: headerimgabout,
+                        desc: "Export & Import Project Task"
+                    },
+                    {
+                        id: "8",
+                        name: "Work Summary",
+                        img: headerimgabout,
+                        desc: "Work Summary"
+                    },
                 ]
             },
             {
-                id: "11",
+                id: "29",
                 name: "New Student Admissions Information System in AKAMIGAS Energy and Mineral Polytechnic",
                 img: cardplaceholder,
                 desc: "Developing an information system used to assist the AKAMIGAS Energy and Mineral Polytechnic in the process of managing new student admissions",
@@ -705,7 +816,7 @@ export const workDatas = {
                 ]
             },
             {
-                id: "12",
+                id: "30",
                 name: "Academic System & Online Exam in AKAMIGAS Energy and Mineral Polytechnic",
                 img: cardplaceholder,
                 desc: "Developing system to make it easier to prepare for exams and assisting in the management/administration of academic activities in AKAMIGAS Energy and Mineral Polytechnic",
@@ -719,7 +830,7 @@ export const workDatas = {
                 ]
             },
             {
-                id: "13",
+                id: "31",
                 name: "E-Letter in Pertamina University",
                 img: cardplaceholder,
                 desc: "Developing a system to facilitate the process of recording and managing correspondence within agencies at Pertamina University",
@@ -733,7 +844,7 @@ export const workDatas = {
                 ]
             },
             {
-                id: "14",
+                id: "32",
                 name: "Office Manuscript Application (ANDIN) in Pertamina University",
                 img: cardplaceholder,
                 desc: "Developing an application that makes it easy to manage, review, create, and distribute official scripts at Pertamina University",
@@ -747,7 +858,7 @@ export const workDatas = {
                 ]
             },
             {
-                id: "15",
+                id: "33",
                 name: "Managing Domain and E-Library Maintenance in Widya Pasraman Sila Kertha Raharja School",
                 img: cardplaceholder,
                 desc: "Manage the Domain and Maintenance of the Widya Pasraman Sila Kertha Raharja School E-Library on a regular basis",
@@ -771,13 +882,56 @@ export const workDatas = {
                 name: "Restaurant Website in Bebek Bengil",
                 img: cardplaceholder,
                 desc: "Developing website to find information like menus, location, hours of operation and contact info easily for Bebek Bengil",
+                desc2: "A restaurant website is a business website whose purpose is to provide information on menus, services, locations and other services. It also provides directions to restaurants. It can also offer promotional discounts and special offers from restaurants.Your customers will get a clear picture of the experience the restaurant has to offer and the vibe guests can expect.",
                 systemFeatures: [
                     {
-                        id: "",
-                        name: "",
-                        img: "",
-                        desc: ""
-                    }
+                        id: "1",
+                        name: "User-Friendly Website",
+                        img: RestaurantWebsite,
+                        desc: "A user-friendly website is a website that is designed to be easily accessed by visitors."
+                    },
+                    {
+                        id: "2",
+                        name: "Pop Up",
+                        img: RestaurantWebsite,
+                        desc: "The use of pop ups is based on several reasons, including content promotion, lead generation, offers, and discounts."
+                    },
+                    {
+                        id: "3",
+                        name: "HomePage",
+                        img: RestaurantWebsite,
+                        desc: "Home or can also be referred to as the homepage is the main page of a website."
+                    },
+                    {
+                        id: "4",
+                        name: "Online Reservation",
+                        img: RestaurantWebsite,
+                        desc: "An online reservation system is a vital necessity for restaurant business owners because it can shorten the data collection process."
+                    },
+                    {
+                        id: "5",
+                        name: "Digital Menus",
+                        img: RestaurantWebsite,
+                        desc: "You can display the menus in the restaurant, either in PDF form or on pages specifically for your restaurant menu along with information and descriptions of the menu."
+                    },
+                    {
+                        id: "6",
+                        name: "Contact Us",
+                        img: RestaurantWebsite,
+                        desc: "It feels like your restaurant website won't be complete without a contact us button to make it easier for customers to contact your restaurant."
+                    },
+                    {
+                        id: "7",
+                        name: "News and Blogs",
+                        img: RestaurantWebsite,
+                        desc: "The news and blog features are in the form of articles and writings (which are loaded as posts) on a web page."
+                    },
+                    {
+                        id: "8",
+                        name: "Multilanguage",
+                        img: RestaurantWebsite,
+                        desc: "The multilanguage feature on the website is useful if your web visitors come from different countries."
+                    },
                 ]
             },
 
@@ -1249,27 +1403,27 @@ export const settings = {
 export const tabsData = [
     {
         title: 'Software Development',
-        photo: service1 ,
+        photo: service1,
         paragraph: 'We develop responsive web-based applications on various platforms, with interactive design displays, powerful functionality, and dynamic software..',
     },
     {
         title: 'Mobile App',
-        photo: service2 ,
+        photo: service2,
         paragraph: 'We design a mobile app system that supports various existing operating systems and is user friendly, where you can interact adaptively with anyone..',
     },
     {
         title: 'IT Masterplan',
-        photo: service3 ,
+        photo: service3,
         paragraph: 'We develop an IT development plan that aligns with your business strategy. Realize your company`s digital transformation with the right planning.',
     },
     {
         title: 'Branding Website',
-        photo: service4 ,
+        photo: service4,
         paragraph: 'We work with different types of clients. For us, your website is not only your digital presence but also a strong digital brand through a personalized website that visitors will love.',
     },
     {
         title: 'Startup Partnership',
-        photo: service5 ,
+        photo: service5,
         paragraph: 'Partners with us. We fine tune each innovation program to enable corporate/startup collaboration and leapfrog competition by innovating faster.',
     },
 ];
@@ -1298,3 +1452,128 @@ export const articles = [
             "Vivamus finibus, massa non faucibus commodo, turpis velit vehicula elit, et commodo quam lorem ac justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod lorem vel mauris aliquam blandit.",
     },
 ];
+
+export const solutionDatas = {
+    all: {
+        title: 'All Solutions',
+        items: [
+            {
+                id: 'solution-1',
+                title: 'Solution 1',
+                category: 'education',
+                imageUrl: solution1,
+                description:
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                linkUrl: '/solutions/solution-1',
+            },
+            {
+                id: 'solution-2',
+                title: 'Solution 2',
+                category: 'oilGas',
+                imageUrl: solution1,
+                description:
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                linkUrl: '/solutions/solution-2',
+            },
+            {
+                id: 'solution-3',
+                title: 'Solution 3',
+                category: 'industry',
+                imageUrl: solution1,
+                description:
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                linkUrl: '/solutions/solution-3',
+            },
+            {
+                id: 'solution-4',
+                title: 'Solution 4',
+                category: 'storeSupply',
+                imageUrl: solution1,
+                description:
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                linkUrl: '/solutions/solution-4',
+            },
+        ],
+    },
+    education: {
+        title: 'Education Solutions',
+        items: [
+            {
+                id: 'solution-1',
+                title: 'Solution 1',
+                category: 'education',
+                imageUrl: solution1,
+                description:
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                linkUrl: '/solutions/solution-1',
+            },
+        ],
+    },
+    oilGas: {
+        title: 'Oil & Gas Solutions',
+        items: [
+            {
+                id: 'solution-2',
+                title: 'Solution 2',
+                category: 'oilGas',
+                imageUrl: solution1,
+                description:
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                linkUrl: '/solutions/solution-2',
+            },
+        ],
+    },
+    industry: {
+        title: 'Industry Solutions',
+        items: [
+            {
+                id: 'solution-3',
+                title: 'Solution 3',
+                category: 'industry',
+                imageUrl: solution1,
+                description:
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                linkUrl: '/solutions/solution-3',
+            },
+        ],
+    },
+    storeSupply: {
+        title: 'Store & Supply Solutions',
+        items: [
+            {
+                id: 'solution-4',
+                title: 'Solution 4',
+                category: 'store',
+                imageUrl: solution1,
+                description: 'test',
+                linkUrl: '/solutions/solution-4'
+            }
+        ]
+    },
+    propertyContract: {
+        title: 'Property & Contract Management',
+        items: [
+            {
+                id: 'solution-5',
+                title: 'Solution 5',
+                category: 'propertyContract',
+                imageUrl: solution1,
+                description: 'test',
+                linkUrl: '/solutions/solution-5'
+            }
+        ]
+    },
+    storeSupply: {
+        title: 'Store & Supply Solutions',
+        items: [
+            {
+                id: 'solution-4',
+                title: 'Solution 4',
+                category: 'store',
+                imageUrl: solution1,
+                description: 'test',
+                linkUrl: '/solutions/solution-4'
+            }
+        ]
+    }
+}
