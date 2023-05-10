@@ -28,10 +28,10 @@ const Welcome = () => {
               <button
                 type="button"
                 onClick={() => { }}
-                className="inline-flex items-end px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                className="inline-flex w-[250px] items-end px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               >
                 Explore Now
-                <BsArrowRight className="ml-3 -mr-1 h-5 w-5" />
+                <BsArrowRight className="ml-3 mr-1 mb-1 h-5 w-5" />
               </button>
             </div>
           </div>

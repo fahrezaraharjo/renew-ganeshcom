@@ -54,17 +54,16 @@ const CategoryList = () => {
   const handleCategoryChange = (category) => {
     setActiveCategory(category);
     window.scrollTo({
-      top: 0,
       behavior: "smooth"
     });
   }
 
   return (
     <div className="w-full flex flex-col p-14 mx-auto backdrop-blur-sm ">
-      <h1 className="text-3xl font-bold text-gradient mb-4">OUR SOLUTION</h1>
+      <h1 className="text-3xl font-bold text-blue-500 mb-4">OUR SOLUTION</h1>
       <div className="flex flex-row justify-between w-full px-14">
         <div className="w-1/3 white-glassmorphism p-4 mx-5">
-          <h1 className="text-gradient border-b-2 ">All Categories</h1>
+          <h1 className="text-blue-500 border-b-2 ">All Categories</h1>
           <ul className="">
             {categories.map((category) => (
               <li
@@ -79,7 +78,7 @@ const CategoryList = () => {
           </ul>
         </div>
         <div className="w-2/3 white-glassmorphism">
-          <h2 className="text-lg font-semibold py-4 px-8 text-gradient border-b-2 border-blue-200">
+          <h2 className="text-lg font-semibold py-4 px-8 text-blue-500 border-b-2 border-blue-200">
             {activeCategory.name}
           </h2>
           <div className="p-8">

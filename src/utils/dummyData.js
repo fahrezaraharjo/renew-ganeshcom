@@ -1,4 +1,4 @@
-import { solution20 } from "../../images";
+import { solution17, solution20 } from "../../images";
 import { solution5 } from "../../images";
 import { solution15 } from "../../images";
 import { solution19 } from "../../images";
@@ -1302,17 +1302,17 @@ export const categories = [
             {
                 id: 1,
                 title: "Oil Rig",
-                url: "https://images.unsplash.com/photo-1570597441527-f08cbbf0f0a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                url: solution15,
             },
             {
                 id: 2,
                 title: "Refinery",
-                url: "https://images.unsplash.com/photo-1553817343-2e1449a38d5e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                url: solution15,
             },
             {
                 id: 3,
                 title: "Gas Pump",
-                url: "https://images.unsplash.com/photo-1580914734542-3f3b10ed2e7b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                url: solution15,
             },
         ],
     },
@@ -1323,17 +1323,17 @@ export const categories = [
             {
                 id: 1,
                 title: "Factory",
-                url: "https://images.unsplash.com/photo-1576233450697-8ee0a91674ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                url: solution14,
             },
             {
                 id: 2,
                 title: "Construction Site",
-                url: "https://images.unsplash.com/photo-1542366676-0c8e69271e0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                url: solution14,
             },
             {
                 id: 3,
                 title: "Welding",
-                url: "https://images.unsplash.com/photo-1593020429818-1e49f9ddc2b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                url: solution14,
             },
         ],
     },
@@ -1344,17 +1344,17 @@ export const categories = [
             {
                 id: 1,
                 title: "Grocery Store",
-                url: ""
+                url: solution20
             },
             {
                 id: 2,
                 title: "Construction Site",
-                url: "https://images.unsplash.com/photo-1542366676-0c8e69271e0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                url: solution20,
             },
             {
                 id: 3,
                 title: "Welding",
-                url: "https://images.unsplash.com/photo-1593020429818-1e49f9ddc2b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                url: solution20,
             },
         ],
     },
@@ -1365,17 +1365,17 @@ export const categories = [
             {
                 id: 1,
                 title: "Grocery Store",
-                url: ""
+                url: solution5
             },
             {
                 id: 2,
                 title: "Construction Site",
-                url: "https://images.unsplash.com/photo-1542366676-0c8e69271e0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                url: solution5,
             },
             {
                 id: 3,
                 title: "Welding",
-                url: "https://images.unsplash.com/photo-1593020429818-1e49f9ddc2b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                url: solution5,
             },
         ],
     },
@@ -1386,17 +1386,17 @@ export const categories = [
             {
                 id: 1,
                 title: "Grocery Store",
-                url: ""
+                url: solution20
             },
             {
                 id: 2,
                 title: "Construction Site",
-                url: "https://images.unsplash.com/photo-1542366676-0c8e69271e0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                url: solution17
             },
             {
                 id: 3,
                 title: "Welding",
-                url: "https://images.unsplash.com/photo-1593020429818-1e49f9ddc2b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                url: solution17
             },
         ],
     },
