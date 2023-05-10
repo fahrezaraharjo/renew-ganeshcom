@@ -1,10 +1,17 @@
+import { solution20 } from "../../images";
+import { solution5 } from "../../images";
+import { solution15 } from "../../images";
+import { solution19 } from "../../images";
+import { solution14 } from "../../images";
 import {
     akuntaid, dimedika, keacaracom, mytimesheet, pems, ximo, sion,
     trustedby1, trustedby2, trustedby3, trustedby4, trustedby5, trustedby6, trustedby7, trustedby8, trustedby9, trustedby10,
     solution1, solution2, solution3,
-    whatsnew1, whatsnew2, whatsnew3, headerimgabout, headerimgwork, headerimgsolution, cardplaceholder, homeslider1, homeslider2, homeslider3, service1, service2, service3, service4, service5, RestaurantWebsite, lesonline1, lesonline3, lesonline4, lesonline2, restaurant1, restaurant2, restaurant3, restaurant4
+    whatsnew1, whatsnew2, whatsnew3, headerimgabout, headerimgwork, headerimgsolution, cardplaceholder, homeslider1, homeslider2, homeslider3, service1, service2, service3, service4, service5, RestaurantWebsite, lesonline1, lesonline3, lesonline4, lesonline2, restaurant1, restaurant2, restaurant3, restaurant4, solution4
 
 } from "../../images";
+
+//-----------------------------------------------------ABOUT US---------------------------------------------------//
 
 export const aboutUs = [
     {
@@ -15,14 +22,21 @@ export const aboutUs = [
     }
 ]
 
+//-----------------------------------------------------CATEGORIES SOLUTIONS---------------------------------------------------//
+
 export const categoriesSolutions = [
     { label: 'All Category', value: 'all' },
     { label: 'Education', value: 'education' },
     { label: 'Oil & Gas Company', value: 'oilGas' },
     { label: 'Industry', value: 'industry' },
     { label: 'Store & Supply', value: 'storeSupply' },
-    { label: 'Property & Contract Management', value: 'propertyContract' },
+    { label: 'Property & Contract Management', value: 'propertyContractor' },
+    { label: 'E-Govermment', value: 'eGovermment' },
+
+
 ];
+
+//-----------------------------------------------------WELCOME DATAS---------------------------------------------------//
 
 export const welcomeDatas = {
     leftItems:
@@ -38,11 +52,16 @@ export const welcomeDatas = {
     ]
 }
 
+//-----------------------------------------------------CAROUSEL ASSETS---------------------------------------------------//
+
+
 export const carouselImages = [
     { id: 1, src: homeslider3 },
     { id: 2, src: homeslider2 },
     { id: 3, src: homeslider1 },
 ];
+
+//-----------------------------------------------------SERVICE HOME---------------------------------------------------//
 
 export const serviceHome = {
     topItems:
@@ -51,6 +70,9 @@ export const serviceHome = {
         text2: "We are an Information Technology Company that provides IT services and solutions for website design, web application development, mobile application development, and various innovative product developments. We realize the progression into the digital age has been inevitable, for businesses to survive and thrive in this era, an understanding of these innovations is key. With a mission to enhance our customers' business growth, we provide IT services and solutions with creative design and development, as well as provide high-quality solutions.",
     }
 }
+
+//-----------------------------------------------------HEADER DATAS---------------------------------------------------//
+
 
 export const headerData = {
     about: {
@@ -75,6 +97,8 @@ export const headerData = {
         title: "Contact Us"
     }
 };
+
+//-----------------------------------------------------WORK DATAS---------------------------------------------------//
 
 export const workDatas = {
     softwareDevelopment: {
@@ -1106,6 +1130,9 @@ export const workDatas = {
     },
 };
 
+//-----------------------------------------------------FOOTER DATAS---------------------------------------------------//
+
+
 export const footerData = {
     mainMenu: [
         { id: 1, title: "About" },
@@ -1159,6 +1186,8 @@ export const footerData = {
     ]
 };
 
+//-----------------------------------------------------TESTIMONI---------------------------------------------------//
+
 export const trustedCompanies = [
     { id: '1', image: trustedby1 },
     { id: '2', image: trustedby2 },
@@ -1171,6 +1200,9 @@ export const trustedCompanies = [
     { id: '9', image: trustedby9 },
     { id: '10', image: trustedby10 },
 ];
+
+//-----------------------------------------------------PRODUCT---------------------------------------------------//
+
 
 export const products = [
     {
@@ -1237,6 +1269,9 @@ export const products = [
     },
 
 ];
+
+//-----------------------------------------------------OUR SOLUTION---------------------------------------------------//
+
 
 export const categories = [
     {
@@ -1367,6 +1402,39 @@ export const categories = [
     },
 ]
 
+//-----------------------------------------------------TABS SERVICE---------------------------------------------------//
+
+export const tabsData = [
+    {
+        title: 'Software Development',
+        photo: service1,
+        paragraph: 'We develop responsive web-based applications on various platforms, with interactive design displays, powerful functionality, and dynamic software..',
+    },
+    {
+        title: 'Mobile App',
+        photo: service2,
+        paragraph: 'We design a mobile app system that supports various existing operating systems and is user friendly, where you can interact adaptively with anyone..',
+    },
+    {
+        title: 'IT Masterplan',
+        photo: service3,
+        paragraph: 'We develop an IT development plan that aligns with your business strategy. Realize your company`s digital transformation with the right planning.',
+    },
+    {
+        title: 'Branding Website',
+        photo: service4,
+        paragraph: 'We work with different types of clients. For us, your website is not only your digital presence but also a strong digital brand through a personalized website that visitors will love.',
+    },
+    {
+        title: 'Startup Partnership',
+        photo: service5,
+        paragraph: 'Partners with us. We fine tune each innovation program to enable corporate/startup collaboration and leapfrog competition by innovating faster.',
+    },
+];
+
+//-----------------------------------------------------FRAMMER MOTION---------------------------------------------------//
+
+
 export const settings = {
     dots: true,
     infinite: true,
@@ -1400,34 +1468,7 @@ export const settings = {
     ],
 };
 
-export const tabsData = [
-    {
-        title: 'Software Development',
-        photo: service1,
-        paragraph: 'We develop responsive web-based applications on various platforms, with interactive design displays, powerful functionality, and dynamic software..',
-    },
-    {
-        title: 'Mobile App',
-        photo: service2,
-        paragraph: 'We design a mobile app system that supports various existing operating systems and is user friendly, where you can interact adaptively with anyone..',
-    },
-    {
-        title: 'IT Masterplan',
-        photo: service3,
-        paragraph: 'We develop an IT development plan that aligns with your business strategy. Realize your company`s digital transformation with the right planning.',
-    },
-    {
-        title: 'Branding Website',
-        photo: service4,
-        paragraph: 'We work with different types of clients. For us, your website is not only your digital presence but also a strong digital brand through a personalized website that visitors will love.',
-    },
-    {
-        title: 'Startup Partnership',
-        photo: service5,
-        paragraph: 'Partners with us. We fine tune each innovation program to enable corporate/startup collaboration and leapfrog competition by innovating faster.',
-    },
-];
-
+//-----------------------------------------------------ARTICLES---------------------------------------------------//
 
 export const articles = [
     {
@@ -1453,15 +1494,17 @@ export const articles = [
     },
 ];
 
+//-----------------------------------------------------SOLUTION DATAS---------------------------------------------------//
+
+
 export const solutionDatas = {
     education: {
         items: [
             {
                 id: "1",
                 name: "Lesku.id",
-                img: cardplaceholder,
-                desc: "Developing an application to find online tutoring service providers and private tutors for PT Les Online",
-                desc2: "Lesku.id is a platform that brings together tutoring or private tutoring service providers (teachers/teachers) with students/students whose learning process is carried out online and in real time through interactive videos. This application is able to run algorithms for planning private group lessons online with automatic scheduling",
+                img: solution1,
+                desc: "Lesku.id is a platform that brings together tutoring or private tutoring service providers (teachers/teachers) with students/students whose learning process is carried out online and in real time through interactive videos. This application is able to run algorithms for planning private group lessons online with automatic scheduling",
             },
         ]
     },
@@ -1469,10 +1512,9 @@ export const solutionDatas = {
         items: [
             {
                 id: "2",
-                name: "Timesheet in PT Dago Engineering",
-                img: cardplaceholder,
-                desc: "Development of applications that assist users in recording daily work, projects and monitoring work reports for PT Dago Engineering.",
-                desc2: "Timesheet Dago Eng Application will helps users in recording daily work, projects and monitoring work reports for PT Dago Engineering. Timesheet Dago Eng provides you employee attendance application system that can be use everywhere with a simple taps on mobile device. HR can monitor mobile employee more effective and the feature is usefull for evaluating employee’s performance. PT Dago Engineering has proven that using Mytimesheet can make it easier for them to be absent in their company activities.Timesheet Dago Eng was developed to automatically this manual process. This web application has these following features:",
+                name: "AIMS (Assets Integrated Management)",
+                img: solution5,
+                desc: "The AIMS application is a web-based application used by PT Pertamina Hulu Energi as a monitoring medium for several route data into a display that makes it easier for management levels to capture data according to actual situations and conditions.",
             },
         ],
     },
@@ -1480,10 +1522,9 @@ export const solutionDatas = {
         items: [
             {
                 id: "3",
-                name: "IT Support in PT Trihasco Utama",
-                img: cardplaceholder,
-                desc: "Placing IT Support to monitors and maintains the company computer systems, installs, and configures hardware and software, and solves technical issues in PT Trihasco Utama",
-                desc2: "Placing IT Support to monitors and maintains the company computer systems, installs, and configures hardware and software, and solves technical issues in PT Trihasco Utama",
+                name: "HR Management",
+                img: solution14,
+                desc: "HR Management was developed to automatically this manual process. This web application has these following features:",
             }
         ],
     },
@@ -1491,21 +1532,19 @@ export const solutionDatas = {
         items: [
             {
                 id: "4",
-                name: "Restaurant Website in Bebek Bengil",
-                img: cardplaceholder,
-                desc: "Developing website to find information like menus, location, hours of operation and contact info easily for Bebek Bengil",
-                desc2: "A restaurant website is a business website whose purpose is to provide information on menus, services, locations and other services. It also provides directions to restaurants. It can also offer promotional discounts and special offers from restaurants.Your customers will get a clear picture of the experience the restaurant has to offer and the vibe guests can expect.",
+                name: "Sistem POS (Point of Sale)",
+                img: solution20,
+                desc: "A good system in your business will give maximum contribution in developing your business in the future. The POS system is integrated with your marketing, sales, inventory and e-commerce. Let's start digitizing. Access our store anywhere anytime. Safe and in control",
             }
         ],
     },
-    propertyConstractor: {
+    propertyContractor: {
         items: [
             {
                 id: "5",
-                name: "Restaurant Website in Bebek Bengil",
-                img: cardplaceholder,
-                desc: "Developing website to find information like menus, location, hours of operation and contact info easily for Bebek Bengil",
-                desc2: "A restaurant website is a business website whose purpose is to provide information on menus, services, locations and other services. It also provides directions to restaurants. It can also offer promotional discounts and special offers from restaurants.Your customers will get a clear picture of the experience the restaurant has to offer and the vibe guests can expect.",
+                name: "PEMS (Property Management System)",
+                img: solution15,
+                desc: "A Property Management Systems (PEMS) are software applications for the operation of hospitality accommodation and commercial residential rental properties. This application aims to facilitate property management and marketing. PMS is also used in the manufacturing industry, local government and manufacturing.",
             }
         ],
     },
@@ -1513,10 +1552,9 @@ export const solutionDatas = {
         items: [
             {
                 id: "6",
-                name: "Restaurant Website in Bebek Bengil",
-                img: cardplaceholder,
-                desc: "Developing website to find information like menus, location, hours of operation and contact info easily for Bebek Bengil",
-                desc2: "A restaurant website is a business website whose purpose is to provide information on menus, services, locations and other services. It also provides directions to restaurants. It can also offer promotional discounts and special offers from restaurants.Your customers will get a clear picture of the experience the restaurant has to offer and the vibe guests can expect.",
+                name: "SAKIRA BPSDM ESDM",
+                img: solution19,
+                desc: "Employee performance information system for the work report of the Energy and Mineral Resources Development Agency. Each employee records their daily to-do list in the system and you can assign assignments via the admin portal. Employee performance appraisal needs to be done by a company to evaluate the performance of the employee concerned. Through performance appraisal, the company or HR team will find it easier to find out the abilities, skills, behaviors, strengths, and weaknesses of employees.",
             }
         ],
     },

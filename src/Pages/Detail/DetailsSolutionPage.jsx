@@ -29,7 +29,7 @@ const DetailsSolutionPage = () => {
         <div className='flex flex-row gap-6 h-[380px]'>
           <div className='flex flex-col w-full'>
             <h1 className='text-2xl font-bold text-blue-700 w-full mb-4'>{item.name}</h1>
-            <p className='text-blue-200 leading-relaxed mb-12 '>{item.desc2}</p>
+            <p className='text-blue-200 leading-relaxed mb-12 '>{item.desc}</p>
           </div>
           <div className='w-full bg-white'>
             <img src={item.img} alt="" className='w-full h-full object-cover' />

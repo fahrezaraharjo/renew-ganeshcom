@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
 
 const Footer = ({ isHomePage }) => {
 
-  const footerBgClass = isHomePage ? 'gradient-bg-footer' : 'white-glassmorphism';
+  const footerBgClass = isHomePage ? 'gradient-bg-footer' : 'blur-sec';
 
   return (
     <footer className={`text-white ${footerBgClass}`}>

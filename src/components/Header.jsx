@@ -9,7 +9,12 @@ const Header = ({ title, subtitle }) => {
     };
 
     return (
-        <div className="h-[300px] w-full">
+        <motion.div
+            initial={{ opacity: 1, x: "-100vw" }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, ease: "easeInOut" }}
+
+            className="h-[300px] w-full">
             <div className="relative w-full h-[300px] blur-sec">
                 <div className="absolute top-0 left-0 w-full h-full flex items-center justify-between">
                     <motion.div
@@ -35,7 +40,7 @@ const Header = ({ title, subtitle }) => {
                     </motion.div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

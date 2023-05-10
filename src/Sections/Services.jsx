@@ -32,7 +32,7 @@ const Services = () => {
         type: "spring",
         stiffness: 100,
         damping: 10,
-        duration: 1.5,
+        duration: 2,
       },
     },
   };
@@ -45,7 +45,7 @@ const Services = () => {
         type: "spring",
         stiffness: 100,
         damping: 10,
-        duration: 1.5,
+        duration: 2,
       },
     },
   };
@@ -59,7 +59,7 @@ const Services = () => {
           initial="hidden"
           animate="visible"
         >
-          <h1 className="text-3xl font-bold text-gradient mb-4">
+          <h1  className="text-3xl font-bold text-gradient mb-4">
             {serviceHome.topItems.text1}
             <br />
           </h1>

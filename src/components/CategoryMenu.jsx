@@ -7,12 +7,14 @@ const CategoryMenu = ({ selectedFilter, setSelectedFilter }) => {
             {categoriesSolutions.map((category) => (
                 <motion.button
                     key={category.value}
-                    className={`${selectedFilter === category.value ? 'bg-blue-500 text-white text-left' : 'bg-tranparent text-gray-100 text-left items-start'}`}
+                    className={`${selectedFilter === category.value ? 'bg-black rounded-full p-3 text-white text-left' : 'bg-tranparent text-gray-100 text-left items-start'}`}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                     onClick={() => setSelectedFilter(category.value)}
                 >
+                    <h1 className='text-center'>
                     {category.label}
+                    </h1>
                 </motion.button>
             ))}
         </div>

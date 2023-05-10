@@ -50,6 +50,14 @@ const CategoryList = () => {
     ]
   };
 
+  // Scroll to top of page when a new category is selected
+  const handleCategoryChange = (category) => {
+    setActiveCategory(category);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
 
   return (
     <div className="w-full flex flex-col p-14 mx-auto backdrop-blur-sm ">
@@ -63,7 +71,7 @@ const CategoryList = () => {
                 key={category.id}
                 className={`${categoryItemStyle} ${activeCategory.id === category.id ? "text-blue-500" : ""
                   }`}
-                onClick={() => setActiveCategory(category)}
+                onClick={() => handleCategoryChange(category)}
               >
                 {category.name}
               </li>
@@ -88,7 +96,8 @@ const CategoryList = () => {
                     style={{ height: "200px", width: "300px" }} // add fixed height and width
                   />
                 </div>
-              ))}
+              ))
+              }
             </Slider>
           </div>
         </div>
@@ -98,3 +107,4 @@ const CategoryList = () => {
 };
 
 export default CategoryList;
+
