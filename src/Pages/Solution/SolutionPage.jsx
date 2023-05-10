@@ -37,13 +37,13 @@ const SolutionPage = () => {
                             <Link to={`/solutions/${item.id}`} className='text-purple-800 font-bold mt-2 hover:text-blue-700'>
                                 <div className='relative' key={index}>
                                     <motion.div
-                                        className='absolute rounded-xl inset-0 bg-gradient-to-tr bg-opacity-50 text-white p-4 hover:opacity-0 transition-opacity duration-500 ease-in-out items-center flex justify-center'
+                                        className='absolute rounded-xl inset-0 bg-blue-500 bg-opacity-50 text-white p-4 hover:opacity-0 transition-opacity duration-500 ease-in-out items-center flex justify-center'
                                         initial={{ opacity: 1 }}
                                         animate={{ opacity: 1 }}
                                         whileHover={{ opacity: 0 }}
-                                        transition={{ duration: 0.5 }}
+                                        transition={{ duration: 0.3 }}
                                     >
-                                        <h2 className='text-lg text-center font-bold'>{item.name}</h2>
+                                        <h2 className='text-lg text-center font-bold text-gray-100'>{item.name}</h2>
                                     </motion.div>
                                     <motion.img
                                         src={item.img}
@@ -52,7 +52,7 @@ const SolutionPage = () => {
                                         initial={{ opacity: 1 }}
                                         animate={{ opacity: 1 }}
                                         whileHover={{ opacity: 0.1 }}
-                                        transition={{ duration: 0.1 }}
+                                        transition={{ duration: 0.3 }}
                                     />
                                 </div>
                             </Link>
