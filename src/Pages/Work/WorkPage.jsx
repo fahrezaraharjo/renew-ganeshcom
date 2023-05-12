@@ -18,17 +18,15 @@ const WorkPages = () => {
     const categories = ['all', 'softwareDevelopment', 'mobileApp', 'itMasterplan', 'brandingWebsite'];
 
     return (
-        <div className='bg-work-page min-h-screen'>
-            <div className='gradient-bg-welcome'>
-                <Navbar />
-            </div>
+        <div className='bg-work-page min-h-screen p-14'>
+            <Navbar />
             <Header title="Work" subtitle="Our Future start from what we develop." />
             <motion.div
-            initial={{ opacity: 1, x: "100vw" }}
-            animate={{ opacity: 1, x: 0 }}
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 1.5, ease: "easeInOut" }}
-             className='flex justify-center mt-10'>
+                initial={{ opacity: 1, x: "100vw" }}
+                animate={{ opacity: 1, x: 0 }}
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 1.5, ease: "easeInOut" }}
+                className='flex justify-center mt-10'>
                 {categories.map(category => (
                     <button
                         key={category}
@@ -40,7 +38,7 @@ const WorkPages = () => {
                     </button>
                 ))}
             </motion.div>
-            <div className='flex flex-wrap justify-center'>
+            <div className='flex mt-10 flex-wrap justify-center white-glassmorphism'>
                 {workItems.map((item, index) => (
                     <div className='mx-4 my-4 w-full md:w-1/2 lg:w-1/3 xl:w-1/4' key={index}>
                         <motion.div

@@ -16,12 +16,10 @@ const AboutPage = () => {
         },
     };
     return (
-        <div className="min-h-screen overflow-hidden">
-            <div className="gradient-bg-welcome">
-                <Navbar />
-            </div>
-            <div className="bg-about-page p14">
-            <Header title='About' subtitle='Find the right solution for your needs' />
+        <div className="bg-about-page min-h-screen overflow-hidden">
+            <Navbar />
+            <div className=" p14">
+                <Header title='About' subtitle='Find the right solution for your needs' />
                 <motion.div
                     className="flex w-full justify-center items-center blur-sec mt-10"
                     initial={{ opacity: 0 }}
