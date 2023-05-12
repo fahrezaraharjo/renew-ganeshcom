@@ -7,7 +7,11 @@ import { motion } from "framer-motion";
 const Welcome = () => {
   return (
     <div className="p-4">
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.5, ease: "easeInOut" }}>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.5, ease: "easeInOut" }}>
         <div className="w-full mx-auto flex flex-row md:flex-row justify-center items-center py-16 md:py-32 px-6 md:px-0">
           <div className="white-glassmorphism shadow-lg rounded-lg flex flex-col md:flex-row w-full p-4">
             <div className="w-full md:w-1/2 h-full">

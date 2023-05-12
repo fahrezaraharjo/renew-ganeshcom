@@ -187,6 +187,16 @@ body {
   background-size: cover;
 }
 
+
+.bg-headline {
+  background-image: url('../images/christina-wocintechchat-com-glRqyWJgUeY-unsplash.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 .eth-card {
   background-color: #a099ff;
   background-image:

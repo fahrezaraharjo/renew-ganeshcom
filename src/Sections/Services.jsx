@@ -10,6 +10,8 @@ const ServiceCard = ({ color, title, icon, subtitle }) => (
     className="flex flex-row justify-start items-start white-glassmorphism p-3 m-2 cursor-pointer hover:shadow-xl"
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
+    whileInView={{ x: [50, 150, 100], opacity: [0, 0, 1] }}
+
   >
     <div className={`w-10 h-10 rounded-full flex justify-center items-center ${color}`}>
       {icon}
@@ -59,7 +61,7 @@ const Services = () => {
           initial="hidden"
           animate="visible"
         >
-          <h1  className="text-3xl font-bold text-gradient mb-4">
+          <h1 className="text-3xl font-bold text-gradient mb-4">
             {serviceHome.topItems.text1}
             <br />
           </h1>

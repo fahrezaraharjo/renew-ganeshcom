@@ -2,73 +2,29 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { categories } from "../utils/dummyData";
+import { motion } from "framer-motion";
+import { categories, settings } from "../utils/dummyData";
 
 const CategoryList = () => {
   const [activeCategory, setActiveCategory] = useState(categories[0]);
 
-  // Menambahkan custom style untuk efek hover pada list kategori
-  const categoryItemStyle =
-    "my-2 cursor-pointer text-white hover:text-black hover:bg-blue-200 transition duration-300 ease-in-out";
-
-  // Menambahkan custom style untuk efek hover pada slide foto
-  const slideItemStyle =
-    "px-4 py-4 md:p-4 hover:bg-blue-200 transition duration-300 ease-in-out";
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true, // Added autoplay prop
-    autoplaySpeed: 2000, // Added autoplaySpeed prop
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  };
-
-  // Scroll to top of page when a new category is selected
   const handleCategoryChange = (category) => {
     setActiveCategory(category);
-    window.scrollTo({
-      behavior: "smooth"
-    });
-  }
+  };
 
   return (
-    <div className="w-full flex flex-col p-14 mx-auto backdrop-blur-sm ">
-      <h1 className="text-3xl font-bold text-blue-500 mb-4">OUR SOLUTION</h1>
-      <div className="flex flex-row justify-between w-full px-14">
-        <div className="w-1/3 white-glassmorphism p-4 mx-5">
-          <h1 className="text-blue-500 border-b-2 ">All Categories</h1>
-          <ul className="">
+    <div className="w-full flex flex-col p-6 md:p-14 mx-auto backdrop-blur-sm">
+      <h1 className="text-2xl md:text-3xl font-bold text-green-300 mb-4">
+        OUR SOLUTION
+      </h1>
+      <h1 className="text-blue-500 mb-2 ml-6">All Categories</h1>
+      <div className="flex flex-col md:flex-row justify-between gap-5 w-full">
+        <div className="w-full md:w-1/3 white-glassmorphism rounded-lg shadow-md p-4 justify-center flex items-center text-center">
+          <ul className="w-full h-full">
             {categories.map((category) => (
               <li
                 key={category.id}
-                className={`${categoryItemStyle} ${activeCategory.id === category.id ? "text-blue-500" : ""
+                className={`my-2 p-2 rounded-full mt-2 cursor-pointer text-white hover:text-black hover:bg-blue-200 transition duration-300 ease-in-out ${activeCategory.id === category.id ? "text-blue-500" : ""
                   }`}
                 onClick={() => handleCategoryChange(category)}
               >
@@ -77,26 +33,48 @@ const CategoryList = () => {
             ))}
           </ul>
         </div>
-        <div className="w-2/3 white-glassmorphism">
-          <h2 className="text-lg font-semibold py-4 px-8 text-blue-500 border-b-2 border-blue-200">
+        <div className="w-full md:w-2/3 white-glassmorphism rounded-lg shadow-md">
+          <h2 className="text-lg md:text-xl font-semibold py-4 px-8 text-blue-500 border-b-2 border-blue-200">
             {activeCategory.name}
           </h2>
-          <div className="p-8">
+          <div className="md:p-2">
             <Slider {...settings}>
               {activeCategory.photos.map((photo) => (
-                <div key={photo.id} className="relative group px-4 cursor-pointer">
-                  <div className="text-center text-white items-center justify-center flex">
-                    {photo.title}
-                  </div>
-                  <img
-                    src={photo.url}
-                    alt={photo.title}
-                    className="object-cover rounded-md z-0 transition-opacity duration-200"
-                    style={{ height: "200px", width: "300px" }} // add fixed height and width
-                  />
-                </div>
-              ))
-              }
+                <motion.div
+                  key={photo.id}
+                  className="rounded-xl p-2 hover:bg-blue-200 transition duration-300 ease-in-out"
+                  style={{ height: "500px" }}
+                  initial={{ opacity: 1 }}
+                  animate={{ opacity: 1 }}
+                  whileHover={{ opacity: 0.8 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <motion.div
+                    className="relative group cursor-pointer"
+                    style={{ height: "100%", width: "100%" }}
+                    whileHover={{ opacity: 0.8 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <motion.div
+                      className="absolute rounded-xl inset-0 bg-blue-500 hover:rounded-xl bg-opacity-50 text-white p-4 transition-opacity duration-500 ease-in-out items-center flex justify-center"
+                      initial={{ opacity: 1 }}
+                      animate={{ opacity: 1 }}
+                      whileHover={{ opacity: 0 }}
+                      transition={{ duration: 0.3 }}
+                      style={{ height: "100%", width: "100%" }}
+                    >
+                      <h2 className="text-lg text-center font-bold text-gray-100">
+                        {photo.title}
+                      </h2>
+                    </motion.div>
+                    <motion.img
+                      src={photo.url}
+                      alt={photo.title}
+                      className='w-full h-full object-cover rounded-xl'
+                    />
+                  </motion.div>
+                </motion.div>
+              ))}
             </Slider>
           </div>
         </div>

@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Footer, Navbar, Tabs } from '../../components';
-import { AboutUs, Artikel, Bali, CategoryList, FeaturedProduct, GetInTouch, Services, TrustedBySection, Welcome } from '../../Sections';
+import { AboutUs, Bali, CategoryList, FeaturedProduct, GetInTouch, Services, TrustedBySection, Welcome, WhatsNew } from '../../Sections';
 
 const Home = () => {
     const [isHomePage, setIsHomePage] = useState(true);
 
     return (
-        <div className="min-h-screen">
+        <div className="min-h-screen w-full">
             <div className="gradient-bg-welcome">
                 <Navbar />
                 <Welcome />
@@ -24,7 +24,7 @@ const Home = () => {
             </div>
             <div className="gradient-bg-product">
                 <FeaturedProduct />
-                <Artikel />
+                <WhatsNew />
             </div>
             <div className="gradient-bg-contactus">
                 <AboutUs />

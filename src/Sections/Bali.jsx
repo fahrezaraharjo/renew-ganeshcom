@@ -1,5 +1,6 @@
 import React from 'react';
 import { bali1, getin } from '../../images';
+import { motion } from 'framer-motion';
 
 const Bali = () => {
     return (
@@ -22,13 +23,16 @@ const Bali = () => {
                     <img src={bali1} alt='' className='h-auto w-full' />
                 </div>
             </div>
-            <div className='w-full mt-36 md:max-w-5xl mx-auto h-72 md:h-[370px] shadow-md justify-center items-center flex'>
+            <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                whileInView={{ x: [100, 50, 0], opacity: [0, 0, 1] }} className='w-full mt-36 md:max-w-5xl mx-auto h-72 md:h-[370px] shadow-md justify-center items-center flex'>
                 <img
                     src={getin}
                     alt='getin'
-                    className='object-cover w-full h-full items-center justify-center'
+                    className='object-cover w-full h-full items-center justify-center cursor-pointer'
                 />
-            </div>
+            </motion.div>
         </div>
     );
 };

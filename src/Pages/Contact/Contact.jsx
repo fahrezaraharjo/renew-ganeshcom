@@ -34,13 +34,13 @@ const ContactPage = () => {
                     <form className="white-glassmorphism shadow-lg rounded px-8 pt-6 pb-8 mb-4">
                         <div className="mb-4">
                             <label
-                                className="block text-gray-700 text-sm font-bold mb-2"
+                                className="block text-gray-100 text-sm font-bold mb-2"
                                 htmlFor="name"
                             >
                                 Name
                             </label>
                             <input
-                                className="bg-transparent shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                className="bg-transparent shadow appearance-none border rounded w-full py-2 px-3 text-gray-100 leading-tight focus:outline-none focus:shadow-outline"
                                 id="name"
                                 type="text"
                                 placeholder="Enter your name"
@@ -48,13 +48,13 @@ const ContactPage = () => {
                         </div>
                         <div className="mb-4">
                             <label
-                                className="block text-gray-700 text-sm font-bold mb-2"
+                                className="block text-gray-100 text-sm font-bold mb-2"
                                 htmlFor="email"
                             >
                                 Email
                             </label>
                             <input
-                                className="bg-transparent shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                className="bg-transparent shadow appearance-none border rounded w-full py-2 px-3 text-gray-100 leading-tight focus:outline-none focus:shadow-outline"
                                 id="email"
                                 type="email"
                                 placeholder="Enter your email address"
@@ -62,13 +62,13 @@ const ContactPage = () => {
                         </div>
                         <div className="mb-4">
                             <label
-                                className="block text-gray-700 text-sm font-bold mb-2"
+                                className="block text-gray-100 text-sm font-bold mb-2"
                                 htmlFor="message"
                             >
                                 Message
                             </label>
                             <textarea
-                                className="bg-transparent shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                className="bg-transparent shadow appearance-none border rounded w-full py-2 px-3 text-gray-100 leading-tight focus:outline-none focus:shadow-outline"
                                 id="message"
                                 placeholder="Enter your message"
                                 rows={5}

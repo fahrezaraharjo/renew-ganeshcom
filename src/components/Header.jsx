@@ -9,27 +9,23 @@ const Header = ({ title, subtitle }) => {
     };
 
     return (
-        <motion.div
-            initial={{ opacity: 1, x: "-100vw" }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, ease: "easeInOut" }}
-
+        <div
             className="h-[300px] w-full">
-            <div className="relative w-full h-[300px] blur-sec">
+            <div className="relative w-full h-[300px] rounded-mdss">
                 <div className="absolute top-0 left-0 w-full h-full flex items-center justify-between">
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5 }}
-                        className="bg-black text-white bg-opacity-40 py-2 px-4 rounded-md ml-10"
+                        className=" text-white bg-opacity-40 py-2 px-4 rounded-full w-[220px] h-[220px] justify-center flex items-center text-center backdrop-blur-xl bg-white ml-40"
                     >
-                        <h1 className="text-lg font-bold">{subtitle}</h1>
+                        <h1 className="text-lg text-green-300 font-bold">{subtitle}</h1>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5 }}
-                        className="bg-black bg-opacity-40 py-2 px-4 rounded-md mr-10 w-[300px] items-start flex justify-center flex-row gap-1"
+                        className="text-white bg-opacity-30 py-2 px-4 rounded-full w-[220px] h-[220px] justify-center flex items-center text-center backdrop-blur-xl bg-white mr-40"
                     >
                         <h1 className="text-lg font-bold items-center text-blue-500 text-center">
                             Home|{" "}
@@ -40,7 +36,7 @@ const Header = ({ title, subtitle }) => {
                     </motion.div>
                 </div>
             </div>
-        </motion.div>
+        </div>
     );
 };
 

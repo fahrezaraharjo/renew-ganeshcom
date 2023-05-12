@@ -8,7 +8,7 @@ const GetInTouch = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 p-10">
         <div className="md:flex md:items-center md:justify-between">
           <div className="flex-1 min-w-0">
-            <h2 className="text-2xl font-bold leading-7 text-gradient sm:text-3xl sm:truncate">
+            <h2 className="text-2xl font-bold leading-7 text-blue-500 sm:text-3xl sm:truncate">
               Have any idea?
             </h2>
             <p className="mt-1 text-green-300 text-lg">
@@ -26,7 +26,7 @@ const GetInTouch = () => {
         </div>
         <div className="mt-8 md:flex md:items-center md:justify-between">
           <div className="flex-1 min-w-0">
-            <h2 className="text-2xl font-bold leading-7 text-gradient sm:text-3xl sm:truncate">
+            <h2 className="text-2xl font-bold leading-7 text-blue-500 sm:text-3xl sm:truncate">
               Get in Touch with Us
             </h2>
             <p className="mt-1 text-green-300 text-lg">
