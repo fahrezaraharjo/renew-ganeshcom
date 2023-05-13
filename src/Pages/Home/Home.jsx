@@ -6,7 +6,7 @@ const Home = () => {
     const [isHomePage, setIsHomePage] = useState(true);
 
     return (
-        <div className="min-h-screen w-full">
+        <div className="min-h-screen">
             <div className="gradient-bg-welcome">
                 <Navbar />
                 <Welcome />

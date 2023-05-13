@@ -18,7 +18,7 @@ const AboutPage = () => {
     return (
         <div className="bg-about-page min-h-screen overflow-hidden">
             <Navbar />
-            <div className=" p14">
+            <div className="p14">
                 <Header title='About' subtitle='Find the right solution for your needs' />
                 <motion.div
                     className="flex w-full justify-center items-center blur-sec mt-10"

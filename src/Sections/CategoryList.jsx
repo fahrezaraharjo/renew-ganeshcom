@@ -1,87 +1,70 @@
-import React, { useState } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { solutionDatas } from "../utils/dummyData";
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { categories, settings } from "../utils/dummyData";
 
-const CategoryList = () => {
-  const [activeCategory, setActiveCategory] = useState(categories[0]);
-
-  const handleCategoryChange = (category) => {
-    setActiveCategory(category);
-  };
+const OurSolution = () => {
+  const [activeCategory, setActiveCategory] = useState("education");
+  const categories = Object.keys(solutionDatas);
 
   return (
-    <div className="w-full flex flex-col p-6 md:p-14 mx-auto backdrop-blur-sm">
-      <h1 className="text-2xl md:text-3xl font-bold text-green-300 mb-4">
-        OUR SOLUTION
-      </h1>
-      <h1 className="text-blue-500 mb-2 ml-6">All Categories</h1>
-      <div className="flex flex-col md:flex-row justify-between gap-5 w-full">
-        <div className="w-full md:w-1/3 white-glassmorphism rounded-lg shadow-md p-4 justify-center flex items-center text-center">
-          <ul className="w-full h-full">
-            {categories.map((category) => (
-              <li
-                key={category.id}
-                className={`my-2 p-2 rounded-full mt-2 cursor-pointer text-white hover:text-black hover:bg-blue-200 transition duration-300 ease-in-out ${activeCategory.id === category.id ? "text-blue-500" : ""
-                  }`}
-                onClick={() => handleCategoryChange(category)}
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 p-14">
+      <h2 className="text-3xl font-extrabold text-gray-100 sm:text-4xl mb-8">
+        Our Solutions
+      </h2>
+      <nav className="flex justify-center space-x-8 mb-8">
+        {categories.map((category) => (
+          <button
+            key={category}
+            className={`text-lg font-medium focus:outline-none ${
+              activeCategory === category
+                ? "text-blue-500 border-b-2 border-blue-500"
+                : "text-gray-300 hover:text-gray-100"
+            }`}
+            onClick={() => setActiveCategory(category)}
+          >
+            {category}
+          </button>
+        ))}
+      </nav>
+      <div className="relative">
+        <div className="flex justify-start items-center space-x-4 overflow-x-auto pb-4">
+          {solutionDatas[activeCategory].items.map((item) => (
+            <div
+              key={item.id}
+              className="w-80 bg-white rounded-lg shadow-md flex-shrink-0 mr-4 relative"
+            >
+              <img src={item.img} alt={item.name} className="w-full h-44 object-cover rounded-xl" />
+              <motion.div
+                className="text-lg font-medium absolute text-green-300 rounded-xl bg-blue-400 bg-opacity-50 mb-2 inset-0 flex justify-center text-center items-center"
+                initial={{ opacity: 1 }}
+                whileHover={{ opacity: 0, transition: { duration: 0.3 } }}
               >
-                {category.name}
-              </li>
-            ))}
-          </ul>
+                {item.name}
+              </motion.div>
+            </div>
+          ))}
         </div>
-        <div className="w-full md:w-2/3 white-glassmorphism rounded-lg shadow-md">
-          <h2 className="text-lg md:text-xl font-semibold py-4 px-8 text-blue-500 border-b-2 border-blue-200">
-            {activeCategory.name}
-          </h2>
-          <div className="md:p-2">
-            <Slider {...settings}>
-              {activeCategory.photos.map((photo) => (
-                <motion.div
-                  key={photo.id}
-                  className="rounded-xl p-2 hover:bg-blue-200 transition duration-300 ease-in-out"
-                  style={{ height: "500px" }}
-                  initial={{ opacity: 1 }}
-                  animate={{ opacity: 1 }}
-                  whileHover={{ opacity: 0.8 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <motion.div
-                    className="relative group cursor-pointer"
-                    style={{ height: "100%", width: "100%" }}
-                    whileHover={{ opacity: 0.8 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <motion.div
-                      className="absolute rounded-xl inset-0 bg-blue-500 hover:rounded-xl bg-opacity-50 text-white p-4 transition-opacity duration-500 ease-in-out items-center flex justify-center"
-                      initial={{ opacity: 1 }}
-                      animate={{ opacity: 1 }}
-                      whileHover={{ opacity: 0 }}
-                      transition={{ duration: 0.3 }}
-                      style={{ height: "100%", width: "100%" }}
-                    >
-                      <h2 className="text-lg text-center font-bold text-gray-100">
-                        {photo.title}
-                      </h2>
-                    </motion.div>
-                    <motion.img
-                      src={photo.url}
-                      alt={photo.title}
-                      className='w-full h-full object-cover rounded-xl'
-                    />
-                  </motion.div>
-                </motion.div>
-              ))}
-            </Slider>
-          </div>
+        <div className="absolute inset-y-0 right-0 flex items-center">
+          <button className="bg-white p-2 rounded-full shadow-md hover:shadow-lg focus:outline-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="feather feather-chevron-right w-6 h-6"
+            >
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
         </div>
       </div>
     </div>
   );
 };
 
-export default CategoryList;
-
+export default OurSolution;
