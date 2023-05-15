@@ -19,8 +19,7 @@ const WorkPages = () => {
 
     return (
         <div className='bg-work-page min-h-screen'>
-            <Navbar />
-            <div className='p-14'>
+            <div className='p-14 pt-20'>
                 <Header title="Work" subtitle="Our Future start from what we develop." />
                 <motion.div
                     initial={{ opacity: 1, x: "100vw" }}

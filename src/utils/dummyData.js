@@ -1495,57 +1495,880 @@ export const solutionDatas = {
                 name: "Lesku.id",
                 img: solution1,
                 desc: "Lesku.id is a platform that brings together tutoring or private tutoring service providers (teachers/teachers) with students/students whose learning process is carried out online and in real time through interactive videos. This application is able to run algorithms for planning private group lessons online with automatic scheduling",
+                systemFeatures: [
+                    {
+                        id: "1",
+                        name: "Les Private",
+                        img: solution1,
+                        desc: "Les Private",
+                    },
+                    {
+                        id: "2",
+                        name: "Les Group",
+                        img: solution1,
+                        desc: "Les Group",
+                    },
+                    {
+                        id: "3",
+                        name: "Pilih jadwal",
+                        img: solution1,
+                        desc: "Pilih jadwal",
+                    },
+                    {
+                        id: "4",
+                        name: "Cari Guru",
+                        img: solution1,
+                        desc: "Cari Guru",
+                    },
+                ]
+
+            },
+            {
+                id: "2",
+                name: "Sistem Akademik & Online Exam",
+                img: solution1,
+                desc: "Computer-based exams require adequate preparation from both the teacher's and student's sides. Control exams easily with the Academic & Online Exam System which is designed to make it easier for students and teachers to prepare for midterm exams, final exams, and national exams by simulating national exams. In addition, this system also helps the management/administration of academic activities in schools.",
+                systemFeatures: [
+                    {
+                        id: "",
+                        name: "",
+                        img: "",
+                        desc: ""
+                    }
+                ]
+            },
+            {
+                id: "3",
+                name: "Magnus Indonesia",
+                img: solution1,
+                desc: "The Magnus application is very easy to access by all students anywhere and anytime without burdening the capacity of the smartphone. With this application you will be able to feel the convenience of studying online and of course all learning will be more efficient. This application provides a discussion of UTBK questions, Try Outs with HOTS question levels and an analysis of the competition map, to face the SBMPTN.",
+                systemFeatures: [
+                    {
+                        id: "1",
+                        name: "Authentication",
+                        img: solution1,
+                        desc: "Authentication"
+                    },
+                    {
+                        id: "2",
+                        name: "Dashboard",
+                        img: solution1,
+                        desc: "Dashboard"
+                    },
+                    {
+                        id: "3",
+                        name: "Materi",
+                        img: solution1,
+                        desc: "Materi"
+                    },
+                    {
+                        id: "4",
+                        name: "Bank Soal",
+                        img: solution1,
+                        desc: "Bank Soal"
+                    },
+                    {
+                        id: "5",
+                        name: "User Management",
+                        img: solution1,
+                        desc: "User Management"
+                    },
+                    {
+                        id: "6",
+                        name: "Target Belajar",
+                        img: solution1,
+                        desc: "Target Belajar"
+                    },
+                    {
+                        id: "7",
+                        name: "Kelas Online",
+                        img: solution1,
+                        desc: "Kelas Online"
+                    },
+                    {
+                        id: "8",
+                        name: "Management Transaksi",
+                        img: solution1,
+                        desc: "Management Transaksi"
+                    },
+                    {
+                        id: "9",
+                        name: "Online Payment",
+                        img: solution1,
+                        desc: "Online Payment"
+                    },
+
+                    {
+                        id: "10",
+                        name: "FIle Manager",
+                        img: solution1,
+                        desc: "FIle Manager"
+                    },
+                    {
+                        id: "11",
+                        name: "Management Tryout",
+                        img: solution1,
+                        desc: "Management Tryout"
+                    },
+                    {
+                        id: "12",
+                        name: "Bloging",
+                        img: solution1,
+                        desc: "Bloging"
+                    },
+                    {
+                        id: "13",
+                        name: "Web CMS",
+                        img: solution1,
+                        desc: "Web CMS"
+                    },
+                ]
+
+            },
+            {
+                id: "4",
+                name: "PMB (New Student Admission Information System)",
+                img: solution1,
+                desc: "PMB is an information system used to assist the AKAMIGAS Energy and Mineral Polytechnic in the process of managing new student admissions. The increasing number of prospective AKAMIGAS Energy and Mineral Polytechnic students every year makes the manual system no longer effective.",
+                systemFeatures: [
+                    {
+                        id: "",
+                        name: "",
+                        img: "",
+                        desc: ""
+                    }
+                ]
+
             },
         ]
     },
     oilGas: {
         items: [
             {
-                id: "2",
-                name: "AIMS (Assets Integrated Management)",
+                id: "1",
+                name: "AIMS (Assets Integrity Management System)",
                 img: solution5,
                 desc: "The AIMS application is a web-based application used by PT Pertamina Hulu Energi as a monitoring medium for several route data into a display that makes it easier for management levels to capture data according to actual situations and conditions.",
+                systemFeatures: [
+                    {
+                        id: "1",
+                        name: "Assets Register",
+                        img: solution5,
+                        desc: "Assets Register"
+                    },
+                    {
+                        id: "2",
+                        name: "Static Piping(SFIMS)",
+                        img: solution5,
+                        desc: "Static Piping(SFIMS)"
+                    },
+                    {
+                        id: "3",
+                        name: "Pipeline(PIMS)",
+                        img: solution5,
+                        desc: "Pipeline(PIMS)"
+                    },
+                    {
+                        id: "4",
+                        name: "Structure(SIMS)",
+                        img: solution5,
+                        desc: "Structure(SIMS)"
+                    },
+                    {
+                        id: "5",
+                        name: "Inspection Management",
+                        img: solution5,
+                        desc: "Inspection Management"
+                    },
+                    {
+                        id: "6",
+                        name: "Field Register",
+                        img: solution5,
+                        desc: "Field Register"
+                    },
+                    {
+                        id: "7",
+                        name: "Home Dashboard",
+                        img: solution5,
+                        desc: "Home Dashboard"
+                    },
+                    {
+                        id: "8",
+                        name: "Report",
+                        img: solution5,
+                        desc: "Report"
+                    },
+                    {
+                        id: "9",
+                        name: "User & Role Management",
+                        img: solution5,
+                        desc: "User & Role Management"
+                    },
+                    {
+                        id: "10",
+                        name: "Notification",
+                        img: solution5,
+                        desc: "Notification"
+                    },
+                    {
+                        id: "11",
+                        name: "Setting",
+                        img: solution5,
+                        desc: "Setting"
+                    },
+                ]
+
+            },
+            {
+                id: "2",
+                name: "AIMS (Assets Integrity Management System)",
+                img: solution5,
+                desc: "The AIMS application is a web-based application used by PT Pertamina Hulu Energi as a monitoring medium for several route data into a display that makes it easier for management levels to capture data according to actual situations and conditions.",
+                systemFeatures: [
+                    {
+                        id: "",
+                        name: "",
+                        img: "",
+                        desc: ""
+                    }
+                ]
+
+            },
+            {
+                id: "3",
+                name: "AIMS (Assets Integrity Management System)",
+                img: solution5,
+                desc: "The AIMS application is a web-based application used by PT Pertamina Hulu Energi as a monitoring medium for several route data into a display that makes it easier for management levels to capture data according to actual situations and conditions.",
+                systemFeatures: [
+                    {
+                        id: "",
+                        name: "",
+                        img: "",
+                        desc: ""
+                    }
+                ]
+
             },
         ],
     },
     industry: {
         items: [
             {
-                id: "3",
+                id: "1",
                 name: "HR Management",
                 img: solution14,
                 desc: "HR Management was developed to automatically this manual process. This web application has these following features:",
-            }
+                systemFeatures: [
+                    {
+                        id: "1",
+                        name: "Sistem Informasi Pegawai",
+                        img: solution14,
+                        desc: "Sistem Informasi Pegawai"
+                    },
+                    {
+                        id: "2",
+                        name: "Dashboard HR",
+                        img: solution14,
+                        desc: "Dashboard HR"
+                    },
+                    {
+                        id: "3",
+                        name: "Pengajuan Pegawai",
+                        img: solution14,
+                        desc: "Pengajuan Pegawai"
+                    },
+                    {
+                        id: "4",
+                        name: "Update Form & Rekap Standar ISO",
+                        img: solution14,
+                        desc: "Update Form & Rekap Standar ISO"
+                    },
+                    {
+                        id: "5",
+                        name: "Absence Monitoring & Report",
+                        img: solution14,
+                        desc: "Absence Monitoring & Report"
+                    },
+                    {
+                        id: "6",
+                        name: "E-Sign & Approval",
+                        img: solution14,
+                        desc: "E-Sign & Approval"
+                    },
+                    {
+                        id: "7",
+                        name: "KPI Tools",
+                        img: solution14,
+                        desc: "KPI Tools"
+                    },
+                ]
+
+            },
+            {
+                id: "2",
+                name: "Project Management",
+                img: solution14,
+                desc: "Project Management was developed to automatically this manual process. This web application has these following features:",
+                systemFeatures: [
+                    {
+                        id: "1",
+                        name: "Presence",
+                        img: solution14,
+                        desc: "Presence"
+                    },
+                    {
+                        id: "1",
+                        name: "Work List",
+                        img: solution14,
+                        desc: "Work List"
+                    },
+                    {
+                        id: "1",
+                        name: "Meetings",
+                        img: solution14,
+                        desc: "Meetings"
+                    },
+                    {
+                        id: "1",
+                        name: "Check-in",
+                        img: solution14,
+                        desc: "Check-in"
+                    },
+                    {
+                        id: "1",
+                        name: "Work Summary",
+                        img: solution14,
+                        desc: "Work Summary"
+                    },
+                    {
+                        id: "1",
+                        name: "Absence History",
+                        img: solution14,
+                        desc: "Absence History"
+                    },
+                    {
+                        id: "1",
+                        name: "Work Calender",
+                        img: solution14,
+                        desc: "Work Calender"
+                    },
+                    {
+                        id: "1",
+                        name: "Export & Import Project Task",
+                        img: solution14,
+                        desc: "Export & Import Project Task"
+                    },
+                ]
+
+            },
+            {
+                id: "3",
+                name: "Finance system Integration",
+                img: solution14,
+                desc: "Finance System Integration System was developed to automatically this manual process. This web application has these following features:",
+                systemFeatures: [
+                    {
+                        id: "1",
+                        name: "Approval Process",
+                        img: solution14,
+                        desc: "Approval Process"
+                    },
+                    {
+                        id: "2",
+                        name: "Procurement Management - Purchasing",
+                        img: solution14,
+                        desc: "Procurement Management - Purchasing"
+                    },
+                    {
+                        id: "3",
+                        name: "Budgeting Control - project",
+                        img: solution14,
+                        desc: "Budgeting Control - project"
+                    },
+                    {
+                        id: "4",
+                        name: "E- Sign Document",
+                        img: solution14,
+                        desc: "E- Sign Document"
+                    },
+                    {
+                        id: "5",
+                        name: "Digital Invoicing",
+                        img: solution14,
+                        desc: "Digital Invoicing"
+                    },
+                ]
+
+            },
+            {
+                id: "4",
+                name: "Assets Management",
+                img: solution14,
+                desc: "Asset Management System was developed to automatically this manual process. This web application has these following features:",
+                systemFeatures: [
+                    {
+                        id: "1",
+                        name: "Assets Register",
+                        img: solution14,
+                        desc: "Assets Register"
+                    },
+                    {
+                        id: "2",
+                        name: "Assets Monitoring",
+                        img: solution14,
+                        desc: "Assets Monitoring"
+                    },
+                    {
+                        id: "3",
+                        name: "Assets Managerial & Maintenance",
+                        img: solution14,
+                        desc: "Assets Managerial & Maintenance"
+                    },
+                    {
+                        id: "4",
+                        name: "Assets Loading & Distribution",
+                        img: solution14,
+                        desc: "Assets Loading & Distribution"
+                    },
+                ]
+
+            },
+            {
+                id: "5",
+                name: "Company Profile Website",
+                img: solution14,
+                desc: "Company Profile Website System was developed to automatically this manual process. This web application has these following features:",
+                systemFeatures: [
+                    {
+                        id: "1",
+                        name: "News atau Blog",
+                        img: solution14,
+                        desc: "News atau Blog"
+                    },
+                    {
+                        id: "2",
+                        name: "Produk atau service",
+                        img: solution14,
+                        desc: "Produk atau service"
+                    },
+                    {
+                        id: "3",
+                        name: "SEO Management",
+                        img: solution14,
+                        desc: "SEO Management"
+                    },
+                    {
+                        id: "4",
+                        name: "File Manager",
+                        img: solution14,
+                        desc: "File Manager"
+                    },
+                    {
+                        id: "5",
+                        name: "Content Management System (CMS)",
+                        img: solution14,
+                        desc: "Content Management System (CMS)"
+                    },
+                ]
+
+            },
+            {
+                id: "6",
+                name: "Single Sign On",
+                img: solution14,
+                desc: "Single Sign On (SSO) System was developed to automatically this manual process. This web application has these following features:",
+                systemFeatures: [
+                    {
+                        id: "1",
+                        name: "Intergrated Login & sistem portal",
+                        img: solution14,
+                        desc: "Intergrated Login & sistem portal"
+                    }
+                ]
+
+            },
+            {
+                id: "7",
+                name: "The One Dashboard",
+                img: solution14,
+                desc: "THU One Dashboard System was developed to automatically this manual process. This web application has these following features:",
+                systemFeatures: [
+                    {
+                        id: "",
+                        name: "",
+                        img: "",
+                        desc: ""
+                    }
+                ]
+
+            },
+            {
+                id: "8",
+                name: "Workspace & Online Reporting",
+                img: solution14,
+                desc: "Online Reporting is an online web base application with flexibility of space and work scheme.Online Reporting was developed to automatically this manual process. This web application has these following features:",
+                systemFeatures: [
+                    {
+                        id: "1",
+                        name: "Pipeline Mandatory Inspection",
+                        img: solution14,
+                        desc: "Pipeline Mandatory Inspection"
+                    },
+                    {
+                        id: "2",
+                        name: "Pressure Safety Valve Mandatory Inspection",
+                        img: solution14,
+                        desc: "Pressure Safety Valve Mandatory Inspection"
+                    },
+                    {
+                        id: "3",
+                        name: "Storage Tank Mandatory",
+                        img: solution14,
+                        desc: "Storage Tank Mandatory"
+                    },
+                    {
+                        id: "4",
+                        name: "Version 1 Form Update",
+                        img: solution14,
+                        desc: "Version 1 Form Update"
+                    },
+                    {
+                        id: "5",
+                        name: "Online/Offline Switch",
+                        img: solution14,
+                        desc: "Online/Offline Switch"
+                    },
+                    {
+                        id: "6",
+                        name: "Pressure Vessel Form",
+                        img: solution14,
+                        desc: "Pressure Vessel Form"
+                    },
+                    {
+                        id: "7",
+                        name: "Notification Remainder",
+                        img: solution14,
+                        desc: "Notification Remainder"
+                    },
+                    {
+                        id: "8",
+                        name: "Notification Mailer",
+                        img: solution14,
+                        desc: "Notification Mailer"
+                    },
+
+                ]
+
+            },
         ],
     },
     storeSupply: {
         items: [
             {
-                id: "4",
+                id: "1",
                 name: "Sistem POS (Point of Sale)",
                 img: solution20,
                 desc: "A good system in your business will give maximum contribution in developing your business in the future. The POS system is integrated with your marketing, sales, inventory and e-commerce. Let's start digitizing. Access our store anywhere anytime. Safe and in control",
+                systemFeatures: [
+                    {
+                        id: "1",
+                        name: "Kategori Produk",
+                        img: solution20,
+                        desc: "Kategori Produk"
+                    },
+                    {
+                        id: "2",
+                        name: "Kartu Stok",
+                        img: solution20,
+                        desc: "Kartu Stok"
+                    },
+                    {
+                        id: "3",
+                        name: "Laporan Transaksi",
+                        img: solution20,
+                        desc: "Laporan Transaksi"
+                    },
+                    {
+                        id: "4",
+                        name: "History Penjualan",
+                        img: solution20,
+                        desc: "History Penjualan"
+                    },
+                    {
+                        id: "5",
+                        name: "Dashboard",
+                        img: solution20,
+                        desc: "Dashboard"
+                    },
+                    {
+                        id: "6",
+                        name: "Arus Kas",
+                        img: solution20,
+                        desc: "Arus Kas"
+                    },
+                    {
+                        id: "7",
+                        name: "Data Stok",
+                        img: solution20,
+                        desc: "Data Stok"
+                    },
+                    {
+                        id: "8",
+                        name: "Tambah Produk",
+                        img: solution20,
+                        desc: "Tambah Produk"
+                    },
+                    {
+                        id: "9",
+                        name: "Update Stok (opname)",
+                        img: solution20,
+                        desc: "Update Stok (opname)"
+                    },
+                    {
+                        id: "10",
+                        name: "Pencarian Produk",
+                        img: solution20,
+                        desc: "Pencarian Produk"
+                    },
+                    {
+                        id: "11",
+                        name: "Atur Harga dan Diskon",
+                        img: solution20,
+                        desc: "Atur Harga dan Diskon"
+                    },
+                    {
+                        id: "12",
+                        name: "Penjualan",
+                        img: solution20,
+                        desc: "Penjualan"
+                    },
+                    {
+                        id: "13",
+                        name: "Cashin/Cashout",
+                        img: solution20,
+                        desc: "Cashin/Cashout"
+                    },
+                    {
+                        id: "14",
+                        name: "Laporan Harian",
+                        img: solution20,
+                        desc: "Laporan Harian"
+                    },
+                    {
+                        id: "15",
+                        name: "History Penjualan",
+                        img: solution20,
+                        desc: "History Penjualan"
+                    },
+                    {
+                        id: "16",
+                        name: "Kasir",
+                        img: solution20,
+                        desc: "Kasir"
+                    },
+                ]
             }
         ],
     },
     propertyContractor: {
         items: [
             {
-                id: "5",
+                id: "1",
                 name: "PEMS (Property Management System)",
                 img: solution15,
                 desc: "A Property Management Systems (PEMS) are software applications for the operation of hospitality accommodation and commercial residential rental properties. This application aims to facilitate property management and marketing. PMS is also used in the manufacturing industry, local government and manufacturing.",
-            }
+                systemFeatures: [
+                    {
+                        id: "1",
+                        name: "Master Data",
+                        img: solution15,
+                        desc: "Master Data"
+                    },
+                    {
+                        id: "2",
+                        name: "Project Management",
+                        img: solution15,
+                        desc: "Project Management"
+                    },
+                    {
+                        id: "3",
+                        name: "Logistic",
+                        img: solution15,
+                        desc: "Logistic"
+                    },
+                    {
+                        id: "4",
+                        name: "Selling",
+                        img: solution15,
+                        desc: "Selling"
+                    },
+                    {
+                        id: "5",
+                        name: "Oprational",
+                        img: solution15,
+                        desc: "Oprational"
+                    },
+                    {
+                        id: "6",
+                        name: "Project Cart",
+                        img: solution15,
+                        desc: "Project Cart"
+                    },
+                    {
+                        id: "7",
+                        name: "AR/Ap",
+                        img: solution15,
+                        desc: "AR/Ap"
+                    },
+                    {
+                        id: "8",
+                        name: "Accounting",
+                        img: solution15,
+                        desc: "Accounting"
+                    },
+                    {
+                        id: "9",
+                        name: "Report",
+                        img: solution15,
+                        desc: "Report"
+                    },
+                    {
+                        id: "10",
+                        name: "Dashboard",
+                        img: solution15,
+                        desc: "Dashboard"
+                    },
+                ]
+            },
+            {
+                id: "2",
+                name: "DMS (Document Management System))",
+                img: solution15,
+                desc: "Within the company, of course, there are various types of affairs with documents or letters of approval. However, what if you are a busy boss and don't have time to go to the office because of certain business? With DMS, you can easily share, send, archive documents more easily, quickly and securely. You can even approve it online, anytime and anywhere!",
+                systemFeatures: [
+                    {
+                        id: "1",
+                        name: "Create Document",
+                        img: solution15,
+                        desc: "Create Document"
+                    },
+                    {
+                        id: "1",
+                        name: "Manage Document Struture",
+                        img: solution15,
+                        desc: "Manage Document Struture"
+                    },
+                    {
+                        id: "1",
+                        name: "E-filling",
+                        img: solution15,
+                        desc: "E-filling"
+                    },
+                    {
+                        id: "1",
+                        name: "Sharing File",
+                        img: solution15,
+                        desc: "Sharing File"
+                    },
+                    {
+                        id: "1",
+                        name: "File Indexing",
+                        img: solution15,
+                        desc: "File Indexing"
+                    },
+                    {
+                        id: "1",
+                        name: "File Hierarchy by Folder",
+                        img: solution15,
+                        desc: "File Hierarchy by Folder"
+                    },
+                ]
+            },
+
         ],
     },
     eGovermment: {
         items: [
             {
-                id: "6",
+                id: "1",
                 name: "SAKIRA BPSDM ESDM",
-                img: solution19,
+                img: solution14,
                 desc: "Employee performance information system for the work report of the Energy and Mineral Resources Development Agency. Each employee records their daily to-do list in the system and you can assign assignments via the admin portal. Employee performance appraisal needs to be done by a company to evaluate the performance of the employee concerned. Through performance appraisal, the company or HR team will find it easier to find out the abilities, skills, behaviors, strengths, and weaknesses of employees.",
-            }
+                systemFeatures: [
+                    {
+                        id: "1",
+                        name: "Rekap Kinerka",
+                        img: solution14,
+                        desc: "Rekap Kinerka"
+                    },
+                    {
+                        id: "2",
+                        name: "Validasi",
+                        img: solution14,
+                        desc: "Validasi"
+                    },
+                    {
+                        id: "3",
+                        name: "My Team",
+                        img: solution14,
+                        desc: "My Team"
+                    },
+                    {
+                        id: "4",
+                        name: "Berita",
+                        img: solution14,
+                        desc: "Berita"
+                    },
+                    {
+                        id: "5",
+                        name: "Notification",
+                        img: solution14,
+                        desc: "Notification"
+                    },
+                ]
+            },
+            {
+                id: "2",
+                name: "PHE Dashboard Project",
+                img: solution14,
+                desc: "The PHE Dashboard Project is a development project for the PKL Registration System, Commodity, and Laboratory Testing of the BPIUK Ministry of Marine Affairs and Fisheries, Karangasem Regency.",
+                systemFeatures: [
+                    {
+                        id: "",
+                        name: "",
+                        img: "",
+                        desc: ""
+                    }
+                ]
+            },
+            {
+                id: "3",
+                name: "HIO Disnaker",
+                img: solution14,
+                desc: "The process of submitting a letter is easier by using HIO Disnaker. Data submissions are organized and easy to select. Create harmonious and sweet industrial/employment relationships with HIO Disnaker. Industrial relations complaints can be submitted online and well organized at the Manpower Office.",
+                systemFeatures: [
+                    {
+                        id: "",
+                        name: "",
+                        img: "",
+                        desc: ""
+                    }
+                ]
+            },
+            {
+                id: "4",
+                name: "ANDIN (Aplikasi Naskah Dinas)",
+                img: solution14,
+                desc: "In this all-digital era, everything is electronic, as well as Pertamina University which applies the Electronic Service Manuscript. Now Pertamina University uses the Official Manuscript Application (ANDIN) which is an application that makes it easy to manage, review, create and share official manuscript arrangements. This application is very suitable for an agency that does a lot of correspondence.",
+                systemFeatures: [
+                    {
+                        id: "1",
+                        name: "Mobile Friendly",
+                        img: solution19,
+                        desc: "Mobile Friendly"
+                    }
+                ]
+            },
         ],
     },
 };

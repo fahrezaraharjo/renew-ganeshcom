@@ -7,7 +7,7 @@ const Footer = ({ isHomePage }) => {
 
   return (
     <footer className={`text-white ${footerBgClass}`}>
-      <div className="container mx-auto px-4 overflow-hidden">
+      <div className="container mx-auto px-4 overflow-hidden p-11">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h4 className="text-lg font-semibold mb-4">Main Menu</h4>

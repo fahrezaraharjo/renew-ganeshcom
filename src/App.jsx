@@ -5,8 +5,10 @@ import { Navbar } from './components';
 function App() {
   return (
     <BrowserRouter>
-      <div>
-        <Routes>
+
+      <Navbar />
+      <Routes>
+        
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/work" element={<WorkPages />} />
@@ -14,8 +16,9 @@ function App() {
           <Route path="/solution" element={<SolutionPage />} />
           <Route path="/solutions/:id" element={<DetailsSolutionPage />} />
           <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </div>
+        
+      </Routes>
+
     </BrowserRouter>
   );
 }

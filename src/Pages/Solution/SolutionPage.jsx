@@ -16,10 +16,9 @@ const SolutionPage = () => {
             : solutionDatas[selectedFilter].items;
 
     return (
-        <div className='gradient-bg-oursolutions min-h-screen'>
-            <Navbar />
+        <div className='gradient-bg-oursolutions min-h-screen pt-24'>
             <Header title='Solutions' subtitle='Find the right solution for your needs' />
-            <div className='flex flex-col gap-10'>
+            <div className='flex flex-col gap-[35px]'>
                 <div className='flex flex-col p-14 gap-3 white-glassmorphism'>
                     <h1 className='text-3xl text-gray-100'>
                         Our Solutions

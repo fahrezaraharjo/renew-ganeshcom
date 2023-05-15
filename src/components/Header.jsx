@@ -11,7 +11,7 @@ const Header = ({ title, subtitle }) => {
     return (
         <div
             className="h-[300px] w-full">
-            <div className="relative w-full h-[300px] rounded-mdss">
+            <div className="relative w-full h-[300px] rounded-sm">
                 <div className="absolute top-0 left-0 w-full h-full flex items-center justify-between">
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}

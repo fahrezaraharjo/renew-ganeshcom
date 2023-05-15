@@ -27,7 +27,7 @@ const OurSolution = () => {
         ))}
       </nav>
       <div className="relative">
-        <div className="flex justify-start items-center space-x-4 overflow-x-auto pb-4">
+        <div className="flex justify-start items-center space-x-4 overflow-x-hidden pb-4">
           {solutionDatas[activeCategory].items.map((item) => (
             <div
               key={item.id}
