@@ -2,7 +2,6 @@ import { footerData } from '../utils/dummyData';
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
 
 const Footer = ({ isHomePage }) => {
-
   const footerBgClass = isHomePage ? 'gradient-bg-footer' : 'blur-sec';
 
   return (
@@ -39,7 +38,12 @@ const Footer = ({ isHomePage }) => {
               {footerData.whereWeAre.map((item) => (
                 <li key={item.id}>
                   <span className="text-gray-300 cursor-pointer">{item.title}: </span>
-                  <a href="#" className="text-gray-300 hover:text-white">
+                  <a
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.address)}`}
+                    className="text-gray-300 hover:text-white"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {item.address}
                   </a>
                 </li>
@@ -49,35 +53,23 @@ const Footer = ({ isHomePage }) => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Connect With Us</h4>
             <ul className="flex list-none flex-wrap">
-              <h1 className='mr-2 mt-2'>
-                Facebook
-              </h1>
               <li className="mr-4 mt-2">
-                <a href={footerData.connectWithUs.facebook} className="hover:text-gray-400 cursor-pointer">
+                <a href={footerData.connectWithUs[0].url} className="hover:text-gray-400 cursor-pointer">
                   <FaFacebook size={24} className='' />
                 </a>
               </li>
-              <h1 className='mr-2 mt-2'>
-                Instagram
-              </h1>
               <li className="mr-4 mt-2">
-                <a href={footerData.connectWithUs.instagram} className="hover:text-gray-400 cursor-pointer">
+                <a href={footerData.connectWithUs[1].url} className="hover:text-gray-400 cursor-pointer">
                   <FaInstagram size={24} className='' />
                 </a>
               </li>
-              <h1 className='mr-2 mt-2'>
-                LinkedIn
-              </h1>
               <li className="mr-4 mt-2">
-                <a href={footerData.connectWithUs.linkedin} className="hover:text-gray-400 cursor-pointer">
+                <a href={footerData.connectWithUs[2].url} className="hover:text-gray-400 cursor-pointer">
                   <FaLinkedin size={24} className='' />
                 </a>
               </li>
-              <h1 className='mr-2 mt-2'>
-                Youtube
-              </h1>
               <li className='mr-4 mt-2'>
-                <a href={footerData.connectWithUs.youtube} className="hover:text-gray-400 cursor-pointer">
+                <a href={footerData.connectWithUs[3].url} className="hover:text-gray-400 cursor-pointer">
                   <FaYoutube size={24} className='' />
                 </a>
               </li>

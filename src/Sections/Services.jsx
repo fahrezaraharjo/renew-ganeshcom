@@ -10,7 +10,7 @@ const ServiceCard = ({ color, title, icon, subtitle }) => (
     className="flex flex-row justify-start items-start shadowcard white-glassmorphism shadow-md p-3 m-2 cursor-pointer hover:shadow-xl"
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
-    whileInView={{ x: [50, 150, 100], opacity: [0, 0, 1] }}
+    whileInView={{ x: [50, 150, 0], opacity: [0, 0, 1] }}
   >
     <div className={`w-10 h-10 rounded-full flex justify-center items-center ${color}`}>
       {icon}
@@ -25,39 +25,12 @@ const ServiceCard = ({ color, title, icon, subtitle }) => (
 );
 
 const Services = () => {
-  const leftSectionVariants = {
-    hidden: { x: -500 },
-    initial: { x: 0 },
-    visible: {
-      x: 0,
-      transition: {
-        type: "spring",
-        stiffness: 100,
-        damping: 10,
-        duration: 2,
-      },
-    },
-  };
-
-  const rightSectionVariants = {
-    hidden: { x: 500 },
-    visible: {
-      x: 0,
-      transition: {
-        type: "spring",
-        stiffness: 100,
-        damping: 10,
-        duration: 2,
-      },
-    },
-  };
 
   return (
     <div className="flex w-full justify-between gradient-bg-services overflow-hidden ">
       <div className="w-1/2 flex  mf:flex-row flex-col p-12">
         <motion.div
           className="flex-1 flex flex-col w-full h-full object-cover justify-start items-start"
-          variants={leftSectionVariants}
           initial="hidden"
           animate="visible">
           <h1 className="text-3xl font-bold text-gradient mb-4">
@@ -69,10 +42,9 @@ const Services = () => {
           </p>
         </motion.div>
       </div>
-      <div className="w-1/2 flex justify-start">
+      <div className="w-1/2 flex justify-start p-12">
         <motion.div
           className="flex-1 flex flex-col w-full h-full object-cover justify-start items-start"
-          variants={rightSectionVariants}
           initial="hidden"
           animate="visible"
         >

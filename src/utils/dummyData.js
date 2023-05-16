@@ -1,4 +1,4 @@
-import { CPW, DMS, administrator, approved, assetmanagement, attachment, dago, documentM, elibrary, getintouch1, industrial, kalender, magnus, mail, pems1, posinrayas, presence, printer, ptlesonline, recap, restaurantbebek, solution17, solution20, spd, timesheetutama, user, worklist, workspace, worksummary } from "../../images";
+import { CPW, DMS, administrator, approved, assetmanagement, attachment, brandingdevelop, brandingtech, dago, documentM, elibrary, getintouch1, industrial, itmasterdevelop, itmastertech, kalender, magnus, mail, mobiledevelop, mobiletech, pems1, posinrayas, presence, printer, ptlesonline, recap, restaurantbebek, serviceSoftware, servicebranding, servicemobile, servicestartup, softwaredev, softwaretech, solution17, solution20, spd, timesheetutama, user, worklist, workspace, worksummary } from "../../images";
 import { solution5 } from "../../images";
 import { solution15 } from "../../images";
 import { solution19 } from "../../images";
@@ -1335,14 +1335,14 @@ export const workDatas = {
 
 export const footerData = {
     mainMenu: [
-        { id: 1, title: "About", url: "http://localhost:3000/about" },
+        { id: 1, title: "About", url: "https://reaplicate-ganeshcom-6r1s643t1-fahrezaraharjo.vercel.app/about" },
         { id: 2, title: "Testimonial", url: "/#" },
         { id: 3, title: "Services", url: "/#" },
         { id: 4, title: "Achievement", url: "/#" },
         { id: 5, title: "Sitemap", url: "/#" }
     ],
     otherMenu: [
-        { id: 1, title: "Blog" },
+        { id: 1, title: "Blog", url: "/#article" },
         { id: 2, title: "Carrers" },
         { id: 3, title: "Intership" },
         { id: 4, title: "R&D Program" },
@@ -1366,22 +1366,26 @@ export const footerData = {
         {
             id: 1,
             title: "Facebook",
-            icon: "fab fa-facebook"
+            icon: "fab fa-facebook",
+            url: "https://www.facebook.com/ganeshcomstudio/"
         },
         {
             id: 2,
             title: "Instagram",
-            icon: "fab fa-instagram"
+            icon: "fab fa-instagram",
+            url: "https://www.instagram.com/ganeshcomstudio/"
         },
         {
             id: 3,
             title: "Linkedin",
-            icon: "fab fa-linkedin"
+            icon: "fab fa-linkedin",
+            url: "https://www.linkedin.com/company/ganeshcomstudio/"
         },
         {
             id: 4,
             title: "Youtube",
-            icon: "fab fa-youtube"
+            icon: "fab fa-youtube",
+            url: "https://www.youtube.com/channel/UCV-TnoZcw8wZ5rVgIZKo6Ig"
         }
     ]
 };
@@ -2574,3 +2578,130 @@ export const solutionDatas = {
         ],
     },
 };
+
+
+/*-------------------------------------ServicesDatas-------------------------------*/
+
+export const serviceDatas = {
+    softwareDevelopment: {
+        items: [
+            {
+                id: "112",
+                name: "Software Development",
+                img: serviceSoftware,
+                desc: "Software development is the process of conceiving, specifying, designing, programming, documenting, testing, and bug fixing involved in creating and maintaining applications, frameworks, or other software components. We develop responsive web-based applications on various platforms, with interactive design displays, powerful functionality, and dynamic software. We work with a team of professional practitioners to develop web-based applications with standard and highly competitive prices. We have served more than 60 clients on a small to large scale.",
+                systemFeatures: [
+                    {
+                        id: "1",
+                        name: "Development Method",
+                        img: softwaredev,
+                        desc: "We are Using Agile Software Development Life Cycle That Contains:Requirements Collection,Analysis,Designing,Coding,Testing,Maintenance"
+                    },
+                    {
+                        id: "2",
+                        name: "Technology",
+                        img: softwaretech,
+                        desc: "We have used up to date technology and various platforms in software development created by our development team, ensuring our work is representative of your brand"
+                    },
+                ]
+            },
+        ]
+    },
+    mobileApp: {
+        items: [
+            {
+                id: "211",
+                name: "Mobile App",
+                img: servicemobile,
+                desc: "A mobile application, most commonly referred to as an app, is a type of application software designed to run on a mobile device, such as a smartphone or tablet computer. A mobile app itself is application software developed for smartphones or tablets with various operating systems: iOS, Android, KaiOS, Harmony OS, Tizen, and others.We design a mobile app system that supports various existing operating systems and is user friendly, where you can interact adaptively with anyone.",
+                systemFeatures: [
+                    {
+                        id: "1",
+                        name: "Development Method",
+                        img: mobiledevelop,
+                        desc: "The Developement Method We Use On Mobile Are:Planning,Analysis UI/UX Design,Development,Testing,Release,Maintenance"
+                    },
+                    {
+                        id: "2",
+                        name: "Technology",
+                        img: mobiletech,
+                        desc: "We have used up to date technology such as React Native, Flutter,etc in our mobile apps created by our development team, ensuring our work is representative of your brand"
+                    },
+                ]
+            },
+        ]
+    },
+    itMasterplan: {
+        items: [
+            {
+                id: "311",
+                name: "IT Masterplan",
+                img: servicebranding,
+                desc: "To face competition, various business processes in the company need to be adapted to the conditions of technological development. Finding IT solutions that will support companies in determining, controlling, and applying technology to business transformation is crucial for company effectiveness.We develop an IT development plan that aligns with your business strategy. Realize your company's digital transformation with the right planning.",
+                systemFeatures: [
+                    {
+                        id: "1",
+                        name: "Development Method",
+                        img: itmasterdevelop,
+                        desc: "We have used up to date technology Such as:html, css, js for web and Framework :Laravel,react (Next JS),Nest JS,ASP.Net"
+                    },
+                    {
+                        id: "2",
+                        name: "Technology",
+                        img: itmastertech,
+                        desc: "Development Method :Data Collection,Public Scoping,Resource Analysis,Development of Resource Objective,Public Review,Finalize Master Plan,Adoption of Master Plan Revision"
+                    },
+                ]
+            },
+        ]
+    },
+    brandingWebsite: {
+        items: [
+            {
+                id: "411",
+                name: "Branding Website",
+                img: servicebranding,
+                desc: "Website is the first impression of your brand or company and devising it correctly should be your first action if you want to give a kick start to your business today. Developing engaging websites and e-commerce with great user experience is what we aim to do. We work with different types of clients. For us, your website is not only your digital presence but also a strong digital brand through a personalized website that visitors will love.",
+                systemFeatures: [
+                    {
+                        id: "1",
+                        name: "Development Method",
+                        img: brandingdevelop,
+                        desc: "Planning,Analysis,Prototyping,Development,Testing,Release,SEO"
+                    },
+                    {
+                        id: "2",
+                        name: "Technology",
+                        img: brandingtech,
+                        desc: "The Technology We Use To Branding Website Such As: Web: html, css, js, Framework: Laravel, front End = react (Next JS), Back end = Nest JS, Back ASP.Net"
+                    },
+                ]
+            },
+        ]
+    },
+    startupPartnership: {
+        items: [
+            {
+                id: "511",
+                name: "Startup Partnership",
+                img: servicestartup,
+                desc: "When scanning business opportunities, corporations often approach startups for partnership, as these entities hold the advantage for the landscape – refreshing novelties. Collaborations between startups and established corporate players are pivotal for fostering innovation. Driven from determination, startups have introduced an unprecedented capacity to reshape the existing business models and invent new ones altogether.We provide opportunities to enhance each innovation program to enable enterprise/startup collaboration, enable our partners to find new revenue paths, provide solutions for their customers, gain innovation insights, improve internal processes and leapfrog the competition by innovating faster.",
+                systemFeatures: [
+                    {
+                        id: "1",
+                        name: " ",
+                        img: servicestartup,
+                        desc: " "
+                    },
+                    {
+                        id: "2",
+                        name: " ",
+                        img: servicestartup,
+                        desc: " "
+                    },
+                ]
+            },
+        ]
+    },
+
+}

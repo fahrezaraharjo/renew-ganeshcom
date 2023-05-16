@@ -139,9 +139,36 @@ import DMS from "./DMS.jpg"
 import CPW from "./CPW.png"
 
 
+//--------------------------Service------------------------
+import serviceSoftware from "./service-software.jpg"
+import softwaredev from "./software-development.png"
+import softwaretech from "./software-technology.jpeg"
+import servicemobile from "./service-mobile.jpg"
+import mobiledevelop from "./mobile-develop.png"
+import mobiletech from "./mobile-tech.png"
+import serviceit from "./service-itmaster.jpg"
+import itmasterdevelop from "./itmaster-develop.png"
+import itmastertech from "./itmaster-tech.jpeg"
+import servicebranding from "./service-branding.png"
+import brandingdevelop from "./branding-develop.png"
+import brandingtech from "./branding-tech.jpeg"
+import servicestartup from "./service-startup.jpg"
 
 
 export {
+    servicestartup,
+    serviceSoftware,
+    softwaredev,
+    softwaretech,
+    servicemobile,
+    mobiledevelop,
+    mobiletech,
+    serviceit,
+    itmasterdevelop,
+    itmastertech,
+    servicebranding,
+    brandingdevelop,
+    brandingtech,
     CPW,
     DMS,
     documentM,

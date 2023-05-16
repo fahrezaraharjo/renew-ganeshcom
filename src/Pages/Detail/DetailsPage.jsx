@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { workDatas } from '../../utils/dummyData';
+import { serviceDatas } from '../../utils/dummyData';
 import { Footer, Navbar } from '../../components';
 import YouTube from "react-youtube";
 import { articles } from '../../utils/dummyData';
@@ -17,7 +17,7 @@ const DetailsPage = () => {
   };
 
   // Find the work item with the matching id
-  const items = Object.values(workDatas).reduce((acc, data) => acc.concat(data.items), []);
+  const items = Object.values(serviceDatas).reduce((acc, data) => acc.concat(data.items), []);
   const item = items.find((item) => item.id === id);
   if (!item) {
     return <div>Work item not found</div>;
