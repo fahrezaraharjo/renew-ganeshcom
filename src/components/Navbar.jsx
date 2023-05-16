@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="flex flex-row justify-evenly h-[50px] md:mr-40">
         <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
           {["About", "Service", "Work", "Solution", "Contact"].map((item, index) => (
-            <NavBarItem key={item + index} title={item} path={`/${item.toLowerCase()}`} />
+            <NavBarItem key={item + index} title={item} path={`https://reaplicate-ganeshcom.vercel.app/${item.toLowerCase()}`} />
           ))}
         </ul>
         <div className="flex relative">
@@ -42,7 +42,7 @@ const Navbar = () => {
             >
               <li className="text-xl w-full my-2"><AiOutlineClose onClick={() => setToggleMenu(false)} /></li>
               {["About", "Service", "Work", "Solution", "Contact"].map(
-                (item, index) => <NavBarItem key={item + index} title={item} path={`/${item.toLowerCase()}`} classprops="my-2 text-lg" />,
+                (item, index) => <NavBarItem key={item + index} title={item} path={`https://reaplicate-ganeshcom.vercel.app/${item.toLowerCase()}`} classprops="my-2 text-lg" />,
               )}
             </ul>
           )}
