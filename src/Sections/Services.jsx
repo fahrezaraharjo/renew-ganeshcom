@@ -7,7 +7,7 @@ import { serviceHome } from "../utils/dummyData";
 
 const ServiceCard = ({ color, title, icon, subtitle }) => (
   <motion.div
-    className="flex flex-row justify-start items-start white-glassmorphism p-3 m-2 cursor-pointer hover:shadow-xl"
+    className="flex flex-row justify-start items-start shadowcard white-glassmorphism shadow-md p-3 m-2 cursor-pointer hover:shadow-xl"
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
     whileInView={{ x: [50, 150, 100], opacity: [0, 0, 1] }}
@@ -53,7 +53,7 @@ const Services = () => {
   };
 
   return (
-    <div className="flex w-full justify-center items-center gradient-bg-services">
+    <div className="flex w-full justify-center items-center gradient-bg-services overflow-hidden">
       <div className="flex mf:flex-row flex-col items-center justify-between md:p-20 py-12 px-4">
         <motion.div
           className="flex-1 flex flex-col justify-start items-start"

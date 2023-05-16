@@ -27,8 +27,7 @@ const DetailsPage = () => {
 
   return (
     <div className='min-h-screen gradient-bg-welcome'>
-      <Navbar />
-      <div className='container mx-auto px-4 pt-12 pb-24'>
+      <div className='container mx-auto px-4 pt-28 pb-24'>
         <div className='flex flex-col'>
           <div className='flex flex-col'>
             <h1 className='text-4xl font-bold text-blue-700 mb-4'>{item.name}</h1>
@@ -59,8 +58,8 @@ const DetailsPage = () => {
                 className={`p-4 flex flex-row w-full h-[440px] gap-6 justify-between items-start ${feature.id === activeTab ? '' : 'hidden'
                   } mt-8`}
               >
-                <div className='w-1/2 h-[400px] rounded-md bg-white'>
-                <img className='mb-6 object-cover rounded-md w-full h-full' src={feature.img} alt={feature.name} />
+                <div className='w-1/2 h-[400px] rounded-md'>
+                <img className='mb-6 object-fill rounded-md' src={feature.img} alt={feature.name} />
                 </div>
                 <div className='white-glassmorphism w-1/2 h-full p-10'>
                   <h1 className='font-bold text-3xl text-blue-500 mb-4'>
@@ -89,7 +88,7 @@ const DetailsPage = () => {
             {articles.map((article) => (
               <div key={article.id} className="flex flex-col mb-8 md:flex-row">
                 <div className="md:w-1/3 md:pr-4">
-                  <img className="object-cover w-full h-40 md:h-auto md:w-full" src={article.image} alt={article.title} />
+                  <img className="object-cover w-full h-full" src={article.image} alt={article.title} />
                 </div>
                 <div className="md:w-2/3 pl-4">
                   <h3 className="text-lg font-medium text-blue-600">{article.title}</h3>

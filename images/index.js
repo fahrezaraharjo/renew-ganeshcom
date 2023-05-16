@@ -96,12 +96,92 @@ import restaurant4 from "./system-featured-restaurant4.png"
 //solutions
 import SolutionsHeader from "./book-read-student-students.jpg"
 
-
+//work
+import posinrayas from "./posinrayas.jpg"
+import ptlesonline from "./ptlesonline.png"
+import magnus from "./magnus.jpeg"
+import timesheetutama from "./timesheetutama.jpg"
+import pems1 from "./pems.png"
+import mail from "./mail.png"
+import approved from "./approved.png"
+import administrator from "./administrator.png"
+import industrial from "./industrial.png"
+import printer from "./printer.png"
+import attachment from "./attachment.png"
+import recap from "./recap.png"
+import user from "./user.png"
+import setting2 from "./setting.png"
+import assetmanagement from "./assetsmanagement.png"
+import elibrary from "./elibrary.png"
+import presence from "./presence.png"
+import worklist from "./worklist.png"
+import spd from "./spd.png"
+import worksummary from "./worksummary.png"
+import date from "./date.png"
+import kalender from "./kalender.png"
+import dago from "./dago.png"
+import blog from "./blog.png"
+import productorservice from "./productorservice.png"
+import seo from "./seo.png"   
+import filemanager from "./filemanager.png"
+import restaurantbebek from "./restaurantbebek.jpeg"
+import workspace from "./workspace.jpg"
+import documentM from "./documentM.png"
+import documenM1 from "./documenM1.png"
+import documenM2 from "./documenM2.png"
+import documenM3 from "./documenM3.png"
+import documenM4 from "./documenM4.png"
+import documenM5 from "./documenM5.png"
+import documenM6 from "./documenM6.png"
+import documenM7 from "./documenM7.png"
+import documenM8 from "./documenM8.png"
+import DMS from "./DMS.jpg"
+import CPW from "./CPW.png"
 
 
 
 
 export {
+    CPW,
+    DMS,
+    documentM,
+    documenM1,
+    documenM2,
+    documenM3,
+    documenM4,
+    documenM5,
+    documenM6,
+    documenM7,
+    documenM8,
+    workspace,
+    restaurantbebek,
+    blog,
+    productorservice,
+    seo,
+    filemanager,
+    dago,
+    kalender,
+    presence,
+    worklist,
+    spd,
+    worksummary,
+    date,
+    elibrary,
+    assetmanagement,
+    mail,
+    approved,
+    administrator,
+    industrial,
+    printer,
+    attachment,
+    recap,
+    user,
+    setting2,
+    pems1,
+    timesheetutama,
+    magnus,
+    ptlesonline,
+    posinrayas,
     SolutionsHeader,
     restaurant1,
     restaurant2,

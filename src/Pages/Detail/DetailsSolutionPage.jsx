@@ -24,8 +24,7 @@ const DetailsSolutionPage = () => {
   }
   return (
     <div className='min-h-screen gradient-bg-welcome'>
-      <Navbar />
-      <div className='container mx-auto px-4 pt-12 pb-24'>
+      <div className='container mx-auto px-4 pt-28 pb-24'>
         <div className='flex flex-row gap-6 h-[380px]'>
           <div className='flex flex-col w-full'>
             <h1 className='text-2xl font-bold text-blue-700 w-full mb-4'>{item.name}</h1>

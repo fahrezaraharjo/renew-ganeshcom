@@ -22,16 +22,15 @@ const WorkPages = () => {
             <div className='p-14 pt-20'>
                 <Header title="Work" subtitle="Our Future start from what we develop." />
                 <motion.div
-                    initial={{ opacity: 1, x: "100vw" }}
-                    animate={{ opacity: 1, x: 0 }}
-                    whileHover={{ scale: 1.05 }}
+                    initial={{ opacity: 0 }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
+                    whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
                     className='flex justify-center mt-10'>
                     {categories.map(category => (
                         <button
                             key={category}
-                            className={`${selectedFilter === category ? 'bg-blue-500 text-white' : 'bg-white text-gray-700'
-                                } py-2 px-4 rounded-md mx-2 focus:outline-none`}
+                            className={`${selectedFilter === category ? 'white-glassmorphism text-green-300' : 'blue-glassmorphism text-blue-400'
+                                } py-2 px-4 rounded-md mx-2 focus:outline-none `}
                             onClick={() => setSelectedFilter(category)}
                         >
                             {category === 'all' ? 'All Work' : category}
@@ -42,10 +41,7 @@ const WorkPages = () => {
                     {workItems.map((item, index) => (
                         <div className='mx-4 my-4 w-full md:w-1/2 lg:w-1/3 xl:w-1/4' key={index}>
                             <motion.div
-                                initial={{ opacity: 1, x: "-100vw" }}
-                                animate={{ opacity: 1, x: 0 }}
-                                whileHover={{ scale: 1.05 }}
-                                transition={{ duration: 2, ease: "easeInOut" }}
+                                
                                 className='rounded-lg overflow-hidden shadow-lg white-glassmorphism'>
                                 <motion.img
                                     src={item.img}

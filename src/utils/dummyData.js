@@ -1,4 +1,4 @@
-import { solution17, solution20 } from "../../images";
+import { CPW, DMS, administrator, approved, assetmanagement, attachment, dago, documentM, elibrary, getintouch1, industrial, kalender, magnus, mail, pems1, posinrayas, presence, printer, ptlesonline, recap, restaurantbebek, solution17, solution20, spd, timesheetutama, user, worklist, workspace, worksummary } from "../../images";
 import { solution5 } from "../../images";
 import { solution15 } from "../../images";
 import { solution19 } from "../../images";
@@ -7,8 +7,8 @@ import {
     akuntaid, dimedika, keacaracom, mytimesheet, pems, ximo, sion,
     trustedby1, trustedby2, trustedby3, trustedby4, trustedby5, trustedby6, trustedby7, trustedby8, trustedby9, trustedby10,
     solution1, solution2, solution3,
-    whatsnew1, whatsnew2, whatsnew3, headerimgabout, headerimgwork, headerimgsolution, cardplaceholder, homeslider1, homeslider2, homeslider3, service1, service2, service3, service4, service5, RestaurantWebsite, lesonline1, lesonline3, lesonline4, lesonline2, restaurant1, restaurant2, restaurant3, restaurant4, solution4
-
+    whatsnew1, whatsnew2, whatsnew3, headerimgabout, headerimgwork, headerimgsolution, cardplaceholder, homeslider1, homeslider2, homeslider3, service1, service2, service3, service4, service5, RestaurantWebsite, lesonline1, lesonline3, lesonline4, lesonline2, restaurant1, restaurant2, restaurant3, restaurant4, solution4,
+    documenM1, documenM2, documenM3, documenM4, documenM5, documenM6, documenM7, documenM8
 } from "../../images";
 
 //-----------------------------------------------------ABOUT US---------------------------------------------------//
@@ -104,7 +104,7 @@ export const workDatas = {
             {
                 id: "1",
                 name: "Online Tutoring in PT Les Online",
-                img: cardplaceholder,
+                img: ptlesonline,
                 desc: "Developing an application to find online tutoring service providers and private tutors for PT Les Online",
                 desc2: "Developing an application to find online tutoring service providers and private tutors for PT Les Online",
                 systemFeatures: [
@@ -118,19 +118,19 @@ export const workDatas = {
                         id: "2",
                         name: "Group Lesson",
                         img: lesonline2,
-                        desc: "private lessons"
+                        desc: "Group Lesson"
                     },
                     {
                         id: "3",
                         name: "Select Schedule",
                         img: lesonline3,
-                        desc: "private lessons"
+                        desc: "Select Schedule"
                     },
                     {
                         id: "4",
                         name: "Find Teacher",
                         img: lesonline4,
-                        desc: "private lessons"
+                        desc: "Find Teacher"
                     },
 
                 ]
@@ -138,103 +138,103 @@ export const workDatas = {
             {
                 id: "2",
                 name: "Smart POS in Rayas Store",
-                img: cardplaceholder,
+                img: posinrayas,
                 desc: "A good system in your business will give maximum contribution in developing your business in the future. Let's start digitizing. Access our store anywhere anytime. Safe and in control",
                 systemFeatures: [
                     {
                         id: "1",
                         name: "Kategori produk",
-                        img: headerimgabout,
+                        img: posinrayas,
                         desc: "kategori produk"
                     },
                     {
                         id: "2",
                         name: "Kartu Stok",
-                        img: headerimgabout,
+                        img: posinrayas,
                         desc: "Kartu Stok"
                     },
                     {
                         id: "3",
                         name: "Laporan Transaksi",
-                        img: headerimgabout,
+                        img: posinrayas,
                         desc: "Laporan Transaksi"
                     },
                     {
                         id: "4",
                         name: "History Penjualan",
-                        img: headerimgabout,
+                        img: posinrayas,
                         desc: "History Penjualan"
                     },
                     {
                         id: "5",
                         name: "Dashboard",
-                        img: headerimgabout,
+                        img: posinrayas,
                         desc: "Dashboard"
                     },
                     {
                         id: "6",
                         name: "Arus Kas",
-                        img: headerimgabout,
+                        img: posinrayas,
                         desc: "Arus Kas"
                     },
                     {
                         id: "7",
                         name: "Data stok",
-                        img: headerimgabout,
+                        img: posinrayas,
                         desc: "Data stok"
                     },
                     {
                         id: "8",
                         name: "Tambah Produk",
-                        img: headerimgabout,
+                        img: posinrayas,
                         desc: "Tambah Produk"
                     },
                     {
                         id: "9",
                         name: "Update Stok(opname)",
-                        img: headerimgabout,
+                        img: posinrayas,
                         desc: "Update Stok(opname)"
                     },
                     {
                         id: "10",
                         name: "Pencarian Produk",
-                        img: headerimgabout,
+                        img: posinrayas,
                         desc: "Pencarian Produk"
                     },
                     {
                         id: "11",
                         name: "Atur Harga dan Diskon",
-                        img: headerimgabout,
+                        img: posinrayas,
                         desc: "Atur Harga dan Diskon"
                     },
                     {
                         id: "12",
                         name: "Penjualan",
-                        img: headerimgabout,
+                        img: posinrayas,
                         desc: "Penjualan"
                     },
                     {
                         id: "13",
                         name: "Cash In/Cash Out",
-                        img: headerimgabout,
+                        img: posinrayas,
                         desc: "Cash In/Cash Out"
                     },
                     {
                         id: "14",
                         name: "Laporan Harian",
-                        img: headerimgabout,
+                        img: posinrayas,
                         desc: "Laporan Harian"
                     },
                     {
                         id: "15",
                         name: "History Penjualan",
-                        img: headerimgabout,
+                        img: posinrayas,
                         desc: ""
                     },
                     {
                         id: "16",
                         name: "Kasir",
-                        img: headerimgabout,
+                        img: posinrayas,
                         desc: "Kasir"
                     },
 
@@ -243,31 +243,31 @@ export const workDatas = {
             {
                 id: "3",
                 name: "Magnus Indonesia in Azria",
-                img: cardplaceholder,
+                img: magnus,
                 desc: "Developing an application to face the UTBK SBMPTN. The questions are presented in accordance with the Try Out and UTBK grids from LTMPT for Azria",
                 systemFeatures: [
                     {
                         id: "1",
                         name: "Work Featured 1",
-                        img: "",
+                        img: magnus,
                         desc: "lorem ipsum dolor amet"
                     },
                     {
                         id: "2",
                         name: "Work Featured 2",
-                        img: headerimgabout,
+                        img: magnus,
                         desc: "lorem ipsum dolor amet"
                     },
                     {
                         id: "3",
                         name: "Work Featured 3",
-                        img: headerimgabout,
+                        img: magnus,
                         desc: "lorem ipsum dolor amet"
                     },
                     {
                         id: "4",
                         name: "Work Featured 4",
-                        img: headerimgabout,
+                        img: magnus,
                         desc: "lorem ipsum dolor amet"
                     }
                 ]
@@ -275,68 +275,68 @@ export const workDatas = {
             {
                 id: "4",
                 name: "Property Management System (PEMS) in PT Undagi Bali Sadana",
-                img: cardplaceholder,
+                img: pems1,
                 desc: "Developing software for operating hotel accommodation and commercial housing rental properties for PT Undagi Bali Sadana which is a land and building property provider",
                 desc2: "PT Undagi Bali Sadana is a company that develops and builds a piece of land or land into a property product along with all the complete facilities and infrastructure inside into a single unit.To assist its business operations, PT Undagi Bali Sadana uses a Property Management System (PEMS). This application aims to facilitate property management and marketing.",
                 systemFeatures: [
                     {
                         id: "1",
                         name: "Master Data",
-                        img: headerimgabout,
+                        img: pems1,
                         desc: "Master Data"
                     },
                     {
                         id: "2",
                         name: "Project Management",
-                        img: headerimgabout,
+                        img: pems1,
                         desc: "Project Management"
                     },
                     {
                         id: "3",
                         name: "Logistic",
-                        img: headerimgabout,
+                        img: pems1,
                         desc: "Logistic"
                     },
                     {
                         id: "4",
                         name: "Selling",
-                        img: headerimgabout,
+                        img: pems1,
                         desc: "Selling"
                     },
                     {
                         id: "5",
                         name: "Oprational",
-                        img: headerimgabout,
+                        img: pems1,
                         desc: "Oprational"
                     },
                     {
                         id: "6",
                         name: "Project Cart",
-                        img: headerimgabout,
+                        img: pems1,
                         desc: "Project Cart"
                     },
                     {
                         id: "7",
                         name: "AR/AP",
-                        img: headerimgabout,
+                        img: pems1,
                         desc: "AR/AP"
                     },
                     {
                         id: "8",
                         name: "Acounting",
-                        img: headerimgabout,
+                        img: pems1,
                         desc: "Acounting"
                     },
                     {
                         id: "9",
                         name: "Report",
-                        img: headerimgabout,
+                        img: pems1,
                         desc: "Report"
                     },
                     {
                         id: "10",
                         name: "Dashboard",
-                        img: headerimgabout,
+                        img: pems1,
                         desc: "Dashboard"
                     }
                 ]
@@ -344,55 +344,55 @@ export const workDatas = {
             {
                 id: "5",
                 name: "Online Industrial Relations System at the Department of Labor and Industry",
-                img: cardplaceholder,
+                img: industrial,
                 desc: "Developing system to provide a harmonious relationship between employer and employees, ensuring continuous productivity at the Department of Labor and Industry",
                 systemFeatures: [
                     {
                         id: "1",
                         name: "Create mail",
-                        img: headerimgabout,
+                        img: mail,
                         desc: "Create mail"
                     },
                     {
                         id: "2",
                         name: "Mail Verification / Approval",
-                        img: headerimgabout,
+                        img: approved,
                         desc: "Mail Verification / Approval"
                     },
                     {
                         id: "3",
                         name: "Administrator Mail Protal",
-                        img: headerimgabout,
+                        img: administrator,
                         desc: "Administrator Mail Protal"
                     },
                     {
                         id: "4",
                         name: "Print/Export Mail",
-                        img: headerimgabout,
+                        img: printer,
                         desc: "Print/Export Mail"
                     },
                     {
                         id: "5",
                         name: "Attachment Upload/Download",
-                        img: headerimgabout,
+                        img: attachment,
                         desc: "Attachment Upload/Download"
                     },
                     {
                         id: "6",
                         name: "Recap & Report",
-                        img: headerimgabout,
+                        img: recap,
                         desc: "Recap & Report"
                     },
                     {
                         id: "7",
                         name: "User Management",
-                        img: headerimgabout,
+                        img: user,
                         desc: "User Management"
                     },
                     {
                         id: "8",
                         name: "Mail Setting",
-                        img: headerimgabout,
+                        img: service2,
                         desc: "Mail Setting"
                     },
                 ]
@@ -527,29 +527,90 @@ export const workDatas = {
             {
                 id: "15",
                 name: "Asset Management Information System (SIMASET) in Pertamina University",
-                img: cardplaceholder,
+                img: assetmanagement,
                 desc: "Developing a system for monitoring or tracking important assets and tracking the progress of asset maintenance requests easily",
                 systemFeatures: [
                     {
-                        id: "",
-                        name: "",
-                        img: "",
-                        desc: ""
-                    }
+                        id: "1",
+                        name: "Dashboard Statics",
+                        img: assetmanagement,
+                        desc: "a dashboard that contains data visualization and analytical tools displayed visually on the screen, including key performance indicators or other metrics that are important to the business."
+                    },
+                    {
+                        id: "2",
+                        name: "QR Code Technology",
+                        img: assetmanagement,
+                        desc: "All assets that have been registered into the system have a unique number which becomes a unique QR code making it easier to tag labeling assets."
+                    },
+                    {
+                        id: "3",
+                        name: "Asset Tracking & Audit",
+                        img: assetmanagement,
+                        desc: "Asset tracking and identification becomes more efficient by using smartphones and scanners and can avoid discrepancies between physical data and assets."
+                    },
+                    {
+                        id: "4",
+                        name: "Approval Workflow",
+                        img: assetmanagement,
+                        desc: "An approval workflow is a logical sequence of tasks, including human consent, to process data."
+                    },
+                    {
+                        id: "5",
+                        name: "Asset Reporting",
+                        img: assetmanagement,
+                        desc: "Provides asset reporting for all asset activity which can be exported in csv, xls and pdf formats and can be customized as needed."
+                    },
+                    {
+                        id: "6",
+                        name: "Multi User & Division",
+                        img: assetmanagement,
+                        desc: "Can be used simultaneously without limiting user accounts with different devices and support for multi-divisions that have different roles."
+                    },
+                    {
+                        id: "7",
+                        name: "Assets Lending",
+                        img: assetmanagement,
+                        desc: "The process of lending assets online can help stakeholders in applying for asset loans through the system."
+                    },
+                    {
+                        id: "8",
+                        name: "Assets Complaints",
+                        img: assetmanagement,
+                        desc: "Submission of a person's complaint or dissatisfaction with the use of assets can be done online"
+                    },
+
                 ]
             },
             {
                 id: "16",
                 name: "E-Library in Widya Pasraman Sila Kertha Raharja School",
-                img: cardplaceholder,
+                img: elibrary,
                 desc: "Developing an application for storing, accessing, and managing magazine articles, books, and even study materials in Widya Pasraman Sila Kertha Raharja School",
                 systemFeatures: [
                     {
-                        id: "",
-                        name: "",
-                        img: "",
-                        desc: ""
-                    }
+                        id: "1",
+                        name: "Dashboards & Reports",
+                        img: elibrary,
+                        desc: "The dashboard is designed using a user interface (UI) design that has ever-increasing availability of data sources from libraries."
+                    },
+                    {
+                        id: "2",
+                        name: "Book Management",
+                        img: elibrary,
+                        desc: "The library management system has designed a library where the book management system manages the identity of each book."
+                    },
+                    {
+                        id: "3",
+                        name: "Student Management",
+                        img: elibrary,
+                        desc: "With login-based access, the library management system allows students to easily find and access study materials in the library."
+                    },
+                    {
+                        id: "4",
+                        name: "Library Details",
+                        img: elibrary,
+                        desc: "The system ensures that students and teachers are connected to each other through this library."
+                    },
                 ]
             },
         ],
@@ -559,44 +620,44 @@ export const workDatas = {
             {
                 id: "17",
                 name: "Timesheet in PT Dago Engineering",
-                img: cardplaceholder,
+                img: dago,
                 desc: "Development of applications that assist users in recording daily work, projects and monitoring work reports for PT Dago Engineering.",
                 desc2: "Timesheet Dago Eng Application will helps users in recording daily work, projects and monitoring work reports for PT Dago Engineering. Timesheet Dago Eng provides you employee attendance application system that can be use everywhere with a simple taps on mobile device. HR can monitor mobile employee more effective and the feature is usefull for evaluating employee’s performance. PT Dago Engineering has proven that using Mytimesheet can make it easier for them to be absent in their company activities.Timesheet Dago Eng was developed to automatically this manual process. This web application has these following features:",
                 systemFeatures: [
                     {
                         id: "1",
                         name: "Presence",
-                        img: headerimgabout,
+                        img: presence,
                         desc: "Presence"
                     },
                     {
                         id: "2",
                         name: "Work List",
-                        img: headerimgabout,
+                        img: worklist,
                         desc: "Work List"
                     },
                     {
                         id: "3",
                         name: "SPD",
-                        img: headerimgabout,
+                        img: spd,
                         desc: "SPD"
                     },
                     {
                         id: "4",
                         name: "Absence History",
-                        img: headerimgabout,
+                        img: user,
                         desc: "Absence History"
                     },
                     {
                         id: "5",
                         name: "Work Summary",
-                        img: headerimgabout,
+                        img: worksummary,
                         desc: "Work Summary"
                     },
                     {
                         id: "6",
                         name: "Work Calender",
-                        img: headerimgabout,
+                        img: kalender,
                         desc: "Work Calender"
                     },
                 ]
@@ -604,7 +665,7 @@ export const workDatas = {
             {
                 id: "18",
                 name: "Restaurant Reservation Application in Bebek Bengil",
-                img: cardplaceholder,
+                img: restaurantbebek,
                 desc: "Developing an application to make it easier for customers to book online reservations in Bebek Bengil",
                 desc2: "Developing an application to make it easier for customers to book online reservations in Bebek Bengil",
                 systemFeatures: [
@@ -741,85 +802,181 @@ export const workDatas = {
             {
                 id: "26",
                 name: "Workspace & Online Reporting in PT Trihasco Utama",
-                img: cardplaceholder,
+                img: workspace,
                 desc: "Developing software for support work productivity that is integrated with other systems in PT Trihasco Utama",
                 systemFeatures: [
                     {
-                        id: "",
-                        name: "",
-                        img: "",
-                        desc: ""
-                    }
+                        id: "1",
+                        name: "Pipeline Mandatory Inspection",
+                        img: workspace,
+                        desc: "Pipeline Mandatory Inspection"
+                    },
+                    {
+                        id: "2",
+                        name: "Pressure Safety Valve Mandatory Inspection",
+                        img: workspace,
+                        desc: "Pressure Safety Valve Mandatory Inspection"
+                    },
+                    {
+                        id: "3",
+                        name: "Storage Tank Mandatory",
+                        img: workspace,
+                        desc: "Storage Tank Mandatory"
+                    },
+                    {
+                        id: "4",
+                        name: "Version 1 Form Update",
+                        img: workspace,
+                        desc: "Version 1 Form Update"
+                    },
+                    {
+                        id: "5",
+                        name: "Online/Offline Switch",
+                        img: workspace,
+                        desc: "Online/Offline Switch"
+                    },
+                    {
+                        id: "6",
+                        name: "Pressure Vessel Form",
+                        img: workspace,
+                        desc: "Pressure Vessel Form"
+                    },
+                    {
+                        id: "7",
+                        name: "Notification Remainder",
+                        img: workspace,
+                        desc: "Notification Remainder"
+                    },
+                    {
+                        id: "8",
+                        name: "Notification Mailer",
+                        img: workspace,
+                        desc: "Notification Mailer"
+                    },
                 ]
             },
             {
                 id: "27",
                 name: "Document Management System (DMS) in PT Trihasco Utama",
-                img: cardplaceholder,
+                img: DMS,
                 desc: "Developing document management system to create, store, manage, and track electronic documents in PT Trihasco Utama            ",
                 systemFeatures: [
                     {
-                        id: "",
-                        name: "",
-                        img: "",
-                        desc: ""
-                    }
+                        id: "1",
+                        name: "Master Data",
+                        img: documentM,
+                        desc: "Master Data"
+                    },
+                    {
+                        id: "2",
+                        name: "Project Management",
+                        img: documenM1,
+                        desc: "Project Management"
+                    },
+                    {
+                        id: "3",
+                        name: "Logistic",
+                        img: documenM2,
+                        desc: "Logistic"
+                    },
+                    {
+                        id: "4",
+                        name: "Selling",
+                        img: documenM3,
+                        desc: "Selling"
+                    },
+                    {
+                        id: "5",
+                        name: "Oprational",
+                        img: documenM4,
+                        desc: "Oprational"
+                    },
+                    {
+                        id: "6",
+                        name: "Project Cart",
+                        img: documenM5,
+                        desc: "Project Cart"
+                    },
+                    {
+                        id: "7",
+                        name: "AR/AP",
+                        img: documenM6,
+                        desc: "AR/AP"
+                    },
+                    {
+                        id: "8",
+                        name: "Accounting",
+                        img: documenM7,
+                        desc: "Accounting"
+                    },
+                    {
+                        id: "9",
+                        name: "Accounting",
+                        img: documenM8,
+                        desc: "Accounting"
+                    },
+                    {
+                        id: "10",
+                        name: "Accounting",
+                        img: documenM2,
+                        desc: "Accounting"
+                    },
                 ]
             },
             {
                 id: "28",
                 name: "Timesheet in Trihasco Utama",
-                img: cardplaceholder,
+                img: timesheetutama,
                 desc: "Developing of applications that assist users in recording daily work, projects and monitoring work reports for PT Trihasco Utama",
                 desc2: "Timesheet Trihasco Utama Application will helps users in recording daily work, projects and monitoring work reports for PT Trihasco Utama. Timesheet Trihasco Utama provides you employee attendance application system that can be use everywhere with a simple taps on mobile device. HR can monitor mobile employee more effective and the feature is usefull for evaluating employee’s performance. PT Trihasco Utama has proven that using Mytimesheet can make it easier for them to be absent in their company activities.Timesheet Trihasco Utama was developed to automatically this manual process. This web application has these following features:",
                 systemFeatures: [
                     {
                         id: "1",
                         name: "Presence",
-                        img: headerimgabout,
+                        img: presence,
                         desc: "Presence"
                     },
                     {
                         id: "2",
                         name: "Work List",
-                        img: headerimgabout,
+                        img: worklist,
                         desc: "Work List"
                     },
                     {
                         id: "3",
                         name: "Meeting",
-                        img: headerimgabout,
+                        img: getintouch1,
                         desc: "Meeting"
                     },
                     {
                         id: "4",
                         name: "CheckIn",
-                        img: headerimgabout,
+                        img: user,
                         desc: "CheckIn"
                     },
                     {
                         id: "5",
-                        name: "Absence History",
-                        img: headerimgabout,
-                        desc: "Absence History"
+                        name: "Work Summary",
+                        img: presence,
+                        desc: "Work Summary"
                     },
                     {
                         id: "6",
-                        name: "Work Callender",
-                        img: headerimgabout,
-                        desc: "Work Callender"
+                        name: "Absence History",
+                        img: kalender,
+                        desc: "Absence History"
                     },
                     {
                         id: "7",
-                        name: "Export & Import Project Task",
-                        img: headerimgabout,
-                        desc: "Export & Import Project Task"
+                        name: "Work Calender",
+                        img: administrator,
+                        desc: "Work Calender"
                     },
                     {
                         id: "8",
-                        name: "Work Summary",
-                        img: headerimgabout,
-                        desc: "Work Summary"
+                        name: "Export & Import Project Task",
+                        img: worksummary,
+                        desc: "Export & Import Project Task"
                     },
                 ]
             },
@@ -902,7 +1059,7 @@ export const workDatas = {
             {
                 id: "34",
                 name: "Restaurant Website in Bebek Bengil",
-                img: cardplaceholder,
+                img: RestaurantWebsite,
                 desc: "Developing website to find information like menus, location, hours of operation and contact info easily for Bebek Bengil",
                 desc2: "A restaurant website is a business website whose purpose is to provide information on menus, services, locations and other services. It also provides directions to restaurants. It can also offer promotional discounts and special offers from restaurants.Your customers will get a clear picture of the experience the restaurant has to offer and the vibe guests can expect.",
                 systemFeatures: [
@@ -1110,20 +1267,65 @@ export const workDatas = {
             {
                 id: "45",
                 name: "Company Profile and Catalog Website in CV Vidjitha Group",
-                img: cardplaceholder,
+                img: CPW,
                 desc: "Developing a website to offer products and services and find information such as location, hours of operation and contact info easily for CV Vidjitha Group  ",
                 systemFeatures: [
                     {
-                        id: "",
-                        name: "",
-                        img: "",
-                        desc: ""
-                    }
+                        id: "1",
+                        name: "User-Friendly Website",
+                        img: CPW,
+                        desc: "A user-friendly website is a website that is designed to be easily accessed by visitors."
+                    },
+                    {
+                        id: "2",
+                        name: "Product Search",
+                        img: CPW,
+                        desc: "This feature serves to make it easier for customers to find the products they need."
+                    },
+                    {
+                        id: "3",
+                        name: "Product Details",
+                        img: CPW,
+                        desc: "Creating a product detail page serves to provide a detailed description of the appearance, features and benefits of the product that consumers will experience."
+                    },
+                    {
+                        id: "4",
+                        name: "Homepage",
+                        img: CPW,
+                        desc: "When accessing a website, the first page that will appear is the home page. In general, a brief company profile is on this home page."
+                    },
+                    {
+                        id: "5",
+                        name: "Related Products (Related Items)",
+                        img: CPW,
+                        desc: "Related products are recommendations of similar products which are usually placed at the bottom of product detail pages."
+                    },
+                    {
+                        id: "6",
+                        name: "Call-to-Action (CTA) Buttons",
+                        img: CPW,
+                        desc: "CTA is an 'action' button that invites visitors to do something. Can buy products, fill out forms, subscribe to newsletters, and so on."
+                    },
+                    {
+                        id: "7",
+                        name: "Important Links and Icons",
+                        img: CPW,
+                        desc: "At the bottom of the online shop website, or often called the footer, you will usually find links to other pages."
+                    },
+                    {
+                        id: "8",
+                        name: "Frequently Asked Questions (FAQ)",
+                        img: CPW,
+                        desc: "Frequently Asked Questions (FAQ) is a page that contains a collection of questions that are frequently asked by online store visitors."
+                    },
+                    {
+                        id: "9",
+                        name: "CMS (Content Management System)",
+                        img: CPW,
+                        desc: "Content management systems are software used to manage adding or manipulating (changing) content from a website."
+                    },
                 ]
             },
-
-
-
         ],
     },
 };
@@ -1488,7 +1690,7 @@ export const articles = [
 
 
 export const solutionDatas = {
-    education: {
+    Education: {
         items: [
             {
                 id: "1",

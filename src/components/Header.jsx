@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Header = ({ title, subtitle }) => {
     const [showMenu, setShowMenu] = useState(false);
@@ -27,9 +28,11 @@ const Header = ({ title, subtitle }) => {
                         transition={{ duration: 0.5 }}
                         className="text-white bg-opacity-30 py-2 px-4 rounded-full w-[220px] h-[220px] justify-center flex items-center text-center backdrop-blur-xl bg-white mr-40"
                     >
-                        <h1 className="text-lg font-bold items-center text-blue-500 text-center">
-                            Home|{" "}
-                        </h1>
+                        <Link to="/" className='text-purple-800 font-bold mt-2 hover:text-blue-700'>
+                            <h1 className="text-lg font-bold items-center text-blue-500 text-center">
+                                Home|{" "}
+                            </h1>
+                        </Link>
                         <h2 className="text-white items-center text-center text-lg font-bold">
                             {title}
                         </h2>
