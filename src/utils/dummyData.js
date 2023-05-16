@@ -1335,11 +1335,11 @@ export const workDatas = {
 
 export const footerData = {
     mainMenu: [
-        { id: 1, title: "About" },
-        { id: 2, title: "Testimonial" },
-        { id: 3, title: "Services" },
-        { id: 4, title: "Achievement" },
-        { id: 5, title: "Sitemap" }
+        { id: 1, title: "About", url: "http://localhost:3000/about" },
+        { id: 2, title: "Testimonial", url: "/#" },
+        { id: 3, title: "Services", url: "/#" },
+        { id: 4, title: "Achievement", url: "/#" },
+        { id: 5, title: "Sitemap", url: "/#" }
     ],
     otherMenu: [
         { id: 1, title: "Blog" },

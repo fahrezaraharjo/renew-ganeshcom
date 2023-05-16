@@ -40,37 +40,38 @@ const WorkPages = () => {
                 <div className='flex mt-10 flex-wrap justify-center white-glassmorphism'>
                     {workItems.map((item, index) => (
                         <div className='mx-4 my-4 w-full md:w-1/2 lg:w-1/3 xl:w-1/4' key={index}>
-                            <motion.div
-                                
-                                className='rounded-lg overflow-hidden shadow-lg white-glassmorphism'>
-                                <motion.img
-                                    src={item.img}
-                                    alt={item.name}
-                                    className='object-cover w-full h-64'
-                                    initial={{ opacity: 1, }}
-                                    animate={{ opacity: 1, }}
-                                    whileHover={{ opacity: 0.8 }}
-                                    transition={{ duration: 0.5 }}
-                                />
-                                <div className='px-6 py-4'>
-                                    <h1 className='text-blue-400 font-bold text-xl border-b-2 border-gray-100 mb-2'>{item.name}</h1>
-                                    <p className='text-gray-100 text-base'>{item.desc}</p>
-                                    <motion.div
+                            <div className='rounded-lg overflow-hidden shadow-lg white-glassmorphism' style={{ height: '500px' }}>
+                                <div className='w-full h-1/2'>
+                                    <motion.img
+                                        src={item.img}
+                                        alt={item.name}
+                                        className='w-full h-full object-cover'
                                         initial={{ opacity: 1 }}
                                         animate={{ opacity: 1 }}
-                                        whileHover={{ opacity: 0 }}
+                                        whileHover={{ opacity: 0.8 }}
                                         transition={{ duration: 0.5 }}
-                                        className='flex justify-end mt-4'>
-                                        <Link to={`/details/${item.id}`} className='text-blue-500 font-bold'>View Details</Link>
-                                    </motion.div>
+                                    />
                                 </div>
-                            </motion.div>
+                                <div className='w-full px-6 py-4 flex flex-col' style={{ height: '250px' }}>
+                                    <div className='p-1'>
+                                        <Link to={`/details/${item.id}`} className='text-blue-500 font-bold'>
+                                            <h1 className='text-blue-400 font-bold text-xl border-b-2 border-gray-100 mb-2'>{item.name}</h1>
+                                        </Link>
+                                    </div>
+                                    <div className='overflow-hidden text-gray-100 text-base h-20'>
+                                        <p>{item.desc.split(' ').slice(0, 20).join(' ')}{item.desc.split(' ').length > 20 ? '...' : ''}</p>
+                                    </div>
+                                    <div className='flex justify-end mt-auto'>
+                                        <Link to={`/details/${item.id}`} className='text-blue-500 font-bold'>View Details</Link>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     ))}
                 </div>
                 <Footer isHomePage={isHomePage} />
             </div>
-        </div>
+        </div >
     );
 };
 
