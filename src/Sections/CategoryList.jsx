@@ -1,23 +1,28 @@
-import { solutionDatas } from "../utils/dummyData";
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { solutionDatas } from "../utils/dummyData";
+import { motion } from 'framer-motion';
+
 
 const OurSolution = () => {
   const [activeCategory, setActiveCategory] = useState("all");
-  const categories = ["All", ...Object.keys(solutionDatas)];
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const categories = ["all", ...Object.keys(solutionDatas)];
   const items =
-    activeCategory === "All"
+    activeCategory === "all"
       ? Object.values(solutionDatas).flatMap((category) => category.items)
       : solutionDatas[activeCategory]?.items || [];
 
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
-  };
-
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + items.length) % items.length);
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000, // Adjust the duration between slides
   };
 
   return (
@@ -29,9 +34,9 @@ const OurSolution = () => {
         {categories.map((category) => (
           <button
             key={category}
-            className={`button-85 ${activeCategory === category
+            className={`text-lg p-4 font-medium focus:outline-none ${activeCategory === category
               ? "text-blue-500 rounded-sm border-b-2 border-blue-500"
-              : "text-green-300 hover:text-blue-500"
+              : "text-green-300 hover:text-blue-500 "
               }`}
             onClick={() => setActiveCategory(category)}
           >
@@ -39,69 +44,37 @@ const OurSolution = () => {
           </button>
         ))}
       </nav>
-      <div className="relative white-glassmorphism p-5 flex flex-wrap">
-        <div className="flex justify-start items-center pb-4 overflow-hidden scrollbar-hide">
-          <AnimatePresence initial={false} custom={currentIndex}>
-            <motion.div
-              className="flex space-x-4"
-              drag="x"
-              dragConstraints={{ left: 0, right: (items.length - 1) * -480 }}
-              dragElastic={0.8}
-              key={currentIndex}
-              custom={currentIndex}
-              style={{
-                transform: `translateX(${currentIndex * -480}px)`,
-              }}
-              transition={{ ease: "easeOut", duration: 0.3 }}
-            >
-              {items.map((item, index) => (
-                <Link
-                  to={`/solutions/${item.id}`}
-                  className="text-purple-800 font-bold mt-2 hover:text-blue-700"
-                  key={item.id}
-                >
+      <div className='container mx-auto cursor-pointer'>
+        <div className='grid grid-cols-1'>
+          <Slider {...settings}>
+            {items.map((item, index) => (
+              <Link to={`/solutions/${item.id}`}>
+                <div key={item.id} className="relative flex" style={{ marginRight: index === items.length - 1 ? 0 : 16 }}>
                   <motion.div
-                    className="w-80 rounded-lg shadow-md flex-shrink-0 mr-4 relative"
-                    initial={{ opacity: 0 }}
+                    className='absolute rounded-xl inset-0 bg-blue-500 bg-opacity-50 text-white p-4 hover:opacity-0 transition-opacity duration-500 ease-in-out items-center flex justify-center'
+                    initial={{ opacity: 1 }}
                     animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
+                    whileHover={{ opacity: 0 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <img
-                      src={item.img}
-                      alt={item.name}
-                      className="w-full h-44 object-cover rounded-xl"
-                    />
-                    <motion.div
-                      className="hover:cursor-pointer text-lg font-medium absolute text-green-300 rounded-xl w-full h-full bg-blue-400 bg-opacity-50 mb-2 inset-0 flex justify-center text-center items-center"
-                      initial={{ opacity: 1 }}
-                      whileHover={{ opacity: 0, transition: { duration: 0.2 } }}
-                      exit={{ opacity: 1 }}
-                    >
-                      <h3 className="text-white">{item.name}</h3>
-                    </motion.div>
+                    <h2 className='text-lg text-center font-bold text-gray-100'>{item.name}</h2>
                   </motion.div>
-                </Link>
-              ))}
-            </motion.div>
-          </AnimatePresence>
-        </div>
-        <div className="flex justify-center w-full mt-4">
-          <button
-            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none"
-            onClick={handlePrev}
-          >
-            Prev
-          </button>
-          <button
-            className="ml-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none"
-            onClick={handleNext}
-          >
-            Next
-          </button>
+                  <motion.img
+                    src={item.img}
+                    alt={item.name}
+                    className='h-48 w-full object-cover rounded-xl'
+                    initial={{ opacity: 1 }}
+                    animate={{ opacity: 1 }}
+                    whileHover={{ opacity: 0.1 }}
+                    transition={{ duration: 0.3 }}
+                  />
+                </div>
+              </Link>
+            ))}
+          </Slider>
         </div>
       </div>
-    </div >
+    </div>
   );
 };
 

@@ -16,10 +16,12 @@ const Navbar = () => {
 
   return (
     <nav className="blur-sec w-full top-0 z-50 fixed flex justify-between items-center p-4">
-      <div className="flex flex-col items-center justify-center w-22 md:ml-40">
-        <img src={logo} alt="logo" className="w-10 cursor-pointer" />
-        <Link to="/" className="text-white mt-2">Ganeshcom</Link>
-      </div>
+      <Link to="/" className="text-white mt-2">
+        <div className="flex flex-col items-center justify-center w-22 md:ml-40">
+          <img src={logo} alt="logo" className="w-10 cursor-pointer" />
+          Ganeshcom
+        </div>
+      </Link>
       <div className="flex flex-row justify-evenly h-[50px] md:mr-40">
         <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
           {["About", "Work", "Solution", "Contact"].map((item, index) => (

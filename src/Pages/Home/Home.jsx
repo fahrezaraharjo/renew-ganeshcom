@@ -19,8 +19,10 @@ const Home = () => {
             </div>
             <TrustedBySection />
             <div className="bg-getintouch">
-                <CategoryList />
-                <GetInTouch />
+                <div className='blur-outer'>
+                    <CategoryList />
+                    <GetInTouch />
+                </div>
             </div>
             <div className="gradient-bg-product">
                 <FeaturedProduct />

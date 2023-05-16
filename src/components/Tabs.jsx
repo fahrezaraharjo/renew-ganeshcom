@@ -3,7 +3,6 @@ import { BsArrowRight, BsShieldFillCheck } from "react-icons/bs";
 import { tabsData } from '../utils/dummyData';
 import ServicesCard from './ServicesCard';
 
-
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState(0);
 
@@ -31,12 +30,12 @@ const Tabs = () => {
         ))}
       </div>
       <div className="flex flex-col md:flex-row items-center w-full justify-evenly">
-        <div className='w-full md:w-1/4 ml-10 h-[300px] justify-center flex items-center'>
-          <img src={tabsData[activeTab].photo} alt={tabsData[activeTab].title} className="w-full object-cover md:h-70" />
+        <div className='w-full md:w-1/2 lg:w-1/3 xl:w-1/4 ml-10 h-[300px] justify-center flex items-center'>
+          <img src={tabsData[activeTab].photo} alt={tabsData[activeTab].title} className="w-full object-cover md:h-70 lg:mt-3" />
         </div>
         {tabsData.map((tab, index) => (
           activeTab === index && (
-            <div key={index} className='flex flex-start flex-col w-full md:w-1/4 mt-4 md:mt-0'>
+            <div key={index} className='flex flex-start flex-col w-full md:w-1/2 lg:w-1/3 xl:w-1/4 mt-4 md:mt-0'>
               <ServicesCard
                 color="bg-[#2952E3]"
                 title={tab.title}

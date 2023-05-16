@@ -1476,7 +1476,7 @@ export const products = [
 export const categories = [
     {
         id: 1,
-        name: "Education",
+        name: "education",
         photos: [
             {
                 id: 1,
@@ -1690,7 +1690,7 @@ export const articles = [
 
 
 export const solutionDatas = {
-    Education: {
+    education: {
         items: [
             {
                 id: "1",
