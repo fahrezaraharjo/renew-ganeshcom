@@ -27,6 +27,7 @@ const ServiceCard = ({ color, title, icon, subtitle }) => (
 const Services = () => {
   const leftSectionVariants = {
     hidden: { x: -500 },
+    initial: { x: 0 },
     visible: {
       x: 0,
       transition: {
@@ -52,14 +53,13 @@ const Services = () => {
   };
 
   return (
-    <div className="flex w-full justify-start gradient-bg-services overflow-hidden">
-      <div className="flex mf:flex-row flex-col md:p-20 py-12 px-4">
+    <div className="flex w-full justify-between gradient-bg-services overflow-hidden ">
+      <div className="w-1/2 flex  mf:flex-row flex-col p-12">
         <motion.div
-          className="flex-1 flex flex-col w-[350px] justify-start items-start"
+          className="flex-1 flex flex-col w-full h-full object-cover justify-start items-start"
           variants={leftSectionVariants}
           initial="hidden"
-          animate="visible"
-        >
+          animate="visible">
           <h1 className="text-3xl font-bold text-gradient mb-4">
             {serviceHome.topItems.text1}
             <br />
@@ -68,9 +68,10 @@ const Services = () => {
             {serviceHome.topItems.text2}
           </p>
         </motion.div>
-
+      </div>
+      <div className="w-1/2 flex justify-start">
         <motion.div
-          className="flex-1 flex flex-col justify-start items-start"
+          className="flex-1 flex flex-col w-full h-full object-cover justify-start items-start"
           variants={rightSectionVariants}
           initial="hidden"
           animate="visible"
