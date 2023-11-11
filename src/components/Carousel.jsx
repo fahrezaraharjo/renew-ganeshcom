@@ -1,3 +1,6 @@
+/* eslint-disable react/button-has-type */
+/* eslint-disable jsx-a11y/control-has-associated-label */
+/* eslint-disable arrow-body-style */
 import React, { useState } from "react";
 
 const Carousel = ({ images }) => {

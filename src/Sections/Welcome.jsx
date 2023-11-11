@@ -1,3 +1,5 @@
+/* eslint-disable import/order */
+/* eslint-disable arrow-body-style */
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import Carousel from "../components/Carousel";
@@ -12,7 +14,7 @@ const Welcome = () => {
         whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.5, ease: "easeInOut" }}
-        >
+      >
         <div className="w-full mx-auto flex flex-row md:flex-row justify-center items-center py-16 md:py-32 px-6 md:px-0">
           <div className="white-glassmorphism shadow-md rounded-lg flex flex-col md:flex-row w-full p-4">
             <div className="w-full md:w-1/2 h-full">
@@ -32,7 +34,7 @@ const Welcome = () => {
               </p>
               <button
                 type="button"
-                onClick={() => { }}
+                onClick={() => {}}
                 className="inline-flex w-[250px] items-end px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               >
                 Explore Now

@@ -1,3 +1,4 @@
+/* eslint-disable arrow-body-style */
 import React from "react";
 import { BsShieldFillCheck } from "react-icons/bs";
 import { BiSearchAlt } from "react-icons/bi";
@@ -12,11 +13,15 @@ const ServiceCard = ({ color, title, icon, subtitle }) => (
     whileTap={{ scale: 0.95 }}
     whileInView={{ x: [50, 150, 0], opacity: [0, 0, 1] }}
   >
-    <div className={`w-10 h-10 rounded-full flex justify-center items-center ${color}`}>
+    <div
+      className={`w-10 h-10 rounded-full flex justify-center items-center ${color}`}
+    >
       {icon}
     </div>
     <div className="ml-5 flex flex-col flex-1">
-      <h3 className="mt-2 text-white text-lg sm:text-xl md:text-2xl">{title}</h3>
+      <h3 className="mt-2 text-white text-lg sm:text-xl md:text-2xl">
+        {title}
+      </h3>
       <p className="mt-1 text-white text-sm md:text-base lg:text-lg xl:text-xl">
         {subtitle}
       </p>
@@ -25,14 +30,14 @@ const ServiceCard = ({ color, title, icon, subtitle }) => (
 );
 
 const Services = () => {
-
   return (
     <div className="flex w-full justify-between gradient-bg-services overflow-hidden ">
       <div className="w-1/2 flex  mf:flex-row flex-col p-12">
         <motion.div
           className="flex-1 flex flex-col w-full h-full object-cover justify-start items-start"
           initial="hidden"
-          animate="visible">
+          animate="visible"
+        >
           <h1 className="text-3xl font-bold text-gradient mb-4">
             {serviceHome.topItems.text1}
             <br />
@@ -59,7 +64,6 @@ const Services = () => {
             title="Best exchange rates"
             icon={<BiSearchAlt fontSize={21} className="text-white" />}
             subtitle="Get the best exchange rates. We provide competitive rates for all transactions."
-
           />
           <ServiceCard
             color="bg-[#F84550]"

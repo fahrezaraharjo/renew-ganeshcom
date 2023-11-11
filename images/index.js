@@ -1,5 +1,10 @@
-
-//featured product
+/* eslint-disable no-trailing-spaces */
+/* eslint-disable indent */
+/* eslint-disable semi */
+/* eslint-disable spaced-comment */
+/* eslint-disable no-multiple-empty-lines */
+/* eslint-disable import/no-duplicates */
+// featured product
 import akuntaid from "./akuntaid-230317.205557.png";
 import dimedika from "./dimedikaid-230317.205857.png";
 import keacaracom from "./keacaracom-230317.210116.png";
@@ -8,18 +13,17 @@ import pems from "./pems-230317.205357.jpg";
 import ximo from "./ximo-230319.145810.jpg";
 import sion from "./sion-app-230317.205711.png";
 
-
-//assets
+// assets
 import bali from "./bali.png";
 import logo from "./g.png";
 
 
-//homeslider
+// homeslider
 import homeslider1 from "./homeslider-230326.171913.jpg";
 import homeslider2 from "./homeslider-230326.171926.jpg";
 import homeslider3 from "./homeslider-230326.171937.jpg";
 
-//service
+// service
 import service1 from "./service-230326.175925.png";
 import service2 from "./service-230326.175935.png";
 import service3 from "./service-230326.175944.png";
@@ -153,9 +157,22 @@ import servicebranding from "./service-branding.png"
 import brandingdevelop from "./branding-develop.png"
 import brandingtech from "./branding-tech.jpeg"
 import servicestartup from "./service-startup.jpg"
+import yf from "./yellow-flash-logo-removebg-preview.png"
+import artbanner from "./artbanner.png"
+import artbanner1 from "./artbanner1.png"
+import artbanner2 from "./artbanner2.png"
+
+
+
+
+
 
 
 export {
+    yf,
+    artbanner,
+    artbanner1,
+    artbanner2,
     servicestartup,
     serviceSoftware,
     softwaredev,

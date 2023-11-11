@@ -1,3 +1,5 @@
+/* eslint-disable eol-last */
+/* eslint-disable quotes */
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home, AboutPage, WorkPages, DetailsPage, SolutionPage, DetailsSolutionPage, Contact, ServicePage, DetailService } from './Pages';
 import { Navbar } from './components';
